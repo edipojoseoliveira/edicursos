@@ -85,17 +85,42 @@ li:first-child {
     position: fixed;
 }
 
-.container-cursos > .row > div {
+.container-curso {
+    margin-top: 8%;
+    margin-left: 75px;
+}
+
+.container-cursos > .row > div,
+.container-curso > .row > div {
     padding: 20px;
 }
 
-.logica-programacao > a > h2 {
+.container-cursos > .row > div > a > p,
+.container-curso > .row > div > p {
+    font-size: 18pt;
+}
+
+.logica-programacao > a > h2,
+.logica-programacao > h2 {
     background: blue;
     color: white;
     border-radius: 5px;
     padding: 20px;
     font-size: 26pt;
     font-weight: bold;
+}
+
+.logica-programacao > h2 {
+    position: absolute;
+}
+
+.logica-programacao > p {
+    margin-top: 10%;
+}
+
+.logica-programacao > a {
+    text-decoration: none;
+    color: black;
 }
 
 .ingles-essencial > a > h2 {
@@ -107,18 +132,9 @@ li:first-child {
     font-weight: bold;
 }
 
-.logica-programacao > a {
-    text-decoration: none;
-    color: black;
-}
-
 .ingles-essencial > a {
     text-decoration: none;
     color: black;
-}
-
-.container-cursos > .row > div > a > p {
-    font-size: 18pt;
 }
 
 /* Original */
