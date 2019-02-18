@@ -137,6 +137,10 @@ li:first-child {
     color: black;
 }
 
+.oi {
+    margin-right: 5px;
+}
+
 /* Original */
 
 body {
