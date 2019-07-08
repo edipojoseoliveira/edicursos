@@ -33,18 +33,49 @@
             <!-- Aqui fica o menu superior -->
         </div>
         
-        <div class="container margin-top-10 font-size-18">
+        <div class="container margin-top-5">
             <div class="row">
-                <div class="col-md-5 col-sm-10 logica-programacao">
-                    <a href="cursos/logica-de-programacao.html">
-                        <h2>Lógica de programação</h2>
-                        <p>
-                            Nesse curso aprenderemos lógica de programação com a plataforma App Inventor desenvolvendo nossos aplicativos.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-5 col-sm-10 ingles-essencial">
-                    <!-- Aqui vai o outro curso -->
+                <div class="col-md-10 col-sm-12 logica-programacao">
+                    <h2>Contato</h2>
+                    <p>
+                        <form>
+                            <br/>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="form-row">
+                                        <div class="col-6">
+                                            <input type="text" id="inputNome" class="form-control" placeholder="Nome">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="mail" id="inputEmail" class="form-control" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <textarea id="inputMensagem" class="form-control" placeholder="Mensagem"></textarea>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="form-row">
+                                        <div class="col-12 text-right margin-bottom-10">
+                                            <button type="submit" class="btn btn-outline-primary"
+                                                onclick="salvarMensagem()">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <dl>
+                                        <dt>E-mail</dt>
+                                        <dd>edipojoseoliveira@gmail.com</dd>
+
+                                        <dt>Telefone</dt>
+                                        <dd>(46) 9 9106-2205</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </form>
+                    </p>
                 </div>
             </div>
         </div>
@@ -77,5 +108,8 @@
                 }
             }
         </script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+        <script src="scripts/firebase.js"></script>
 	</body>
 </html>

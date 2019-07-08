@@ -6,8 +6,11 @@ html {
     margin: 0;
 }
 
+.personagem {
+    width: 5%;
+}
+
 .ondas-banner {
-    height: 100%;
     max-width: 100%;
     bottom: 0;
     right: 0;
@@ -28,6 +31,12 @@ html {
     position: fixed;
 }
 
+.texto-banner {
+    color: #09234a;
+    left: 10%;
+    position: fixed;
+}
+
 .logo-menu {
     width: 160px;
     top: 7px;
@@ -35,14 +44,7 @@ html {
     position: fixed;
 }
 
-.texto-banner {
-    color: #09234a;
-    top: 65%;
-    left: 10%;
-    position: fixed;
-}
-
-ul {
+#menu-superior {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -52,11 +54,11 @@ ul {
     width: 100%;
 }
 
-li {
+#menu-superior > li {
     float: right;
 }
 
-li a {
+#menu-superior > li a {
     display: block;
     color: #09234a;
     text-align: center;
@@ -65,18 +67,59 @@ li a {
     font-size: 16pt;
 }
 
+.navbar {
+    background-color: #fff !important;
+}
 
-li a:hover {
+.margin-top-2 {
+    margin-top: 2%;
+}
+
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+.margin-top-10 {
+    margin-top: 10%;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10%;
+}
+
+.video-aula {
+    border: 2px solid #ddd !important;
+}
+
+.nav-link {
+    color: #09234a !important;
+    font-size: 16pt;
+}
+
+.nav-link:hover {
+    color: #98a7b7 !important;
+    font-size: 16pt;
+}
+
+#menu-superior > li a:hover {
     color: #98a7b7;
     text-decoration:none;
 }
 
-li:first-child {
+#menu-superior > li:first-child {
     padding-right: 50px;
 }
 
-.active {
+#menu-superior > li > .active {
     color: #98a7b7;
+}
+
+.menu-active {
+    color: #98a7b7 !important;
 }
 
 .container-cursos {
@@ -100,6 +143,10 @@ li:first-child {
     font-size: 18pt;
 }
 
+.font-size-18 {
+    font-size: 18pt;
+}
+
 .logica-programacao > a > h2,
 .logica-programacao > h2 {
     background: blue;
@@ -108,14 +155,6 @@ li:first-child {
     padding: 20px;
     font-size: 26pt;
     font-weight: bold;
-}
-
-.logica-programacao > h2 {
-    position: absolute;
-}
-
-.logica-programacao > p {
-    margin-top: 10%;
 }
 
 .logica-programacao > a {
@@ -236,14 +275,20 @@ body {
     opacity: 1;
 }
 
-@media(max-width:991px) {
+@media(min-width:769px) {
     .conteudo-post { padding: 90px 20px !important; }
+    .logica-programacao > h2 { position: absolute; }
+    .logica-programacao > p { margin-top: 10%; }
+    .ondas-banner { height: 90%; }
+    .texto-banner { top: 65%; }
 }
 
 @media(max-width:768px) {
     .slide-title { text-shadow: 1px 1px #333; }
     .slide-subtitle { text-shadow: 1px 1px #333; }
     .conteudo-post { padding: 90px 20px !important; }
+    .ondas-banner { height: 40%; }
+    .texto-banner { top: 37%; }
 }
 
 @media(max-width:575px) {

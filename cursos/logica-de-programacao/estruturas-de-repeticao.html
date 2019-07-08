@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="icon" type="imagem/png" href="../../sources/icone-tab.png" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="EdiCursos é uma plataforma de cursos na área de tecnologia, visite nosso site e confira os cursos disponíveis, entre eles temos os cursos de Lógica de Programação, JAVA Básico, API REST com JAVA e muito mais.">
+	</head>
+	<body>
+		<div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
+                    <h1 id="titulo-pagina">Estruturas de repetição</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Seja bem-vindo(a) a nossa sétima aula do curso de Lógica de Programação com App Inventor, nessa aula vamos estudar as estruturas de repetição.
+                    </p>
+                    <p>
+                        As estruturas de repetição são usadas quando precisamos que um determinado comando seja executado várias vezes seguidas.
+                    </p>
+                    <p>
+                        Imagine que você precisa desenvolver um aplicativo que a cada 1 hora verifica a temperatura ambiente e mostra essa informação para o usuário, nesse caso você precisa repetir o comando de consultar a temperatura a cada 1 hora, usando uma estrutura de repetição você conseguiria fazer esse aplicativo de forma muito fácil. Esse foi só um exemplo de uma situação onde poderíamos resolver o problema usando estruturas de repetição.
+                    </p>
+                    <p>
+                        No App Inventor existem três estruturas de repetição, são elas:
+                    </p>
+                    <p>
+                        <ol class="list-post">
+                            <li><b>Para cada número repete</b>, mais conhecida como <b>(for)</b></li>
+                            <li><b>Para cada elemento na lista fazer</b>, mais conhecida como <b>(for each)</b></li>
+                            <li><b>Enquanto testar repete</b>, mais conhecida como <b>(while)</b></li>
+                        </ol>
+                    </p>
+
+                    <h2>Estrutura de repetição (for)</h2>
+                    <p>
+                        Vamos começar estudando a estrutura <b>for</b>. Nós usamos essa estrutura quando precisamos repetir um ou vários comandos por uma quantidade determinada de vezes.
+                    </p>
+                    <p>
+                        Imagine que você quer que seu aplicativo escreva na tela os número de 1 até 5, você pode fazer isso de duas formas, a primeira é você usar o comando de imprimir um número na tela 5 vezes seguidas.
+                    </p>
+                    <p>
+                        A segunda forma é você usar a estrutura de repetição que faz repetir por 5 vezes o comando de imprimir um número na tela.
+                    </p>
+                    <p>
+                        Assim você precisa usar apenas uma vez o comando de imprimir um número na tela e informar para a estrutura de repetição que você deseja repetir o comando por 5 vezes.
+                    </p>
+                    <p>
+                        Como você pode ver nesse exemplo, quando não usamos a estrutura de repetição nós temos que repetir muitos blocos, já quanto usamos a estrutura de repetição a quantidade de blocos usados é menor.
+                    </p>
+                    <p>
+                        Agora imagine se em vez de ter que imprimir os número de 1 a 5 você tivesse que imprimir os números de 1 a 100. Com a estrutura de repetição você só precisa alterar a quantidade de vezes que ela deve repetir, no lugar de 5 digitar 100, já se você não tivesse a estrutura de repetição você teria que copiar 100 vezes os mesmos blocos.
+                    </p>
+                    <p>
+                        Essa primeira estrutura de repetição tem o objetivo de repetir por uma quantidade definida de vezes os comandos que quisermos, vamos ver agora a próxima estrutura de repetição.
+                    </p>
+
+                    <h2>Estrutura de repetição (for each)</h2>
+                    <p>
+                        A estrutura de repetição <b>for each</b> é usada quando temos uma lista e precisamos percorrer todos os seus itens.
+                    </p>
+                    <p>
+                        Imagine que temos em nosso aplicativo uma lista de compras e agora precisamos mostrar todos os itens dessa lista na tela para o usuário.
+                    </p>
+                    <p>
+                        Nesse caso nós usamos a estrutura de repetição <b>for each</b>, para essa estrutura de repetição funcionar precisamos informar para ela qual lista deve ser percorrida. Então para cada item da lista será executado o comando para imprimi-lo na tela.
+                    </p>
+                    <p>
+                        Veja como ficaria a organização dos blocos.
+                    </p>
+                    <p>
+                        Primeiro criamos uma variável que guardará a lista de compras com os itens: Arroz, Feijão, Tomate, Alface, Maçã, Banana.
+                    </p>
+                    <p>
+                        Ao clicar em um botão da tela usamos a estrutura de repetição para percorrer todos os itens da lista de compras e imprimimos na tela item por item.
+                    </p>
+                    <p>
+                        Essa segunda estrutura de repetição tem o objetivo de percorrer todos os itens de qualquer lista que tivermos, vamos ver agora como funciona a estrutura de repetição <b>while</b>.
+                    </p>
+
+                    <h2>Estrutura de repetição (while)</h2>
+                    <p>
+                        A estrutura de repetição <b>while</b> é usada quando temos que repetir alguns comandos mas não sabemos exatamente quantas vezes precisamos repeti-los, a quantidade de vezes que será executado vai depender de uma condição.
+                    </p>
+                    <p>
+                        Imagine que você precisa agora criar um despertador, o aplicativo deve saber que horário vai disparar o alarme, mas não sabe quantas vezes o alarme vai tocar, pois vai depender de quando o usuário clicar no botão desligar do despertador.
+                    </p>
+                    <p>
+                        Enquanto o usuário não clicar no botão desligar alarme, ele deve continuar tocando. Perceba que nesse caso você não sabe exatamente quantas vezes o alarme deve tocar, mas sabe que enquanto o botão desligar não for clicado o alarme deve continuar tocando repetidamente.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa primeira parte da aula de estruturas de repetição nós tivemos uma visão geral sobre o que são e como funcionam as estruturas de repetição, agora nós vamos ter três aulas práticas sobre estruturas de repetição, em cada aula praticaremos um tipo de estrutura de repetição.
+                    </p>
+                    <p>
+                        Se surgiu alguma dúvida em relação ao conteúdo escreva nos comentários, responderemos suas perguntas o mais rápido possível. Até a próxima aula!
+                    </p>
+
+                    <a href="video-aula-aplicativo-estrutura-de-repeticao-for.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/estruturas-de-repeticao')">
+                        Próxima aula
+                    </a>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-5">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <img class="ondas-cursos" src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://www.edicursos.com.br",
+                "name": "EdiCursos",
+                "logo": "http://www.edicursos.com/imagens/icone-tab.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55-046-99106-2205",
+                    "contactType": "customer support",
+                    "areaServed": "BR",
+                    "contactOption": "TollFree"
+                }
+            }
+        </script>
+	</body>
+</html>

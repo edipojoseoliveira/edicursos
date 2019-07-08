@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="icon" type="imagem/png" href="../../sources/icone-tab.png" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="EdiCursos é uma plataforma de cursos na área de tecnologia, visite nosso site e confira os cursos disponíveis, entre eles temos os cursos de Lógica de Programação, JAVA Básico, API REST com JAVA e muito mais.">
+	</head>
+	<body>
+		<div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
+                    <h1 id="titulo-pagina">Operadores lógicos</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Seja bem-vindo(a) a segunda parte da aula 06 do curso de lógica de programação com App Inventor, hoje vamos falar sobre os operadores lógicos <b>E</b> e <b>OU</b>. Os operadores lógicos trabalham em conjunto com os operadores de comparação, e são frequentemente usados nas estruturas condicionais que estudamos nas aulas anteriores.
+                    </p>
+                    <p>
+                        Sabemos que em uma estrutura condicional nós usamos os operadores de comparação para criar as condições que indicarão se um determinado comando será executado ou não, ao usar uma estrutura condicional pode haver a necessidade de criarmos mais de uma condição para decidir se um determinado comando será executado ou não, para conseguirmos fazer duas ou mais condições juntas nós vamos usar os operadores lógicos <b>E</b> e <b>OU</b>. Vamos ver agora como eles funcionam.
+                    </p>
+
+                    <h2>Usando o operador lógico E</h2>
+                    <p>
+                        Imagine que você criou um aplicativo de agenda, e nele você cadastrou o seguinte compromisso “dia 10 às 15:00 horas eu tenho uma reunião”, nesse compromisso você especificou o dia e a hora. Quando chegar as 15:00 horas do dia 10 o seu aplicativo deve mostrar uma notificação.
+                    </p>
+                    <p>
+                        Para saber quando é o momento certo de exibir a notificação você pode criar a seguinte estrutura condicional:
+                    </p>
+                    <p>
+<pre>
+<b>Se</b> o dia for igual a 10 <b>E</b> a hora for igual a 15:00 <b>então</b>
+    Exibir uma notificação
+</pre>
+                    </p>
+                    <p>
+                        Percebeu que no teste da estrutura condicional você precisou fazer duas comparações? Foi necessário comparar o dia e a hora. Nessas situações temos os operadores lógicos para resolver nosso problema, neste exemplo foi usado o operador <b>E</b>.
+                    </p>
+
+                    <h2>Usando o operador lógico OU</h2>
+                    <p>
+                        Suponhamos que você tem que criar um aplicativo para controlar a quantidade de produtos em um estoque de uma loja, o dono da loja falou que a quantidade mínima de produtos é 100 e a quantidade máxima de produtos é 500, seu aplicativo tem que exibir uma notificação para o usuário caso a quantidade de produtos esteja menor que 100 ou maior que 500.
+                    </p>
+                    <p>
+                        Para desenvolver esse aplicativo você vai precisar verificar se a quantidade de produtos é <b>menor</b> que <b>100</b> ou <b>maior</b> que <b>500</b> e exibir uma notificação caso esse teste retorne <b>Verdadeiro (True)</b>, para isso você pode usar a seguinte estrutura condicional.
+                    </p>
+                    <p>
+<pre>
+<b>Se</b> a quantidade for menor que 100 <b>OU</b> a quantidade for maior que 500 <b>então</b>
+    Exibir uma notificação
+</pre>
+                    </p>
+
+                    <h2>Quando usar cada operador lógico</h2>
+                    <p>
+                        Além de saber como usar os operadores lógicos, é necessário saber quando usar cada um. O operador <b>E</b> é usado quando precisamos que o resultado de todos os testes seja verdadeiro para executar um determinado comando, o operador <b>OU</b> é usado quando precisamos que pelo menos um dos resultados dos testes seja verdadeiro para executar um determinado comando.
+                    </p>
+                    <p>
+                        Vamos analisar melhor o primeiro exemplo de uso do operador <b>E</b>.
+                    </p>
+                    <p>
+<pre>
+<b>Se</b> o dia for igual a 10 <b>E</b> a hora for igual a 15:00 <b>então</b>
+    Exibir uma notificação
+</pre>
+                    </p>
+                    <p>
+                        Nós usamos o operador <b>E</b> nesse caso porque precisamos que as duas condições sejam verdadeiras para executar o comando de exibir notificação.
+                    </p>
+                    <p>
+                        Se o dia for igual a 10 mas a hora não for igual a 15:00 então não pode exibir a notificação, se a hora for igual a 15:00 mas o dia não for igual a 10 também não pode exibir a notificação, a notificação só pode ser exibida quando as duas condições forem verdadeiras.
+                    </p>
+                    <p>
+                        Vamos analisar melhor o segundo exemplo onde usamos o operador <b>OU</b>.
+                    </p>
+                    <p>
+<pre>
+<b>Se</b> a quantidade for menor que 100 <b>OU</b> a quantidade for maior que 500 <b>então</b>
+    Exibir uma notificação
+</pre>
+                    </p>
+                    <p>
+                        Nesse exemplo foi usado o operador <b>OU</b> porque não precisamos que as duas condições sejam verdadeiras, se pelo menos uma das condições for verdadeira o comando de exibir uma notificação deve ser executado.
+                    </p>
+                    <p>
+                        Imagine que a quantidade de produtos é <b>90</b>, nesse caso a primeira condição é verdadeira, mas a segunda condição é falsa, mesmo apenas uma condição sendo verdadeira o comando de exibir uma notificação deve ser executado.
+                    </p>
+                    <p>
+                        Se a quantidade fosse <b>600</b>, apenas a segunda condição seria verdadeira, e a primeira condição seria falsa, mesmo assim a notificação deve ser exibida informando o usuário que a quantidade de produtos está acima do desejado.
+                    </p>
+
+                    <a href="video-aula-primeiro-aplicativo-operadores-logicos.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/operadores-logicos')">
+                        Próxima aula
+                    </a>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-5">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <img class="ondas-cursos" src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://www.edicursos.com.br",
+                "name": "EdiCursos",
+                "logo": "http://www.edicursos.com/imagens/icone-tab.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55-046-99106-2205",
+                    "contactType": "customer support",
+                    "areaServed": "BR",
+                    "contactOption": "TollFree"
+                }
+            }
+        </script>
+	</body>
+</html>

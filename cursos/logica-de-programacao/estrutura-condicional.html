@@ -30,54 +30,72 @@
         <meta name="description" content="EdiCursos é uma plataforma de cursos na área de tecnologia, visite nosso site e confira os cursos disponíveis, entre eles temos os cursos de Lógica de Programação, JAVA Básico, API REST com JAVA e muito mais.">
 	</head>
 	<body>
-        <div id="menu-interno-superior">
+		<div id="menu-interno-superior">
             <!-- Aqui fica o menu superior -->
         </div>
         
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">O que são variáveis</h1>
+                    <h1 id="titulo-pagina">Estrutura condicional (IF e ELSE)</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa sexta aula do curso de lógica de programação com App Inventor.
+                        Seja bem-vindo(a) a nossa sexta aula do curso de lógica de programação com App Inventor, nesta aula vamos falar sobre estrutura condicional (IF e ELSE).
                     </p>
                     <p>
-                        Hoje vamos falar sobre variáveis, um assunto muito importante, pois elas são usadas com muita frequência no desenvolvimento de software.
+                        Para que você consiga entender bem o conteúdo dessa aula, é necessário que tenha participado da aula anterior, onde estudamos os operadores de comparação, pois em uma estrutura condicional você vai precisar usá-los, caso não tenha visto a aula anterior <a href="./operadores-matematicos.html">clique aqui</a> para acessá-la.
                     </p>
 
-                    <h2>O que é uma variável?</h2>
+                    <h2>O que é uma estrutura condicional?</h2>
                     <p>
-                        Variável é um local da memória do computador usado para guardar um valor.
+                        Essa provavelmente foi sua primeira dúvida ao iniciar essa aula. O nome parece difícil “estrutura condicional”, mas o que ela representa é algo simples, e nós já usamos ela todos os dias, sem nem perceber.
                     </p>
                     <p>
-                        Nos nossos aplicativos nós vamos precisar de algumas variáveis, por exemplo, se vamos desenvolver um jogo, provavelmente vamos precisar saber a pontuação do jogador, dependendo do jogo podemos saber quantas vidas sobrando o jogador tem, essas informações precisam estar guardadas em algum lugar.
+                        Vamos ver um exemplo de estrutura condicional que você já deve ter usado. Imagine que você precisa atravessar uma rua, mas está com medo de ser atropelado(a), você pode usar a seguinte estrutura condicional:
                     </p>
                     <p>
-                        Toda variável precisa ter um nome, assim quando precisamos obter o valor que está guardado dentro dela basta chamar seu nome. Fácil assim.
+<pre>
+<b>Se</b> não estiver vindo carros da direita <b>e</b> não estiver vindo carros da esquerda <b>então</b>
+    Eu posso atravessar.
+<b>Senão</b>
+    Eu tenho que esperar.
+</pre>
                     </p>
                     <p>
-                        Cada variável pode guardar apenas uma informação por vez, por exemplo, imagine que dentro de uma variável chamada <b>pontuação</b> está guardado o número <b>15</b>, se nós colocarmos o número <b>16</b> dentro dela o número <b>15</b> será apagado.
+                        Essa é uma estrutura condicional, parece bem simples não é?
                     </p>
                     <p>
-                        Além do nome, cada variável precisa ter um tipo, os tipos mais comuns são: número, texto e boolean. Quando precisamos guardar um número, criamos uma variável do tipo número, se precisamos guardar um texto, criamos uma variável do tipo texto, quando precisamos guardar um valor verdadeiro ou falso, criamos uma variável do tipo boolean. Não é possível guardar um texto dentro de uma variável do tipo número, nem o contrário.
+                        Vamos ver mais um exemplo que você já deve ter usado também. Imagine que você está escolhendo uma roupa para usar amanhã, mas está em dúvida em usar uma blusa ou uma camiseta, você pode usar a seguinte estrutura condicional:
                     </p>
                     <p>
-                        Já sabemos o que são variáveis, também sabemos que cada variável precisa ter um nome e um tipo de valor que pode guardar, agora veremos as regras para criar os nomes das variáveis.
+<pre>
+<b>Se</b> estiver frio <b>então</b>
+    Eu uso uma blusa
+<b>Senão</b>
+    Eu uso uma camiseta.
+</pre>
+                    </p>
+                    <p>
+                        Viu só como a estrutura condicional é fácil, e você já usa ela em vários momentos do seu dia a dia.
+                    </p>
+                    <p>
+                        Você percebeu alguma semelhança entre os dois exemplos acima?
+                    </p>
+                    <p>
+                        Toda estrutura condicional começa com a palavra <b>Se</b>, depois vem a condição, se a condição for atendida <b>então</b> a próxima linha é executada, caso a condição não seja atendida a linha que será executada é a que está abaixo da palavra <b>Senão</b>.
+                    </p>
+                    <p>
+                        Em programação a lógica é exatamente a mesma, a diferença é que para criar as condições nós não vamos apenas escrever, vamos ter que usar os operadores de comparação para fazer as comparações necessárias.
+                    </p>
+                    <p>
+                        Basicamente, a estrutura condicional permite que os programas possam verificar quando um determinado comando deve ser executado e quando não deve ser executado.
+                    </p>
+                    <p>
+                        Agora que já sabemos como funciona uma estrutura condicional no nosso dia a dia, vamos ver como elas funcionam na hora de criar um aplicativo.
                     </p>
 
-                    <h2>Regras para nomear variáveis</h2>
-                    <p>
-                        Aqui temos uma lista das regras que devem ser seguidas para nomear as variáveis.
-                    </p>
-                    <ol>
-                        <li>Deve iniciar com uma letra, não pode ser iniciada com um número.</li>
-                        <li>Depois do primeiro caractere também pode usar números.</li>
-                        <li>O nome pode ser o que você quiser, desde que siga as regras. Sugiro que o nome de cada variável seja algo relacionado com o valor guardado nela.</li>
-                    </ol>
-
-                    <a href="video-aula-primeiro-aplicativo-variaveis.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/o-que-sao-variaveis')">
+                    <a href="video-aula-primeiro-aplicativo-estrutura-condicional.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/estrutura-condicional')">
                         Próxima aula
                     </a>
                 </div>
