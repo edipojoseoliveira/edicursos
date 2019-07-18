@@ -88,7 +88,7 @@ html {
 }
 
 .margin-bottom-10 {
-    margin-bottom: 10%;
+    margin-bottom: 7rem;
 }
 
 .video-aula {
@@ -398,7 +398,7 @@ pre {
 
 .nav-link {
     text-align: center;
-    margin: 0 1rem 0 1rem;
+    margin: .8rem .5rem 0 .5rem;
 }
 
 .link-com-borda {

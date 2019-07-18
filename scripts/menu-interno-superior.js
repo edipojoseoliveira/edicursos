@@ -20,6 +20,12 @@ var menu =
 					'<a class="nav-link ' + getClassMenu('/contato') + '" href="' + getUrlHref() + 'contato.html">CONTATO</a>' +
 				'</li>' +
 				'<li class="nav-item">' +
+					'<a class="nav-link ' + getClassMenu('/sobre') + '" href="' + getUrlHref() + 'sobre.html">SOBRE</a>' +
+				'</li>' +
+				'<li class="nav-item">' +
+					'<a class="nav-link ' + getClassMenu('/entrar') + '" href="' + getUrlHref() + 'entrar.html">ENTRAR</a>' +
+				'</li>' +
+				'<li class="nav-item">' +
 					'<a class="nav-link ' + getClassMenu('/cadastre-se') + '" href="' + getUrlHref() + 'cadastre-se.html">CADASTRE-SE</a>' +
 				'</li>' +
 			'</ul>' +
