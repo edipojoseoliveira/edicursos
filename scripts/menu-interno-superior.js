@@ -23,10 +23,10 @@ var menu =
 					'<a class="nav-link ' + getClassMenu('/sobre') + '" href="' + getUrlHref() + 'sobre.html">SOBRE</a>' +
 				'</li>' +
 				'<li class="nav-item">' +
-					'<a class="nav-link ' + getClassMenu('/entrar') + '" href="' + getUrlHref() + 'entrar.html">ENTRAR</a>' +
+					'<a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>' +
 				'</li>' +
 				'<li class="nav-item">' +
-					'<a class="nav-link ' + getClassMenu('/cadastre-se') + '" href="' + getUrlHref() + 'cadastre-se.html">CADASTRE-SE</a>' +
+					'<a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>' +
 				'</li>' +
 			'</ul>' +
 		'</div>' +

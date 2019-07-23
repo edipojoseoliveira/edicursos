@@ -37,45 +37,89 @@
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">O que são variáveis</h1>
+                    <h1 id="titulo-pagina">Aprenda o que são variáveis</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa sexta aula do curso de lógica de programação com App Inventor.
+                        Nessa aula vamos aprender o que são variáveis e como usá-las no desenvolvimento de software, veremos também as regras para nomear uma variável, além de conhecer os tipos de variáveis mais usados para criar aplicativos.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Você já parou para pensar que praticamente todos os aplicativos que usamos guardam alguma informação nossa? Por exemplo, os aplicativos de bancos guardam as informações de sua conta, o WhatsApp guarda suas mensagens, o Google Maps guarda sua localização, entre outros.
                     </p>
                     <p>
-                        Hoje vamos falar sobre variáveis, um assunto muito importante, pois elas são usadas com muita frequência no desenvolvimento de software.
+                        Mas como eles conseguem armazenar essas informações no seu celular? Existem várias formas de fazer isso, uma delas é utilizando as variáveis.
+                    </p>
+                    <p>
+                        Na aula de hoje aprenderemos como funciona, para que serve e como utilizar as variáveis em nossos aplicativos.
                     </p>
 
                     <h2>O que é uma variável?</h2>
                     <p>
-                        Variável é um local da memória do computador usado para guardar um valor.
+                        Variável é um espaço reservado na memória do celular onde um aplicativo pode guardar informações, você pode criar em seu aplicativo quantas variáveis quiser, cada variável pode armazenar apenas uma informação por vez, então se você precisa guardar várias informações vai ser necessário criar várias variáveis.
                     </p>
                     <p>
-                        Nos nossos aplicativos nós vamos precisar de algumas variáveis, por exemplo, se vamos desenvolver um jogo, provavelmente vamos precisar saber a pontuação do jogador, dependendo do jogo podemos saber quantas vidas sobrando o jogador tem, essas informações precisam estar guardadas em algum lugar.
+                        Podemos imaginar que a memória do computador ou do celular é como um armário, nesse armário há várias gavetas, cada gaveta é como uma variável, onde podemos guardar algo dentro dela.
                     </p>
                     <p>
-                        Toda variável precisa ter um nome, assim quando precisamos obter o valor que está guardado dentro dela basta chamar seu nome. Fácil assim.
-                    </p>
-                    <p>
-                        Cada variável pode guardar apenas uma informação por vez, por exemplo, imagine que dentro de uma variável chamada <b>pontuação</b> está guardado o número <b>15</b>, se nós colocarmos o número <b>16</b> dentro dela o número <b>15</b> será apagado.
-                    </p>
-                    <p>
-                        Além do nome, cada variável precisa ter um tipo, os tipos mais comuns são: número, texto e boolean. Quando precisamos guardar um número, criamos uma variável do tipo número, se precisamos guardar um texto, criamos uma variável do tipo texto, quando precisamos guardar um valor verdadeiro ou falso, criamos uma variável do tipo boolean. Não é possível guardar um texto dentro de uma variável do tipo número, nem o contrário.
-                    </p>
-                    <p>
-                        Já sabemos o que são variáveis, também sabemos que cada variável precisa ter um nome e um tipo de valor que pode guardar, agora veremos as regras para criar os nomes das variáveis.
+                        A diferença é que nos nossos aplicativos cada variável precisa ter um nome e cada variável pode guardar apenas uma informação, não é como a gaveta do armário onde podemos guardar vários objetos de uma só vez.
                     </p>
 
-                    <h2>Regras para nomear variáveis</h2>
+                    <h2>Quais informações posso armazenar nas variáveis?</h2>
                     <p>
-                        Aqui temos uma lista das regras que devem ser seguidas para nomear as variáveis.
+                        Cada variável pode guardar um tipo específico de informação, os tipos mais comuns são: números, textos, datas e valores booleanos.
                     </p>
-                    <ol>
-                        <li>Deve iniciar com uma letra, não pode ser iniciada com um número.</li>
-                        <li>Depois do primeiro caractere também pode usar números.</li>
-                        <li>O nome pode ser o que você quiser, desde que siga as regras. Sugiro que o nome de cada variável seja algo relacionado com o valor guardado nela.</li>
-                    </ol>
+                    <ul>
+                        <li>
+                            <b>Tipo números:</b> Nas variáveis de tipo numérico podemos guardar informações que são representadas por números como por exemplo: idade, altura, peso, largura, preço, entre várias outras informações.
+                        </li>
+                        <li>
+                            <b>Tipo textos:</b> Em variáveis de tipo textual guardamos informações como: nome, e-mail, telefone, observações, mensagens, entre outros.
+                        </li>
+                        <li>
+                            <b>Tipo datas:</b> Variáveis do tipo data são usadas para guardar datas e em alguns casos elas também podem guardar horas, veja alguns exemplos de informações que usam tipo data: data de compra, data de cadastro, data de nascimento, horário do despertador tocar e horário de início uma reunião.
+                        </li>
+                        <li>
+                            <b>Tipo booleano:</b> Em uma variável do tipo booleano é possível armazenar apenas o valor <b>Verdadeiro</b> ou o valor <b>Falso</b>, podemos usar esse tipo de variável para guardar informações como: alarme ativado, nesse exemplo o alarme pode estar ativado então o valor da variável seria <b>Verdadeiro</b> ou caso contrato a variável guardaria o valor <b>Falso</b>, assim o aplicativo saberia que o alarme está desativado. Outro exemplo pode ser em um cadastro de aluno onde há o campo <b>Aprovado</b>, quando essa variável estiver com o valor <b>Verdadeiro</b> significa que o aluno está aprovado e quando ela estiver com o valor <b>Falso</b> vai indicar que ele está reprovado.
+                        </li>
+                    </ul>
+
+                    <h2>Tempo de vida da variável</h2>
+                    <p>
+                        Todas as variáveis permanecem na memória do celular enquanto o aplicativo está aberto, ou seja, em execução.
+                    </p>
+                    <p>
+                        Assim que você fecha o aplicativo, todas as variáveis dele são apagadas da memória, caso você precise gravar uma informação que não pode ser apagada ao fechar o aplicativo, você vai usar um banco de dados, as informações gravadas em um banco de dados são permanentes.
+                    </p>
+                    <p>
+                        É importante lembrar que uma variável guarda apenas um informação de cada vez, então se você criou uma variável e guardou dentro dela o número 12, ela vai ter esse valor até o aplicativo ser fechado, mas se você guardar o número 15 nessa mesma variável ela vai apagar o número 12 e ficará apenas com o número 15.
+                    </p>
+
+                    <h2>Regras para nomear uma variável</h2>
+                    <p>
+                        Toda variável precisa ter um nome que funciona como um identificador, esse nome é usado para você conseguir consultar o valor guardado na variável, para você guardar um valor na variável e também para editar uma informação que já esteja dentro dela.
+                    </p>
+                    <p>
+                        Uma dica para nomear uma variável: dê para a variável um nome que te faça lembrar de qual informação ela armazena, por exemplo, imagine que você quer guardar o nome do usuário do seu aplicativo em uma variável, nesse caso o nome dela pode ser <b>nome_usuario</b>, ou se você está desenvolvendo um jogo e precisar guardar a pontuação do jogador, você pode criar uma variável chamado <b>pontuacao_jogador</b>.
+                    </p>
+                    <p>
+                        Como você viu anteriormente, uma variável não pode conter caracteres especiais nem acentos no seu nome.
+                    </p>
+                    <p>
+                        O nome pode ser composto apenas por letras, número e _, além disso o nome de variáveis deve começar sempre com uma letra.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos que as variáveis são usadas para guardar as informações usadas em nossos aplicativos, também vimos que elas são apagadas quando o aplicativo é fechado, além disso conhecemos as regras para nomear às variáveis e também quais são os tipos de informações que podemos guardar em cada variável.
+                    </p>
+                    <p>
+                        Na próxima aula vamos criar nosso primeiro aplicativo usando variáveis, assim poderemos ver na prática como criar uma variável, guardar uma informação dentro dela e também consultar essa informação em determinado momento.
+                    </p>
+                    <p>
+                        Caso tenha ficado com alguma dúvida não deixe de escrever sua pergunta abaixo, nós responderemos o mais rápido possível.
+                    </p>
 
                     <a href="video-aula-primeiro-aplicativo-variaveis.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/o-que-sao-variaveis')">
                         Próxima aula
