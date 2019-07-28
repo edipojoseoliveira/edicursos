@@ -36,15 +36,15 @@
         
         <div class="container margin-top-5">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Operadores matemáticos</h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 logica-programacao">
+                    <h1 id="titulo-pagina">Como usar operadores matemáticos em meu aplicativo?</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa quarta aula do curso de lógica de programação com App Inventor, nesta aula vamos falar sobre os operadores matemáticos que podemos usar para criar aplicativos no App Inventor, também vamos criar nosso primeiro aplicativo usando esses operadores.
+                        Nessa aula vamos aprender a usar os operadores matemáticos no App Inventor, com os operadores matemáticos vamos conseguir desenvolver aplicativos que realizam cálculos matemáticos.
                     </p>
                     
-                    <h2>O que são operadores matemáticos?</h2>
+                    <h2>Introdução</h2>
                     <p>
                         Você se lembra de quando estava começando a aprender matemática na escola? Os operadores matemáticos são aquelas funções básicas de soma, subtração, multiplicação e divisão.
                     </p>
@@ -52,10 +52,52 @@
                         A matemática também é muito importante no desenvolvimento de aplicativos, e os mesmos operadores matemáticos que você estudou na escola são usados no App Inventor e também em todas as linguagens de programação.
                     </p>
                     <p>
-                        Com os operadores matemáticos que o App Inventor permite usar nos nossos aplicativos nós podemos fazer qualquer tipo de cálculo, cálculos simples como a soma entre número, e também cálculos mais complexos.
+                        Com os operadores matemáticos que o App Inventor permite usar nos nossos aplicativos nós podemos fazer qualquer tipo de cálculo, cálculos simples como a soma entre números, e também cálculos mais complexos como raiz quadrado e módulo de divisões.
+                    </p>
+                    <p>
+                        Na aula de hoje aprenderemos como funciona e como podemos usar os operadores matemáticos no App Inventor para desenvolver nossos aplicativos.
+                    </p>
+
+                    <h2>O que são operadores matemáticos?</h2>
+                    <p>
+                        Os operadores matemáticos são os símbolos usados para identificar as operações matemáticas, como por exemplo o operador matemático (+) simboliza a operação de soma na matemática.
+                    </p>
+                    <p>
+                        No desenvolvimento de software temos os quatro principais operadores matemáticos que são soma (+), subtração (-), multiplicação (*) e divisão (/). Os quais são respectivamente representados pelos símbolos entre parênteses.
+                    </p>
+                    <p>
+                        Existem algumas diferenças entre os símbolos usados na matemática e os usados em programação, como é o caso  do operador de multiplicação, representado pelo asterisco (*) e que na matemática, é representado por um (×). O operador de divisão que é representado por uma barra (/), na matemática é representado pelo seguinte símbolo (÷).
+                    </p>
+
+                    <h2>Quando usar os operadores matemáticos?</h2>
+                    <p>
+                        Os operadores matemáticos são usados quando precisamos realizar algum cálculo em nossos aplicativos, por exemplo, imagine que você está desenvolvendo um aplicativo de venda de livros, você provavelmente vai precisar usar o operador de soma (+) e talvez o operador de multiplicação (*) para calcular o total das compras de cada usuário.
+                    </p>
+                    <p>
+                        O operador matemático de soma (+) também pode ser usado para concatenar textos, por exemplo, se você tiver uma variável com o nome do usuário e outra variável com o sobrenome, você pode usar o operador (+) para juntar o nome com o sobrenome e guardar o resultado que é o nome completo em outra variável.
+                    </p>
+
+                    <h2>Como usar os operadores matemáticos?</h2>
+                    <p>
+                        Sempre que você for usar um operador matemático é necessário ter os valores que serão usados no cálculo, por exemplo, se o usuário comprou 3 livros e cada livro custa 30 reais você precisará usar o operador de multiplicação (*) para calcular o total da compra.
+                    </p>
+                    <p>
+                        Nesse exemplo você já tem os valores necessários para realizar o cálculo, agora basta criar uma variável que irá armazenar o resultado da conta 3 * 30, logo a variável receberá o valor de 90 que é o resultado da operação.
+                    </p>
+                    <p>
+                        Também é necessário dar atenção aos tipos de dados que estão sendo usados: se você fazer a soma de um texto com um número o resultado será a concatenação do texto com o número, por exemplo, no seguinte cálculo “texto” + 7 o resultado será “texto 7”, se você tentar usar um texto com qualquer outro operador matemático além do operador soma (+) ocorrerá um erro.
+                    </p>
+                    <p>
+                        O termo concatenação é usado para designar a operação de unir o conteúdo de duas ou mais variáveis, no exemplo acima temos uma variável com o conteúdo “texto” e outra com o conteúdo “7”, quando concatenamos as duas temos como resultado a união entre elas formando a palavra “texto 7”.
+                    </p>
+                    <p>
+                        Quando é feita a soma entre dois números o resultado será um número, no seguinte cálculo 10 + 7 o resultado será 17.
                     </p>
 
                     <h2>Principais operadores matemáticos disponíveis no App Inventor</h2>
+                    <p>
+                        Veja abaixo a lista dos operadores matemáticos disponíveis no App Inventor e também na maioria das linguagens de programação.
+                    </p>
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -69,35 +111,46 @@
                             <tr>
                                 <th scope="row">+</th>
                                 <td>Soma</td>
-                                <td>Usado para calcular a soma entre dois números</td>
+                                <td>Calcula a soma entre dois ou mais números</td>
                                 <td>4 + 5 = 9</td>
                             </tr>
                             <tr>
                                 <th scope="row">-</th>
                                 <td>Subtração</td>
-                                <td>Usado para calcular a subtração entre dois números</td>
+                                <td>Calcula a subtração entre dois ou mais números</td>
                                 <td>10 - 4 = 6</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">/</th>
-                                <td>Divisão</td>
-                                <td>Usado para calcular a divisão entre dois números</td>
-                                <td>26 / 2 = 13</td>
                             </tr>
                             <tr>
                                 <th scope="row">*</th>
                                 <td>Multiplicação</td>
-                                <td>Usado para calcular a multiplicação entre dois número</td>
+                                <td>Calcula a multiplicação entre dois números</td>
                                 <td>3 * 7 = 21</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">/</th>
+                                <td>Divisão</td>
+                                <td>Calcula a divisão entre dois números</td>
+                                <td>26 / 2 = 13</td>
                             </tr>
                             <tr>
                                 <th scope="row">^</th>
                                 <td>Potenciação</td>
-                                <td>Usado para calcular a potência de um número. Ex.: <b>4²</b></td>
+                                <td>Calcula a potência de um número ex.: 4²</td>
                                 <td>4 ^ 2 = 16</td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos o que são os operadores matemáticos, vimos que com eles é possível fazer qualquer tipo de cálculo matemático em nossos aplicativos, além disso conhecemos os operadores mais usados no desenvolvimento de softwares e aprendemos a utilizá-los.
+                    </p>
+                    <p>
+                        A próxima aula contém um vídeo onde você vai aprender a criar uma calculadora no App Inventor, desenvolvendo essa calculadora você poderá ver na prática como são usados quase todos os operadores matemáticos disponíveis no App Inventor.
+                    </p>
+                    <p>
+                        Caso tenha ficado com alguma dúvida não deixe de enviar sua pergunta, nós responderemos o mais rápido possível.
+                    </p>
 
                     <a href="video-aula-primeiro-aplicativo-operadores-matematicos.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/operadores-matematicos')">
                         Próxima aula

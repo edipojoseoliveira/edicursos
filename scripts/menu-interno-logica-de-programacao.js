@@ -31,7 +31,7 @@ function getUrlHref() {
 
 var menu = 
 '<div class="list-group list-group-flush">' + 
-	'<a href="' + getUrlHref() + 'introducao-logica-programacao.html" class="list-group-item list-group-item-action ' + getClassActive('Introdução a lógica de programação') + '">' +
+	'<a href="' + getUrlHref() + 'introducao-logica-programacao.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda lógica de programação e comece desenvolver seus aplicativos') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/introducao-logica-programacao', 'oi-file') + '"></span>' +
 		'Introdução a lógica de programação' +
 	'</a>' +
@@ -51,7 +51,7 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-testando-aplicativo', 'oi-video') + '"></span>' +
 		'Vídeo - Testando o aplicativo' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'o-que-sao-variaveis.html" class="list-group-item list-group-item-action ' + getClassActive('O que são variáveis') + '">' +
+	'<a href="' + getUrlHref() + 'o-que-sao-variaveis.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda o que são variáveis') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/o-que-sao-variaveis', 'oi-file') + '"></span>' +
 		'O que são variáveis' +
 	'</a>' +
@@ -59,7 +59,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-variaveis', 'oi-video') + '"></span>' +
 		'Vídeo - Primeiro aplicativo com variáveis' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'operadores-matematicos.html" class="list-group-item list-group-item-action ' + getClassActive('Operadores matemáticos') + '">' +
+	'<a href="' + getUrlHref() + 'video-aula-gerando-o-instalador-dos-aplicativos.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Gerando o instalador dos aplicativos') + '">' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-gerando-o-instalador-dos-aplicativos', 'oi-video') + '"></span>' +
+		'Vídeo - Gerando o instalador dos aplicativos' +
+	'</a>' +
+	'<a href="' + getUrlHref() + 'operadores-matematicos.html" class="list-group-item list-group-item-action ' + getClassActive('Como usar operadores matemáticos em meu aplicativo?') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/operadores-matematicos', 'oi-file') + '"></span>' +
 		'Operadores matemáticos' +
 	'</a>' +
@@ -71,7 +75,7 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-uma-calculadora', 'oi-video') + '"></span>' +
 		'Vídeo - Desenvolvendo uma calculadora' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Operadores de comparação') + '">' +
+	'<a href="' + getUrlHref() + 'operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda a usar operadores de comparação') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/operadores-comparacao', 'oi-file') + '"></span>' +
 		'Operadores de comparação' +
 	'</a>' +

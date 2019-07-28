@@ -36,34 +36,92 @@
         
         <div class="container margin-top-5">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Operadores de comparação</h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 logica-programacao">
+                    <h1 id="titulo-pagina">Aprenda a usar operadores de comparação</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa quinta aula do curso de lógica de programação com App Inventor, na aula anterior nós falamos sobre os operadores matemáticos que podemos usar em nossos aplicativos.
+                        Nessa aula vamos aprender o que são os operadores de comparação, qual é sua importância e quando podemos usá-los no desenvolvimento de nossos aplicativos.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Nós fazemos diariamente várias comparações, comparamos nossas roupas e calçados para escolher qual usaremos no dia, comparamos preços de produtos para identificar qual oferece mais custo benefício, comparamos músicas para decidir qual ouvir, e várias outras comparações.
                     </p>
                     <p>
-                        Vimos que os operadores matemáticos são usados para fazer cálculos entre números, e o resultado do uso de uma operação matemática sempre será um número. Por exemplo, o resultado da soma entre os número 10 e 5 será 15.
+                        No desenvolvimento de nossos aplicativos também haverão momentos em que precisaremos fazer comparações, seja para informar ao usuário qual produto é mais barato ou para saber se o usuário digitou a senha correta no aplicativo.
                     </p>
                     <p>
-                        Um operador de comparação é usado para comparar qualquer valor, não apenas números. Podemos usá-los em casos onde precisamos saber se uma variável tem o mesmo valor que outra, ou se tem o valor maior que outra, e várias outras comparações, o resultado do uso de uma operação de comparação sempre será Verdadeiro (True) ou Falso (False), por exemplo, quando comparamos se uma variável é igual a outra o resultado dessa comparação vai ser Verdadeiro (True) se elas realmente são iguais ou Falso (False) caso elas sejam diferentes.
+                        Essas comparações que fazemos em nossos aplicativos só são possíveis graças aos operadores de comparação.
                     </p>
                     <p>
-                        Durante o desenvolvimento de nossos aplicativos, em vários momentos nós precisamos comparar valores, por exemplo, imagine que precisamos acessar nossa conta do facebook, precisamos lembrar do login e da senha, mas como o Facebook sabe que digitei a senha certa e o login certo? Provavelmente ele faz uma comparação entre a senha digitada e a senha que já esta cadastrada no site.
+                        Nessa aula aprenderemos como funcionam e como usar os operadores de comparação, assim vamos conseguir desenvolver aplicativos cada vez mais inteligentes que conseguem comparar valores e tomar decisões.
+                    </p>
+
+                    <h2>O que são operadores de comparação?</h2>
+                    <p>
+                        Operadores de comparação são símbolos que representam as diferentes operações de comparação que podemos fazer entre dois ou mais valores em nossos aplicativos.
                     </p>
                     <p>
-                        Percebeu como os operadores de comparação são importantes? Nós temos vários operadores de comparação disponíveis para usar, veja abaixo uma lista dos operadores de comparação que o App Inventor disponibiliza.
+                        Com esses operadores poderemos saber se um valor é igual a outro, usando o operador Igual (=); podemos verificar se um número é menor que outro usando o operador Menor (<). E também é possível identificar se um valor é maior que outro com o operador Maior (>) entre outros que veremos com mais detalhes a seguir.
+                    </p>
+
+                    <h2>Qual a importância dos operadores de comparação?</h2>
+                    <p>
+                        Eles são de extrema importância para tornar nossos aplicativos mais inteligentes, pois através das comparações o software é capaz de tomar decisões, por exemplo as agendas que avisam quais os compromissos do dia, para isso é usado o operador de comparação que verifica se o dia do compromisso é igual ao dia de hoje.
+                    </p>
+                    <p>
+                        Com as comparações é possível fazer validações em nossos aplicativos: imagine que em seu aplicativo há um campo onde o usuário digita o mês em que ele nasceu, esse campo não pode aceitar um número maior que 12, para esse tipo de validação usamos os operadores de comparação.
+                    </p>
+                    <p>
+                        Também usamos os operadores de comparação para deixar nossos sistemas mais seguros, com eles podemos verificar se a senha informada pelo usuário é a mesma senha que foi cadastrada.
+                    </p>
+
+                    <h2>Quando usá-los?</h2>
+                    <p>
+                        Você pode usar os operadores de comparação quando tiver dois ou mais valores e quer compará-los, por exemplo, imagine que você tem uma lista de produtos e precisa encontrar o mais barato, nesse caso você vai precisar comparar o valor de cada produto para descobrir qual é o menor.
+                    </p>
+                    <p>
+                        Você também pode usar os operadores de comparação para criar validações, vamos supor que no seu aplicativo o usuário vai precisar fazer login para acessar as informações, nesse caso quando o usuário informa a senha seu aplicativo precisa verificar se a senha digitada é igual a senha gravada no cadastro do usuário.
+                    </p>
+
+                    <h2>Como usar os operadores de comparação?</h2>
+                    <p>
+                        Suponha que no seu aplicativo há dois produtos e você precisa indicar para o usuário qual é o produto mais barato, então você poderia fazer a comparação da seguinte forma (preço do primeiro produto < preço do segundo produto).
+                    </p>
+                    <p>
+                        Se o resultado da comparação feita anteriormente for Verdadeiro significa que o preço do primeiro produto é menor que o preço do segundo, se o resultado for Falso então o preço do segundo produto é menor.
+                    </p>
+                    <p>
+                        No caso de você precisar validar se uma senha é igual a outra, o operador de comparação “Igual” que é representado pelo seguinte símbolo (=) seria o mais indicado para resolver seu problema.
+                    </p>
+                    <p>
+                        Você poderia usar a seguinte expressão (senha digitada = senha cadastrada), se o resultado for Verdadeiro significa que a senha digitada é igual a senha cadastrada, e se o resultado for Falso significa que as senhas são diferentes.
+                    </p>
+                    <p>
+                        O resultado do uso de um operador de comparação sempre será Verdadeiro ou Falso, no exemplo anterior quando as senhas forem diferentes o resultado será Falso, caso as senhas realmente sejam iguais então o resultado será Verdadeiro.
+                    </p>
+                    <p>
+                        Na maioria das linguagens de programação o valor Verdadeiro é representado por True que é verdadeiro em inglês e o valor Falso é representado por False, mas como nós estamos usando o App Inventor traduzido para português ele vai exibir o resultado das comparações em português também.
+                    </p>
+                    <p>
+                        Uma coisa muito importante ao comparar textos é que uma letra maiúscula é diferente de uma minúscula, veja a seguinte expressão: (“Texto” = “texto”), nesse exemplo o resultado será Falso pois o primeiro valor tem um “T” maiúsculo enquanto no segundo usa o “t” minúsculo.
                     </p>
                     
                     <h2>Operadores de comparação disponíveis no App Inventor</h2>
+                    <p>
+                        O App Inventor disponibiliza todos os operadores de comparação que você pode usar em qualquer linguagem de programação.
+                    </p>
+                    <p>
+                        Veja a seguir uma lista com todos os operadores de comparação do App Inventor.
+                    </p>
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">Símbolo</th>
                                 <th scope="col">Nome</th>
                                 <th scope="col">Função</th>
-                                <th scope="col">Exemplos</th>
+                                <th scope="col">Exemplo</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -74,10 +132,10 @@
                                 <td>3 = 5 (False)</td>
                             </tr>
                             <tr>
-                                <th scope="row">≠</th>
-                                <td>Diferente</td>
-                                <td>Usado para verificar se um valor é diferente de outro</td>
-                                <td>3 ≠ 5 (True)</td>
+                                <th scope="row">></th>
+                                <td>Maior</td>
+                                <td>Usado para verificar se um valor é maior que outro</td>
+                                <td>3 > 5 (False)</td>
                             </tr>
                             <tr>
                                 <th scope="row"><</th>
@@ -86,25 +144,42 @@
                                 <td>3 < 5 (True)</td>
                             </tr>
                             <tr>
+                                <th scope="row">≥</th>
+                                <td>Maior ou igual</td>
+                                <td>Usado para verificar se um valor é maior ou igual a outro</td>
+                                <td>3 ≥ 5 (False)</td>
+                            </tr>
+                            <tr>
                                 <th scope="row">≤</th>
                                 <td>Menor ou igual</td>
                                 <td>Usado para verificar se um valor é menor ou igual a outro</td>
                                 <td>3 ≤ 5 (True)</td>
                             </tr>
                             <tr>
-                                <th scope="row">></th>
-                                <td>Maior</td>
-                                <td>Usado para verificar se um valor é maior que outro</td>
-                                <td>3 > 5 (False)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">≥</th>
-                                <td>Maior ou igual</td>
-                                <td>Usado para verificar se um valor é maior ou igual a outro</td>
-                                <td>3 ≥ 5 (False)</td>
+                                <th scope="row">≠</th>
+                                <td>Diferente</td>
+                                <td>Usado para verificar se um valor é diferente de outro</td>
+                                <td>3 ≠ 5 (True)</td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos a importância dos operadores de comparação em nossos aplicativos e descobrimos que com esses operadores nossos aplicativos começam a ter funções mais inteligentes pois conseguem diferenciar um valor de outro.
+                    </p>
+                    <p>
+                        Além disso vimos todos os operadores de comparação disponíveis no App Inventor e aprendemos a usá-los.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver um aplicativo utilizando os operadores de comparação, assim você verá na prática como esses operadores realmente funcionam.
+                    </p>
+                    <p>
+                        Caso tenha ficado com alguma dúvida não deixe de enviar sua pergunta, nós responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Até a próxima aula!
+                    </p>
 
                     <a href="video-aula-primeiro-aplicativo-operadores-comparacao.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/operadores-comparacao')">
                         Próxima aula

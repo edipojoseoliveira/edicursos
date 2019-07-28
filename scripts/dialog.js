@@ -9,6 +9,7 @@ var dialogsHTML =
 				'</button>' +
 			'</div>' +
 			'<div class="modal-body">' +
+				'<div id="mensagensEntrar"></div>' +
 				'<form>' +
 					'<div class="form-group">' +
 						'<input type="mail" id="inputLoginEmail" class="form-control" placeholder="E-mail">' +
