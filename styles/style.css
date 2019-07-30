@@ -180,6 +180,22 @@ html {
     margin-right: 5px;
 }
 
+.questoes > .opcao {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.questoes > .opcao > .verdadeiro-falso {
+    width: 200px;
+}
+
+.questoes > .descricao {
+    border: 1px solid #DDD;
+    border-left: medium solid blue;
+    border-radius: 3px;
+    padding: 2px 0 5px 10px;
+}
+
 /* Original */
 
 body {
