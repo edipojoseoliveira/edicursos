@@ -180,16 +180,16 @@ html {
     margin-right: 5px;
 }
 
-.questoes > .opcao {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.questao {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.questoes > .opcao > .verdadeiro-falso {
+.opcao-verdadeiro-falso {
     width: 200px;
 }
 
-.questoes > .descricao {
+.questoes-descricao {
     border: 1px solid #DDD;
     border-left: medium solid blue;
     border-radius: 3px;
