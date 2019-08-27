@@ -52,7 +52,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 5 > 18
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp01">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value="true">Verdadeiro</option>
                                     <option value="false">Falso</option>
                                 </select>
@@ -63,7 +63,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 7 < 12
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp02">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value="true">Verdadeiro</option>
                                     <option value="false">Falso</option>
                                 </select>
@@ -74,7 +74,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 "EdiCursos" = "edicursos"
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp03">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value="true">Verdadeiro</option>
                                     <option value="false">Falso</option>
                                 </select>
@@ -85,7 +85,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 2 ≤ 2
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp04">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value="true">Verdadeiro</option>
                                     <option value="false">Falso</option>
                                 </select>
@@ -96,7 +96,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 14 ≥ 9
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp05">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value="true">Verdadeiro</option>
                                     <option value="false">Falso</option>
                                 </select>
@@ -115,7 +115,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 10 __ 9 = Verdadeiro
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp06">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value=">">Maior ( > )</option>
                                     <option value="<">Menor ( < )</option>
                                     <option value="=">Igual ( = )</option>
@@ -127,7 +127,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 17 __ 17 = Falso
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp07">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value=">">Maior ( > )</option>
                                     <option value="<">Menor ( < )</option>
                                     <option value="=">Igual ( = )</option>
@@ -139,7 +139,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 "EdiCursos" __ "edicursos" = Verdadeiro
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp08">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value=">">Maior ( > )</option>
                                     <option value="<">Menor ( < )</option>
                                     <option value="=">Igual ( = )</option>
@@ -152,7 +152,7 @@
                             <div class="col-md-12 mb-12 questao">
                                 45 __ 7 = Falso
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp09">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value=">">Maior ( > )</option>
                                     <option value="<">Menor ( < )</option>
                                     <option value="=">Igual ( = )</option>
@@ -164,11 +164,11 @@
                             <div class="col-md-12 mb-12 questao">
                                 "EdiCursos" __ "EdiCursos" = Verdadeiro
                                 <select class="form-control opcao-verdadeiro-falso" id="sOpCompResp10">
-                                    <option selected="true">Resposta...</option>
+                                    <option selected="true" value="">Resposta...</option>
                                     <option value=">">Maior ( > )</option>
                                     <option value="<">Menor ( < )</option>
                                     <option value="=">Igual ( = )</option>
-                                    <option value="=">Diferente ( ≠ )</option>
+                                    <option value="!=">Diferente ( ≠ )</option>
                                 </select>
                                 <div id="fOpCompResp10"></div>
                             </div>
@@ -176,16 +176,11 @@
                     </form>
                     
                     <br />
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="row" id="divBotoes">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <button class="btn btn-success btn-lg btn-block active" role="button" aria-pressed="true" onclick="enviarRespostas()">
                                 Enviar respostas
                             </button>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                            <a href="video-aula-primeiro-aplicativo-operadores-comparacao.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/operadores-comparacao')">
-                                Próxima aula
-                            </a>
                         </div>
                     </div>
                 </div>

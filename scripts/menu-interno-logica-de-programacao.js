@@ -76,9 +76,15 @@ var menu =
 		'Vídeo - Desenvolvendo uma calculadora' +
 	'</a>' +
 	'<a href="' + getUrlHref() + 'operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda a usar operadores de comparação') + '">' +
-		'<span class="oi ' + getIconeMenu('logica-de-programacao/operadores-comparacao', 'oi-file') + '"></span>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/ativida-operadores-comparacao', 'oi-file') + '"></span>' +
 		'Operadores de comparação' +
 	'</a>' +
+
+	'<a href="' + getUrlHref() + 'atividade-operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Atividade - Operadores de comparação') + '">' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/atividade-operadores-comparacao', 'oi-task') + '"></span>' +
+		'Atividade - Operadores de comparação' +
+	'</a>' +
+
 	'<a href="' + getUrlHref() + 'video-aula-primeiro-aplicativo-operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Primeiro aplicativo com operadores de comparação') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-operadores-comparacao', 'oi-video') + '"></span>' +
 		'Vídeo - Primeiro aplicativo com operadores de comparação' +
