@@ -27,7 +27,7 @@
 			gtag('config', 'UA-120813321-1');
 		</script>
 
-        <meta name="description" content="EdiCursos é uma plataforma de cursos na área de tecnologia, visite nosso site e confira os cursos disponíveis, entre eles temos os cursos de Lógica de Programação, JAVA Básico, API REST com JAVA e muito mais.">
+        <meta name="description" content="Nessa aula vamos aprender o que é uma estrutura condicional, qual é a sua importância e quando podemos usá-la no desenvolvimento de nossos aplicativos.">
 	</head>
 	<body>
 		<div id="menu-interno-superior">
@@ -37,62 +37,133 @@
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Estrutura condicional (IF e ELSE)</h1>
+                    <h1 id="titulo-pagina">Aprenda o que é e como usar uma Estrutura Condicional</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa sexta aula do curso de lógica de programação com App Inventor, nesta aula vamos falar sobre estrutura condicional (IF e ELSE).
-                    </p>
-                    <p>
-                        Para que você consiga entender bem o conteúdo dessa aula, é necessário que tenha participado da aula anterior, onde estudamos os operadores de comparação, pois em uma estrutura condicional você vai precisar usá-los, caso não tenha visto a aula anterior <a href="./operadores-matematicos.html">clique aqui</a> para acessá-la.
+                        Nessa aula vamos aprender o que é uma estrutura condicional, qual é a sua importância e quando podemos usá-la no desenvolvimento de nossos aplicativos.
                     </p>
 
-                    <h2>O que é uma estrutura condicional?</h2>
+                    <h2>Introdução</h2>
                     <p>
-                        Essa provavelmente foi sua primeira dúvida ao iniciar essa aula. O nome parece difícil “estrutura condicional”, mas o que ela representa é algo simples, e nós já usamos ela todos os dias, sem nem perceber.
+                        Você sabia que nós usamos estruturas condicionais todos os dias? Isso mesmo, você nem percebe mas usa estruturas condicionais a quase todo momento da sua vida para tomar decisões.
                     </p>
                     <p>
-                        Vamos ver um exemplo de estrutura condicional que você já deve ter usado. Imagine que você precisa atravessar uma rua, mas está com medo de ser atropelado(a), você pode usar a seguinte estrutura condicional:
+                        Por exemplo, imagine que você vai comprar um celular, se você encontrar um celular bonito, que tenha todas as funcionalidades que você precisa e que tenha um preço acessível, então você vai comprá-lo.
                     </p>
                     <p>
-<pre>
-<b>Se</b> não estiver vindo carros da direita <b>e</b> não estiver vindo carros da esquerda <b>então</b>
-    Eu posso atravessar.
-<b>Senão</b>
-    Eu tenho que esperar.
-</pre>
+                        Neste exemplo nós usamos uma estrutura condicional simples, onde há uma condição que é “se o celular atender todas as necessidades”, e quando essa condição for atendida você toma uma ação, que nesse caso é comprar o celular.
                     </p>
                     <p>
-                        Essa é uma estrutura condicional, parece bem simples não é?
+                        Na aula de hoje nós vamos aprender como funcionam as estruturas condicionais que podemos usar no desenvolvimento de nossos aplicativos, você vai ver como elas são importantes e podem te ajudar a resolver vários problemas.
+                    </p>
+
+                    <h2>O que é uma Estrutura Condicional?</h2>
+                    <p>
+                        Estrutura condicional é o nome dado a uma sequência de comandos que permite que nosso aplicativo tome decisões e realize determinadas ações a partir da comparação de dados.
                     </p>
                     <p>
-                        Vamos ver mais um exemplo que você já deve ter usado também. Imagine que você está escolhendo uma roupa para usar amanhã, mas está em dúvida em usar uma blusa ou uma camiseta, você pode usar a seguinte estrutura condicional:
+                        Vamos usar outro exemplo, o despertador do seu celular, a cada minuto ele usa uma estrutura condicional para decidir se deve ou não tocar o alarme.
                     </p>
                     <p>
-<pre>
-<b>Se</b> estiver frio <b>então</b>
-    Eu uso uma blusa
-<b>Senão</b>
-    Eu uso uma camiseta.
-</pre>
+                        Veja a seguir como podemos descrever a estrutura condicional usada pelo despertador do seu celular.
                     </p>
                     <p>
-                        Viu só como a estrutura condicional é fácil, e você já usa ela em vários momentos do seu dia a dia.
+                        “<b>se</b> a hora atual for <b>igual</b> a hora de despertar <b>então</b> vou tocar o alarme”.
                     </p>
                     <p>
-                        Você percebeu alguma semelhança entre os dois exemplos acima?
+                        Todas as estruturas condicionais tem as seguintes características:
+                    </p>
+                    <ol>
+                        <li>Inicia com a palavra “<b>se</b>”;</li>
+                        <li>Tem uma condição que é construída a partir de comparações, no exemplo citado temos a comparação “hora atual for <b>igual</b> a hora de despertar”;</li>
+                        <li>Por fim vem a ação que será executada quando a condição for atendida, no caso do despertador temos a ação “tocar o alarme”.</li>
+                    </ol>
+                    <p>
+                        Veja como poderíamos fazer essa mesma estrutura condicional no App Inventor.
+                    </p>
+
+                    <img src="../../sources/curso-logica-programacao/estrutura-condicional/bloco-condicional-despertador.png" alt="Exemplo de estrutura condicional simples.">
+
+                    <p>
+                        No App Inventor teríamos duas variáveis, uma com a hora atual do celular e a outra com a hora em que o despertador deve tocar, usamos o operador de comparação Igual ( = ) para comparar as duas variáveis, se as duas horas forem iguais então o aplicativo chama o método que vai tocar o alarme.
                     </p>
                     <p>
-                        Toda estrutura condicional começa com a palavra <b>Se</b>, depois vem a condição, se a condição for atendida <b>então</b> a próxima linha é executada, caso a condição não seja atendida a linha que será executada é a que está abaixo da palavra <b>Senão</b>.
+                        Além do exemplo de um despertador, podemos criar vários outros aplicativos que utilizam as estruturas condicionais.
+                    </p>
+
+                    <h2>Quando usar a Estrutura Condicional?</h2>
+                    <p>
+                        Normalmente usamos as estruturas condicionais quando há algum comando no nosso aplicativo que não deve ser sempre executado. Imagine, que você está desenvolvendo um cadastro de produtos no seu aplicativo, no entanto o produto não pode ser cadastrado quando o seu preço for menor que zero.
                     </p>
                     <p>
-                        Em programação a lógica é exatamente a mesma, a diferença é que para criar as condições nós não vamos apenas escrever, vamos ter que usar os operadores de comparação para fazer as comparações necessárias.
+                        Nesta situação, o comando para cadastrar o produto não deve ser sempre executado, mas deve ser executado apenas quando o preço do produto for maior que zero. Para fazer esse tipo de verificação usamos as estruturas condicionais.
                     </p>
                     <p>
-                        Basicamente, a estrutura condicional permite que os programas possam verificar quando um determinado comando deve ser executado e quando não deve ser executado.
+                        Vamos pensar em mais um exemplo, digamos que você está desenvolvendo um software onde o usuário vai pagar seus boletos, o software deve calcular o valor dos juros que o usuário deve pagar nos boletos atrasados.
                     </p>
                     <p>
-                        Agora que já sabemos como funciona uma estrutura condicional no nosso dia a dia, vamos ver como elas funcionam na hora de criar um aplicativo.
+                        Neste exemplo você não pode calcular os juros em todos os casos, o cálculo dos juros deve ser executado apenas quando a data de vencimento do boleto já passou. Sendo assim, você pode usar a estrutura condicional para verificar se o boleto venceu antes de calcular seus juros.
+                    </p>
+
+                    <h2>Como usar a Estrutura Condicional?</h2>
+                    <p>
+                        Vamos usar o exemplo do cadastro de produtos, onde o preço do produto deve ser maior que zero para ser cadastrado, podemos descrever a estrutura condicional usada da seguinte forma: “<b>se</b> o preço do produto for <b>maior</b> que zero <b>então</b> vou cadastrar o produto.”
+                    </p>
+                    <p>
+                        Em todas as estruturas condicionais iniciamos a frase com a palavra “<b>se</b>”, essa palavra identifica que estamos usando uma estrutura condicional, em inglês é usada a palavra “<b>if</b>”, como as linguagens de programação são escritas em inglês você sempre verá a estrutura condicional se iniciando com “<b>if</b>”.
+                    </p>
+                    <p>
+                        Após isso temos uma condição:  “preço do produto for <b>maior</b> que zero”, para criar as condições nós usamos os operadores de comparação, nesse caso foi usado o operador Maior ( > ) para verificar se o preço do produto é maior que zero.
+                    </p>
+                    <p>
+                        Em seguida, temos a ação que deve ser executada caso a condição seja atendida, nesse exemplo temos o comando “cadastra o produto” que será executado apenas se o preço do produto for maior que zero.
+                    </p>
+                    <p>
+                        Nós chamamos essa estrutura de <b>estrutura condicional simples</b>, neste mesmo exemplo nós podemos adicionar mais um comando na nossa estrutura para que o aplicativo execute uma outra ação quando a condição não for atendida.
+                    </p>
+                    <p>
+                        Digamos que quando o preço do produto não for maior que zero o aplicativo deve exibir uma mensagem informando que o usuário deve alterar o preço do produto. Podemos deixar nossa estrutura da seguinte forma: “<b>se</b> o preço do produto for <b>maior</b> que zero <b>então</b> vou cadastrar o produto <b>senão</b> vou mostrar uma mensagem.”
+                    </p>
+                    <p>
+                        Chamamos essa estrutura de <b>estrutura condicional composta</b>, pois agora foi adicionado o comando “senão”, indicando a ação que deve ser executada quando a condição não for atendida. O comando “senão” em inglês é representado pela palavra “else”.
+                    </p>
+                    <p>
+                        Veja abaixo um simulado do uso de uma estrutura condicional composta no App Inventor verificando se o produto pode ou não ser cadastrado baseado no seu preço.
+                    </p>
+
+                    <img src="../../sources/curso-logica-programacao/estrutura-condicional/bloco-condicional-composto.png" alt="Exemplo de estrutura condicional composta.">
+
+                    <p>
+                        No App Inventor teríamos uma variável com o preço do produto, se o preço do produto for maior que o número zero então o método que cadastra o produto é chamado, caso contrário o aplicativo executa o método que exibe a mensagem informando ao usuário que o preço está errado.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos a usar a Estrutura Condicional, vimos que com essa ferramenta nossos aplicativos conseguem tomar decisões de acordo com as regras que criamos usando os operadores de comparação.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver um aplicativo utilizando as estruturas condicionais, assim você verá na prática como as estruturas condicionais realmente funcionam. Mas antes de iniciar a próxima aula, realize as atividades a seguir sobre as estruturas condicionais.
+                    </p>
+                    <p>
+                        Caso tenha ficado com alguma dúvida não deixe de enviar sua pergunta, nós responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Até a próxima aula!
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        OLIVEIRA, Anderson Luiz. <b>Estrutura condicional SE SENÃO</b>. Blogson, 2019. Disponível em: <a target="_blank" href="https://www.blogson.com.br/estrutura-condicional-se-senao/">https://www.blogson.com.br/estrutura-condicional-se-senao/</a>. Acesso em 13 de agosto de 2019.
+                    </p>
+                    <p>
+                        DEVMEDIA. <b>Estruturas condicionais em Java</b>. DEVMEDIA, 2019. Disponível em: <a target="_blank" href="https://www.devmedia.com.br/estruturas-condicionais-em-java/21135">https://www.devmedia.com.br/estruturas-condicionais-em-java/21135</a>. Acesso em 13 de agosto de 2019.
+                    </p>
+                    <p>
+                        W3SCHOOLS. <b>JavaScript if else e else if</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/js/js_if_else.asp">https://www.w3schools.com/js/js_if_else.asp</a>. Acesso em 13 de agosto de 2019.
+                    </p>
+                    <p>
+                        Mozilla Foundation. <b>if...else</b>. MDN Web Docs, 2019. Disponível em: <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else</a>. Acesso em 13 de agosto de 2019.
                     </p>
 
                     <a href="video-aula-primeiro-aplicativo-estrutura-condicional.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/estrutura-condicional')">

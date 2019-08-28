@@ -79,17 +79,19 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/ativida-operadores-comparacao', 'oi-file') + '"></span>' +
 		'Operadores de comparação' +
 	'</a>' +
-
 	'<a href="' + getUrlHref() + 'atividade-operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Atividade - Operadores de comparação') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/atividade-operadores-comparacao', 'oi-task') + '"></span>' +
 		'Atividade - Operadores de comparação' +
 	'</a>' +
-
 	'<a href="' + getUrlHref() + 'video-aula-primeiro-aplicativo-operadores-comparacao.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Primeiro aplicativo com operadores de comparação') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-operadores-comparacao', 'oi-video') + '"></span>' +
 		'Vídeo - Primeiro aplicativo com operadores de comparação' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'estrutura-condicional.html" class="list-group-item list-group-item-action ' + getClassActive('Estrutura condicional (IF e ELSE)') + '">' +
+	'<a href="' + getUrlHref() + 'video-aula-concluindo-calculadora-de-media.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo uma calculadora de média - Segunda parte') + '">' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-concluindo-calculadora-de-media', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo uma calculadora de média - Segunda parte' +
+	'</a>' +
+	'<a href="' + getUrlHref() + 'estrutura-condicional.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda o que é e como usar uma Estrutura Condicional') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/estrutura-condicional', 'oi-file') + '"></span>' +
 		'Estrutura condicional (IF e ELSE)' +
 	'</a>' +
