@@ -99,7 +99,7 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-estrutura-condicional', 'oi-video') + '"></span>' +
 		'Vídeo - Primeiro aplicativo com estrutura condicional' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'operadores-logicos.html" class="list-group-item list-group-item-action ' + getClassActive('Operadores lógicos') + '">' +
+	'<a href="' + getUrlHref() + 'operadores-logicos.html" class="list-group-item list-group-item-action ' + getClassActive('Aprendendo sobre os operadores lógicos') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/operadores-logicos', 'oi-file') + '"></span>' +
 		'Operadores lógicos' +
 	'</a>' +

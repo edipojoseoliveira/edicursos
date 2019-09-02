@@ -37,83 +37,175 @@
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Operadores lógicos</h1>
+                    <h1 id="titulo-pagina">Aprendendo sobre os operadores lógicos</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a segunda parte da aula 06 do curso de lógica de programação com App Inventor, hoje vamos falar sobre os operadores lógicos <b>E</b> e <b>OU</b>. Os operadores lógicos trabalham em conjunto com os operadores de comparação, e são frequentemente usados nas estruturas condicionais que estudamos nas aulas anteriores.
-                    </p>
-                    <p>
-                        Sabemos que em uma estrutura condicional nós usamos os operadores de comparação para criar as condições que indicarão se um determinado comando será executado ou não, ao usar uma estrutura condicional pode haver a necessidade de criarmos mais de uma condição para decidir se um determinado comando será executado ou não, para conseguirmos fazer duas ou mais condições juntas nós vamos usar os operadores lógicos <b>E</b> e <b>OU</b>. Vamos ver agora como eles funcionam.
+                        Nessa aula vamos aprender o que são os operadores lógicos e como podemos usá-los no desenvolvimento dos nossos aplicativos.
                     </p>
 
-                    <h2>Usando o operador lógico E</h2>
+                    <h2>Introdução</h2>
                     <p>
-                        Imagine que você criou um aplicativo de agenda, e nele você cadastrou o seguinte compromisso “dia 10 às 15:00 horas eu tenho uma reunião”, nesse compromisso você especificou o dia e a hora. Quando chegar as 15:00 horas do dia 10 o seu aplicativo deve mostrar uma notificação.
+                        Nem sempre as decisões que tomamos em nossas vidas são simples ou dependem de apenas uma condição. Existem momentos em que precisamos analisar vários cenários para decidir qual é a melhor ação a ser executada.
                     </p>
                     <p>
-                        Para saber quando é o momento certo de exibir a notificação você pode criar a seguinte estrutura condicional:
+                        No desenvolvimento de softwares nós também usamos as condições para tomar decisões, e como na vida, nos nossos aplicativos há momentos em que as decisões não podem ser tomadas analisando apenas uma condição.
                     </p>
                     <p>
-<pre>
-<b>Se</b> o dia for igual a 10 <b>E</b> a hora for igual a 15:00 <b>então</b>
-    Exibir uma notificação
-</pre>
-                    </p>
-                    <p>
-                        Percebeu que no teste da estrutura condicional você precisou fazer duas comparações? Foi necessário comparar o dia e a hora. Nessas situações temos os operadores lógicos para resolver nosso problema, neste exemplo foi usado o operador <b>E</b>.
+                        Para conseguirmos usar várias condições juntas em nossos aplicativo nós temos a disposição os operadores lógicos que vamos conhecer nessa aula.
                     </p>
 
-                    <h2>Usando o operador lógico OU</h2>
+                    <h2>Qual é a função dos operadores lógicos?</h2>
                     <p>
-                        Suponhamos que você tem que criar um aplicativo para controlar a quantidade de produtos em um estoque de uma loja, o dono da loja falou que a quantidade mínima de produtos é 100 e a quantidade máxima de produtos é 500, seu aplicativo tem que exibir uma notificação para o usuário caso a quantidade de produtos esteja menor que 100 ou maior que 500.
+                        Os operadores lógicos nos permitem verificar mais de uma condição ao mesmo tempo.
                     </p>
                     <p>
-                        Para desenvolver esse aplicativo você vai precisar verificar se a quantidade de produtos é <b>menor</b> que <b>100</b> ou <b>maior</b> que <b>500</b> e exibir uma notificação caso esse teste retorne <b>Verdadeiro (True)</b>, para isso você pode usar a seguinte estrutura condicional.
+                        Na aula anterior nós usamos o exemplo de um despertador, que para tocar o alarme precisa verificar se a hora de despertar é igual a hora atual.
                     </p>
                     <p>
-<pre>
-<b>Se</b> a quantidade for menor que 100 <b>OU</b> a quantidade for maior que 500 <b>então</b>
-    Exibir uma notificação
-</pre>
+                        Mas imagine que além de verificar se a hora é igual, o despertador também precisa verificar o dia da semana, pois podemos colocar o despertador para tocar às seis horas de segunda a sexta e às oito horas aos sábado e domingos.
+                    </p>
+                    <p>
+                        Nesse caso precisaríamos verificar duas condições para saber se o alarme deve ser tocado ou não. Os operadores lógicos tem essa função, de permitir usar mais de uma condição ao mesmo tempo.
                     </p>
 
-                    <h2>Quando usar cada operador lógico</h2>
+                    <h2>Quando usar os operadores lógicos?</h2>
                     <p>
-                        Além de saber como usar os operadores lógicos, é necessário saber quando usar cada um. O operador <b>E</b> é usado quando precisamos que o resultado de todos os testes seja verdadeiro para executar um determinado comando, o operador <b>OU</b> é usado quando precisamos que pelo menos um dos resultados dos testes seja verdadeiro para executar um determinado comando.
+                        Normalmente usamos os operadores lógicos em situações onde precisamos verificar mais de uma condição ao mesmo tempo para decidir qual ação executar.
                     </p>
                     <p>
-                        Vamos analisar melhor o primeiro exemplo de uso do operador <b>E</b>.
+                        Imagine que você está desenvolvendo um aplicativo de agenda, onde o usuário informa o dia e a hora do compromisso que precisa lembrar. Nesse caso você precisa criar uma condição no seu aplicativo, para que ele toque um alarme apenas quando chegar no dia e na hora do compromisso agendado.
                     </p>
                     <p>
-<pre>
-<b>Se</b> o dia for igual a 10 <b>E</b> a hora for igual a 15:00 <b>então</b>
-    Exibir uma notificação
-</pre>
+                        Como você pode perceber temos que fazer duas condições, a primeira é verificar o dia e a segunda é verificar a hora. Para resolver esse problema você poderá usar os operadores lógicos.
+                    </p>
+
+                    <h2>Quais são os operadores lógicos?</h2>
+                    <p>
+                        Veja abaixo os operadores lógicos que podemos usar no App Inventor e na maioria das linguagens de programação.
+                    </p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Operador</th>
+                                <th scope="col">Exemplo</th>
+                                <th scope="col">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">E</th>
+                                <td>“condição 01” E “condição 02”</td>
+                                <td>
+                                    Retorna o valor Verdadeiro quando a primeira e a segunda condição retornarem Verdadeiro, e retorna o valor Falso se uma das condições retornar Falso.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">OU</th>
+                                <td>“condição 01” OU “condição 02”</td>
+                                <td>
+                                    Retorna o valor Verdadeiro quando a primeira ou a segunda condição retornarem Verdadeiro, e retorna o valor Falso se as duas condições retornarem Falso.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">NÃO</th>
+                                <td>NÃO “condição 01”</td>
+                                <td>
+                                    Pega o valor retornado pela condição e inverte, quando a condição retorna Verdadeiro ele transforma para Falso, e quando a condição retorna Falso ele transforma para Verdadeiro.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Esses operadores são usados na maioria das linguagens de programação, mas o símbolo usado para representá-los pode mudar em diferentes linguagens, por exemplo o operador <b>E</b> no App Inventor é representado pela letra “<b>e</b>”, na linguagem de programação Java por exemplo, é representado por “<b>&&</b>” e em algumas linguagens é representado por “<b>AND</b>”.
                     </p>
                     <p>
-                        Nós usamos o operador <b>E</b> nesse caso porque precisamos que as duas condições sejam verdadeiras para executar o comando de exibir notificação.
+                        Assim os operadores <b>OU</b> e <b>NÃO</b> também podem ser representados com símbolos diferentes em outras linguagens, no entanto o funcionamento do operador continuará sendo o mesmo em todas as linguagens.
+                    </p>
+
+                    <h2>Como funciona o operador E</h2>
+                    <p>
+                        O operador <b>E</b> é usado nos casos onde precisamos que todas as condições sejam verdadeiras para executar determinada ação.
                     </p>
                     <p>
-                        Se o dia for igual a 10 mas a hora não for igual a 15:00 então não pode exibir a notificação, se a hora for igual a 15:00 mas o dia não for igual a 10 também não pode exibir a notificação, a notificação só pode ser exibida quando as duas condições forem verdadeiras.
+                        Por exemplo, ao fazer login no seu e-mail é necessário que o usuário e a senha estejam corretos para que seu e-mail abra. Aqui temos duas condições, a primeira é que o email digitado esteja certo e a segunda é que a senha digitada esteja certa.
                     </p>
                     <p>
-                        Vamos analisar melhor o segundo exemplo onde usamos o operador <b>OU</b>.
+                        Nesse exemplo o e-mail só pode abrir se ambas as condições forem verdadeiras, por isso usamos o operador <b>E</b> para juntar as condições.
                     </p>
                     <p>
-<pre>
-<b>Se</b> a quantidade for menor que 100 <b>OU</b> a quantidade for maior que 500 <b>então</b>
-    Exibir uma notificação
-</pre>
+                        Veja como ficaria esse exemplo desenvolvido no App Inventor.
                     </p>
                     <p>
-                        Nesse exemplo foi usado o operador <b>OU</b> porque não precisamos que as duas condições sejam verdadeiras, se pelo menos uma das condições for verdadeira o comando de exibir uma notificação deve ser executado.
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/operadores-logicos/operador-e.png" alt="Exemplo de uso do operador E." />
+                    </p>
+
+                    <h2>Como funciona o operador OU</h2>
+                    <p>
+                        O operador <b>OU</b> é usado nos momentos onde temos mais de uma condição, no entanto se pelo menos uma for Verdadeira a ação deve ser executada, ou seja, não é necessário que todas as condições sejam Verdadeiras para a ação ser executada.
                     </p>
                     <p>
-                        Imagine que a quantidade de produtos é <b>90</b>, nesse caso a primeira condição é verdadeira, mas a segunda condição é falsa, mesmo apenas uma condição sendo verdadeira o comando de exibir uma notificação deve ser executado.
+                        Pense, que você vai criar um aplicativo que verifica a temperatura corporal do usuário e deve alertá-lo caso a temperatura não esteja normal.
                     </p>
                     <p>
-                        Se a quantidade fosse <b>600</b>, apenas a segunda condição seria verdadeira, e a primeira condição seria falsa, mesmo assim a notificação deve ser exibida informando o usuário que a quantidade de produtos está acima do desejado.
+                        A temperatura pode ser considerada normal quando estiver entre 36.1ºC e 37.2ºC, caso contrário significa que há algo errado, nesse caso precisamos de duas condições para verificar se há algo errado.
+                    </p>
+                    <p>
+                        Primeiro verificamos se a temperatura é menor que 36.1ºC, depois verificamos se a temperatura é maior que 37.2ºC, se a primeira ou a segunda condição for verdadeira então o aplicativo deve alertar o usuário que algo está errado.
+                    </p>
+                    <p>
+                        Nessa situação temos que alertar o usuário se pelo menos uma das duas condições for verdadeira, por isso vamos usar o operador <b>OU</b> para juntar as condições.
+                    </p>
+                    <p>
+                        Veja como ficaria esse exemplo desenvolvido no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/operadores-logicos/operador-ou.png" alt="Exemplo de uso do operador OU." />
+                    </p>
+                    
+                    <h2>Como funciona o operador NÃO</h2>
+                    <p>
+                        O operador <b>NÃO</b> é usado nos momentos onde você quer que determinada ação seja executada apenas quando a condição usada retornar Falso, pois o operador <b>NÃO</b> tem a função de inverter o resultado.
+                    </p>
+                    <p>
+                        Imagine, que seu sistema deve controlar a quantidade de produtos no estoque de uma empresa, e sempre que não tiver mais produtos em estoque seu sistema deve informar o usuário.
+                    </p>
+                    <p>
+                        Nesse caso, seu aplicativo vai precisar verificar se não há mais produtos em estoque, e se realmente não tiver mais produtos então a ação de informar o usuário deve ser executada.
+                    </p>
+                    <p>
+                        Para resolver esse problema você pode usar o operador <b>NÃO</b>, pois a ação só deve ser executada quando a condição “quantidade de produto for maior que zero” retorna Falso.
+                    </p>
+                    <p>
+                        Veja como ficaria esse exemplo desenvolvido no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/operadores-logicos/operador-nao.png" alt="Exemplo de uso do operador NÃO." />
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos como funcionam e como usar os operadores lógicos no App Inventor, com esses operador nós podemos usar mais de uma condição ao mesmo tempo nas estruturas condicionais que aprendemos na aula passada.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver um aplicativo utilizando os operadores lógicos, para que você possa ver na prática o funcionamento deles.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos a mais rápido possível.
+                    </p>
+                    <p>
+                        Até a próxima aula.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        Mozilla Foundation. <b>Operadores Lógicos</b>. MDN Web Docs, 2019. Disponível em: <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos</a>. Acesso em 21 de agosto de 2019.
+                    </p>
+                    <p>
+                        ALVES, Gustavo Furtado de Oliveira. <b>Conheça os operadores lógicos</b>. Dicas de Programação, 2013. Disponível em: <a target="_blank" href="https://dicasdeprogramacao.com.br/operadores-logicos">https://dicasdeprogramacao.com.br/operadores-logicos</a>. Acesso em 21 de agosto de 2019.
+                    </p>
+                    <p>
+                        SALES, Janyele. <b>Qual é a temperatura normal do corpo humano</b>. Médico Responde, 2016. Disponível em: <a target="_blank" href="https://medicoresponde.com.br/qual-e-a-temperatura-normal-do-corpo-humano/">https://medicoresponde.com.br/qual-e-a-temperatura-normal-do-corpo-humano/</a>. Acesso em 21 de agosto de 2019.
                     </p>
 
                     <a href="video-aula-primeiro-aplicativo-operadores-logicos.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/operadores-logicos')">
