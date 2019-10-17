@@ -107,7 +107,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-operadores-logicos', 'oi-video') + '"></span>' +
 		'Vídeo - Primeiro aplicativo com operadores lógicos' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'estruturas-de-repeticao.html" class="list-group-item list-group-item-action ' + getClassActive('Estruturas de repetição') + '">' +
+	'<a href="' + getUrlHref() + 'video-aula-primeiro-aplicativo-operadores-logicos-segunda-parte.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Primeiro aplicativo com operadores lógicos - Segunda parte') + '">' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-primeiro-aplicativo-operadores-logicos-segunda-parte', 'oi-video') + '"></span>' +
+		'Vídeo - Primeiro aplicativo com operadores lógicos - Segunda parte' +
+	'</a>' +
+	'<a href="' + getUrlHref() + 'estruturas-de-repeticao.html" class="list-group-item list-group-item-action ' + getClassActive('Aprenda a usar as estruturas de repetição em seus aplicativos') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/estruturas-de-repeticao', 'oi-file') + '"></span>' +
 		'Estruturas de repetição' +
 	'</a>' +
@@ -115,9 +119,13 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-aplicativo-estrutura-de-repeticao-for', 'oi-video') + '"></span>' +
 		'Vídeo - Aplicativo com estrutura de repetição (FOR)' +
 	'</a>' +
-	'<a href="' + getUrlHref() + 'procedimentos.html" class="list-group-item list-group-item-action ' + getClassActive('Procedimentos') + '">' +
+	'<a href="' + getUrlHref() + 'video-aula-aplicativo-gera-tabuada.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo um aplicativo que gera tabuada - Segunda parte') + '">' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-aplicativo-gera-tabuada', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo um aplicativo que gera tabuada - Segunda parte' +
+	'</a>' +
+	'<a href="' + getUrlHref() + 'procedimentos.html" class="list-group-item list-group-item-action ' + getClassActive('O que são procedimentos e como usá-los?') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/procedimentos', 'oi-file') + '"></span>' +
-		'Procedimentos' +
+		'O que são procedimentos e como usá-los?' +
 	'</a>' +
 	'<a href="' + getUrlHref() + 'video-aula-desenvolvendo-jogo-com-numeros.html" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo um jogo com números') + '">' +
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-jogo-com-numeros', 'oi-video') + '"></span>' +

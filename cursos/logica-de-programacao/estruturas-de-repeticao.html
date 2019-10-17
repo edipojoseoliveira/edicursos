@@ -37,92 +37,163 @@
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Estruturas de repetição</h1>
+                    <h1 id="titulo-pagina">Aprenda a usar as estruturas de repetição em seus aplicativos</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa sétima aula do curso de Lógica de Programação com App Inventor, nessa aula vamos estudar as estruturas de repetição.
-                    </p>
-                    <p>
-                        As estruturas de repetição são usadas quando precisamos que um determinado comando seja executado várias vezes seguidas.
-                    </p>
-                    <p>
-                        Imagine que você precisa desenvolver um aplicativo que a cada 1 hora verifica a temperatura ambiente e mostra essa informação para o usuário, nesse caso você precisa repetir o comando de consultar a temperatura a cada 1 hora, usando uma estrutura de repetição você conseguiria fazer esse aplicativo de forma muito fácil. Esse foi só um exemplo de uma situação onde poderíamos resolver o problema usando estruturas de repetição.
-                    </p>
-                    <p>
-                        No App Inventor existem três estruturas de repetição, são elas:
-                    </p>
-                    <p>
-                        <ol class="list-post">
-                            <li><b>Para cada número repete</b>, mais conhecida como <b>(for)</b></li>
-                            <li><b>Para cada elemento na lista fazer</b>, mais conhecida como <b>(for each)</b></li>
-                            <li><b>Enquanto testar repete</b>, mais conhecida como <b>(while)</b></li>
-                        </ol>
+                        Nessa aula vamos aprender o que são as estruturas de repetição e como podemos usá-las no desenvolvimento dos nossos aplicativos no App Inventor.
                     </p>
 
-                    <h2>Estrutura de repetição (for)</h2>
+                    <h2>Introdução</h2>
                     <p>
-                        Vamos começar estudando a estrutura <b>for</b>. Nós usamos essa estrutura quando precisamos repetir um ou vários comandos por uma quantidade determinada de vezes.
+                        Sabe quando você gosta de uma música e fica ouvindo ela várias vezes? Se você usa um aplicativo como o Spotify você pode usar a opção repetir para que o aplicativo fique repetindo a mesma música. Nos aplicativos que desenvolvemos também podemos fazer comandos que ficam repetindo por um determinado número de vezes.
                     </p>
                     <p>
-                        Imagine que você quer que seu aplicativo escreva na tela os número de 1 até 5, você pode fazer isso de duas formas, a primeira é você usar o comando de imprimir um número na tela 5 vezes seguidas.
-                    </p>
-                    <p>
-                        A segunda forma é você usar a estrutura de repetição que faz repetir por 5 vezes o comando de imprimir um número na tela.
-                    </p>
-                    <p>
-                        Assim você precisa usar apenas uma vez o comando de imprimir um número na tela e informar para a estrutura de repetição que você deseja repetir o comando por 5 vezes.
-                    </p>
-                    <p>
-                        Como você pode ver nesse exemplo, quando não usamos a estrutura de repetição nós temos que repetir muitos blocos, já quanto usamos a estrutura de repetição a quantidade de blocos usados é menor.
-                    </p>
-                    <p>
-                        Agora imagine se em vez de ter que imprimir os número de 1 a 5 você tivesse que imprimir os números de 1 a 100. Com a estrutura de repetição você só precisa alterar a quantidade de vezes que ela deve repetir, no lugar de 5 digitar 100, já se você não tivesse a estrutura de repetição você teria que copiar 100 vezes os mesmos blocos.
-                    </p>
-                    <p>
-                        Essa primeira estrutura de repetição tem o objetivo de repetir por uma quantidade definida de vezes os comandos que quisermos, vamos ver agora a próxima estrutura de repetição.
+                        Para conseguir criar essas repetições nós temos as estruturas de repetição que vamos aprender a usar nessa aula.
                     </p>
 
-                    <h2>Estrutura de repetição (for each)</h2>
+                    <h2>Qual é a função das estruturas de repetição?</h2>
                     <p>
-                        A estrutura de repetição <b>for each</b> é usada quando temos uma lista e precisamos percorrer todos os seus itens.
+                        As estruturas de repetição nos permitem executar determinado trecho ou código várias vezes sem precisar reescrevê-lo.
                     </p>
                     <p>
-                        Imagine que temos em nosso aplicativo uma lista de compras e agora precisamos mostrar todos os itens dessa lista na tela para o usuário.
+                        Imagine que você está desenvolvendo um sistema com o objetivo de acompanhar a temperatura interna de uma fábrica.
                     </p>
                     <p>
-                        Nesse caso nós usamos a estrutura de repetição <b>for each</b>, para essa estrutura de repetição funcionar precisamos informar para ela qual lista deve ser percorrida. Então para cada item da lista será executado o comando para imprimi-lo na tela.
+                        Nesse exemplo, o seu sistema deve executar um comando que mede a temperatura a cada 5 minutos, durante as 24 horas do dia e deve verificar se essa temperatura não está muito alta nem muito baixa.
                     </p>
                     <p>
-                        Veja como ficaria a organização dos blocos.
+                        O sistema fará em torno de 288 consultas por dia. Se não houvesse as estruturas de repetição você teria que reescrever o comando que consulta a temperatura 288 vezes.
                     </p>
                     <p>
-                        Primeiro criamos uma variável que guardará a lista de compras com os itens: Arroz, Feijão, Tomate, Alface, Maçã, Banana.
-                    </p>
-                    <p>
-                        Ao clicar em um botão da tela usamos a estrutura de repetição para percorrer todos os itens da lista de compras e imprimimos na tela item por item.
-                    </p>
-                    <p>
-                        Essa segunda estrutura de repetição tem o objetivo de percorrer todos os itens de qualquer lista que tivermos, vamos ver agora como funciona a estrutura de repetição <b>while</b>.
+                        Com o uso de uma estrutura de repetição você consegue fazer seu comando, que consulta a temperatura repetir quantas vezes você quiser.
                     </p>
 
-                    <h2>Estrutura de repetição (while)</h2>
+                    <h2>Quando usar uma estrutura de repetição</h2>
                     <p>
-                        A estrutura de repetição <b>while</b> é usada quando temos que repetir alguns comandos mas não sabemos exatamente quantas vezes precisamos repeti-los, a quantidade de vezes que será executado vai depender de uma condição.
+                        Uma estrutura de repetição deve ser usada em momentos onde seu aplicativo deve executar um determinado trecho de código mais de uma vez, como no exemplo anterior onde o sistema deveria verificar a temperatura 288 vezes.
                     </p>
                     <p>
-                        Imagine que você precisa agora criar um despertador, o aplicativo deve saber que horário vai disparar o alarme, mas não sabe quantas vezes o alarme vai tocar, pois vai depender de quando o usuário clicar no botão desligar do despertador.
+                        As estruturas de repetição também são usadas em situações onde não sabemos exatamente quantas vezes o programa deve repetir, como é o caso de um aplicativo de músicas, quando a música deve ficar repetindo até que o usuário desative a repetição.
                     </p>
                     <p>
-                        Enquanto o usuário não clicar no botão desligar alarme, ele deve continuar tocando. Perceba que nesse caso você não sabe exatamente quantas vezes o alarme deve tocar, mas sabe que enquanto o botão desligar não for clicado o alarme deve continuar tocando repetidamente.
+                        E quando trabalhamos com listas as estruturas de repetição também são muito usadas, como quando você tem uma lista de produtos e precisa mostrar o nome de cada produto na tela, nessa situação a estrutura de repetição é usada para percorrer a lista e para cada item fazer imprimir o nome na tela.
+                    </p>
+
+                    <h2>Quais são as estruturas de repetição mais usadas?</h2>
+                    <p>
+                        As estruturas de repetição mais utilizadas são <b>FOR</b>, <b>WHILE</b> e <b>FOR-EACH</b>.
+                    </p>
+                    <ul>
+                        <li>
+                            <b>FOR</b>: Estrutura usada em casos onde sabemos exatamente a quantidade de vezes que precisamos repetir determinado trecho de código.
+                        </li>
+                        <li>
+                            <b>WHILE</b>: Estrutura usada em casos onde a quantidade de repetições não é fixa, mas existe uma condição de parada.
+                        </li>
+                        <li>
+                            <b>FOR-EACH</b>: Estrutura usada para percorrer listas.
+                        </li>
+                    </ul>
+                    <p>
+                        Vamos ver a seguir um exemplo de uso de cada uma das estruturas de repetição.
+                    </p>
+
+                    <h2>Estrutura de repetição FOR</h2>
+                    <p>
+                        Como vimos anteriormente, a estrutura <b>FOR</b> é usada quando sabemos exatamente quantas vezes um comando deve ser repetido.
+                    </p>
+                    <p>
+                        Vamos ver como podemos usar a estrutura <b>FOR</b> no App Inventor para criar o aplicativo que consulta a temperatura 288 vezes por dia.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/estruturas-de-repeticao/estrutura-for.png" alt="Exemplo de uso da estrutura de repetição FOR." />
+                    </p>
+                    <p>
+                        Este bloco representa no App Inventor a estrutura de repetição chamada <b>FOR</b>.
+                    </p>
+                    <p>
+                        No bloco apresentado ao lado da palavra <b>“desde”</b> é informado que o contador de repetições vai iniciar com o valor <b>1</b>.
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“até”</b> informamos a quantidade de vezes que a estrutura vai repetir, significa que quando o contador chegar em 288 a repetição vai acabar.
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“passo”</b> informamos que o contador vai contar de um em um, ou seja, a cada repetição o contador vai aumentar um.
+                    </p>
+                    <p>
+                        E por fim ao lado da palavra <b>“fazer”</b> podemos colocar os comandos que desejamos executar a cada repetição.
+                    </p>
+
+                    <h2>Estrutura de repetição WHILE</h2>
+                    <p>
+                        Como citado acima, a estrutura de repetição <b>WHILE</b> é usada quando não temos uma quantidade exata de vezes que precisamos repetir determinado comando, mas temos uma condição para parar a repetição.
+                    </p>
+                    <p>
+                        Em um aplicativo de músicas nosso aplicativo não saberia exatamente quantas vezes o usuário iria escutar uma música, mas o aplicativo sabe que deve parar a repetição quando a opção de repetir for desmarcada.
+                    </p>
+                    <p>
+                        Veja abaixo como poderíamos fazer isso no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/estruturas-de-repeticao/estrutura-while.png" alt="Exemplo de uso da estrutura de repetição WHILE." />
+                    </p>
+                    <p>
+                        O bloco <b>enquanto</b> representa a estrutura de repetição <b>WHILE</b> no App Inventor, para essa estrutura de repetição é necessário ter uma condição de parada.
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“testar”</b> temos uma comparação, nessa comparação verificamos se o valor da variável <b>“repeticao”</b> é igual a <b>“Ativada”</b>. Ao lado da palavra <b>“fazer”</b> temos o comando que será repetido.
+                    </p>
+                    <p>
+                        No exemplo, a estrutura vai repetir o comando <b>“tocar_musica”</b> enquanto a variável <b>“repeticao”</b> estiver com o valor igual a <b>“Ativada”</b>, assim que a variável tiver seu valor alterado a estrutura de repetição é finalizada.
+                    </p>
+
+                    <h2>Como funciona a estrutura de repetição FOR-EACH?</h2>
+                    <p>
+                        A estrutura de repetição <b>FOR-EACH</b> é usada sempre que você tem uma lista e precisa percorre-la.
+                    </p>
+                    <p>
+                        Imagine que você tem uma lista de produto, e agora precisa percorrer essa lista para exibir o nome de cada produto na tela um por um.
+                    </p>
+                    <p>
+                        Veja abaixo como poderíamos fazer isso usando a estrutura <b>FOR-EACH</b> no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/estruturas-de-repeticao/estrutura-for-each.png" alt="Exemplo de uso da estrutura de repetição FOR-EACH." />
+                    </p>
+                    <p>
+                        O bloco <b>“para cada item na lista”</b> representa a estrutura que chamamos de <b>FOR-EACH</b>, perceba que para usarmos essa estrutura de repetição primeiro criamos uma variável que recebe uma lista.
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“lista”</b> do bloco de repetição nós colocamos a variável <b>“produtos”</b> que representa uma lista com cinco produtos.
+                    </p>
+                    <p>
+                        Após a palavra <b>“fazer”</b> nós chamamos o método que imprime o nome do produto na tela do celular. Assim para cada item que há na lista será chamado o método que imprime o nome do produto.
                     </p>
 
                     <h2>Conclusão</h2>
                     <p>
-                        Nessa primeira parte da aula de estruturas de repetição nós tivemos uma visão geral sobre o que são e como funcionam as estruturas de repetição, agora nós vamos ter três aulas práticas sobre estruturas de repetição, em cada aula praticaremos um tipo de estrutura de repetição.
+                        Nessa aula nós aprendemos como funcionam e como usar as estruturas de repetição no App Inventor, com essas estruturas nós podemos repetir determinado comando quantas vezes for necessário.
                     </p>
                     <p>
-                        Se surgiu alguma dúvida em relação ao conteúdo escreva nos comentários, responderemos suas perguntas o mais rápido possível. Até a próxima aula!
+                        Na próxima aula vamos desenvolver um aplicativo utilizando as estruturas de repetição, pois praticando você pode aprender ainda mais.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Até a próxima aula.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        ZANELATO, Jessica. <b>Lógica de Programação - estruturas de repetição</b>. PodProgramar, 2018. Disponível em: <a target="_blank" href="https://podprogramar.com.br/logica-de-programacao-estruturas-de-repeticao/">https://podprogramar.com.br/logica-de-programacao-estruturas-de-repeticao</a>. Acesso em: 01 de setembro de 2019.
+                    </p>
+                    <p>
+                        Alisson. <b>Estrutura de Repetição: C++</b>. DevMedia, 2012. Disponível em: <a target="_blank" href="https://www.devmedia.com.br/estrutura-de-repeticao-c/24121">https://www.devmedia.com.br/estrutura-de-repeticao-c/24121</a>. Acesso em: 05 de setembro de 2019.
+                    </p>
+                    <p>
+                        ALVES, Gustavo Furtado de Oliveira. <b>Estrutura de repetição PARA</b>. Dicas de Programação, 2013. Disponível em: <a target="_blank" href="https://dicasdeprogramacao.com.br/estrutura-de-repeticao-para/">https://dicasdeprogramacao.com.br/estrutura-de-repeticao-para/</a>. Acesso em: 05 de setembro de 2019.
                     </p>
 
                     <a href="video-aula-aplicativo-estrutura-de-repeticao-for.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/estruturas-de-repeticao')">

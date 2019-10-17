@@ -37,78 +37,161 @@
         <div class="container margin-top-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
-                    <h1 id="titulo-pagina">Procedimentos</h1>
+                    <h1 id="titulo-pagina">O que são procedimentos e como usá-los?</h1>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
                     <p>
-                        Seja bem-vindo(a) a nossa oitava aula do curso de Lógica de Programação com App Inventor, nessa aula vamos estudar os procedimentos.
+                        Nessa aula vamos aprender o que são os procedimentos e como podemos usá-los no desenvolvimento de nossos aplicativos para tornar nossos códigos mais organizados e intuitivos.
                     </p>
 
-                    <h2>O que são procedimentos?</h2>
+                    <h2>Introdução</h2>
                     <p>
-                        Um procedimento é um conjunto de comandos que farão uma tarefa específica, usar procedimentos é importante para deixar o código de seus softwares mais organizado, além de que sem usar procedimentos é praticamente impossível criar um aplicativo com várias funcionalidades.
+                        Seu quarto já ficou bagunçado? Com tudo fora do lugar? O meu fica desse jeito as vezes. Sabia que o código de nossos aplicativos também pode ficar bagunçado?
                     </p>
                     <p>
-                        Para você ter uma ideia melhor sobre o que são procedimentos vamos pegar como exemplo o WhatsApp, um aplicativo usado para mandar mensagens de texto, fotos, áudios etc.
+                        Quando desenvolvemos aplicativos com muitas funcionalidades o código pode começar a ficar muito bagunçado e difícil de ser entendido.
                     </p>
                     <p>
-                        O WhatsApp tem várias funcionalidades, entre elas podemos citar: exibir os contatos, enviar mensagens, receber mensagens, entre outras.
-                    </p>
-                    <p>
-                        Podemos imaginar que no código do WhatsApp existem vários procedimentos como, listar contatos, enviar mensagens e receber mensagens.
-                    </p>
-                    <p>
-                        Conseguiu entender a ideia? Para cada funcionalidade que você tiver em seu aplicativo é necessário usar um procedimento.
+                        Utilizando os procedimentos podemos deixar nosso código mais organizado, vamos ver nessa aula como funcionam os procedimentos e como podemos utilizá-los em nossos aplicativos.
                     </p>
 
-                    <h2>Declarando um procedimento simples</h2>
+                    <h2>Qual é a finalidade dos procedimentos?</h2>
                     <p>
-                        Todo procedimento precisa ter um nome e um conjunto de comandos que irá executar.
+                        A função principal dos procedimentos é permitir que você possa organizar o código de seus programas de uma forma mais fácil. E também possibilita que você possa reutilizar determinados comandos em lugares diferentes de seu aplicativo.
                     </p>
                     <p>
-                        As regras para criação do nome de um procedimento são as mesmas da criação de nomes de variáveis.
-                    </p>
-
-                    <h2>Parâmetros de um procedimento</h2>
-                    <p>
-                        Os procedimentos também podem receber parâmetros, eles são informações que passamos para os procedimentos usarem.
+                        Os procedimentos são essenciais quando se desenvolve um aplicativo com várias funcionalidades, como é o caso do desenvolvimento de um aplicativo para controle financeiro.
                     </p>
                     <p>
-                        Um procedimento pode receber quantos parâmetros você quiser.
+                        Neste exemplo, poderíamos tornar o código do aplicativo mais organizado criando os seguintes procedimentos: calcular saldo disponível, cadastrar nova despesa, deletar despesa, editar despesa, cadastrar contas a receber, deletar contas a receber, editar contas a receber. Ou seja, para cada funcionalidade criaríamos um procedimento.
                     </p>
                     <p>
-                        Por exemplo, imagine que temos um procedimento que calcula a média de três número, para ele fazer o calcula será necessário informar esses três número, fazemos isso passando-os por parâmetro.
+                        Para deixar nosso código organizado devemos criar um procedimento para cada uma das funcionalidades de nosso aplicativo. Também é indicado usar procedimentos quando você elaborar uma sequência de código igual em lugares diferentes, no seu aplicativo, assim você consegue reutilizar o mesmo código em vários lugares sem ter que reescrevê-lo.
                     </p>
                     <p>
-                        Nem todos os procedimentos precisam de parâmetro, por isso seu uso não é obrigatório.
-                    </p>
-                    <p>
-                        Imagine que você precisa criar um procedimento para consultar a hora atual, esse procedimento não precisaria receber um valor por parâmetro, pois ele apenas deve consultar a hora atual e retornar esse valor.
+                        No exemplo do aplicativo de controle financeiro teríamos um procedimento chamado “calcular_saldo_disponivel”, esse procedimento tem a função de retornar o valor em dinheiro que o usuário possui. Calcular o saldo disponível é algo que usamos em vários lugares, como criamos um procedimento podemos apenas chamá-lo sempre que precisarmos, sem precisar reescrever todo o cálculo do saldo em vários lugares.
                     </p>
 
-                    <h2>Retorno de procedimentos</h2>
+                    <h2>Dificuldades ao usar os procedimentos</h2>
                     <p>
-                        Um procedimento, após ser executada pode retornar ou não uma resposta.
+                        A principal dificuldade ao começar utilizar os procedimentos é identificar quando usá-los e quando não usá-los, por isso eles muitas vezes não são usados da forma devida.
                     </p>
                     <p>
-                        No exemplo usado anteriormente, o procedimento que calcula a média precisa retornar a média calculada.
+                        A dica é, use os procedimentos sempre que um determinado trecho de comandos se repete no seu código.
                     </p>
                     <p>
-                        O procedimento que verifica a hora atual também necessita retornar um valor, nesse caso a hora atual.
+                        Quando o algoritmo for muito extenso também é indicado dividi-lo em procedimentos separados, cada procedimento executando uma tarefa específica.
+                    </p>
+
+                    <h2>Tipos de procedimentos</h2>
+                    <p>
+                        Nós temos disponível no App Inventor três tipos de procedimentos, o primeiro e mais comum nós vamos chamar de <b>“procedimentos simples”</b>, os procedimentos simples apenas executam uma determinada tarefa.
                     </p>
                     <p>
-                        Mas também podemos criar procedimentos que não precisem retornar uma resposta, alguns procedimentos são feitos apenas para executar uma tarefa e não precisam necessariamente retornar um resultado.
+                        O segundo tipo é chamado de <b>“procedimentos parametrizados”</b>, são procedimentos que recebem informações por parâmetro e usam essas informações para fazer determinada tarefa.
                     </p>
                     <p>
-                        Por exemplo, se você criar um procedimento usada para enviar mensagens, ele provavelmente vai precisar receber por parâmetro a mensagem que deve enviar, e seu objetivo é enviar essa mensagem para alguém, no entanto o procedimento não precisa retornar um valor.
+                        E o terceiro tipo chamamos de <b>“procedimentos com retorno”</b>, são os procedimentos que retornam um resultado como resposta após executar determinada ação.
+                    </p>
+                    <p>
+                        Vamos ver a seguir como usar cada um desses tipos de procedimentos com mais detalhes.
+                    </p>
+
+                    <h2>Procedimento simples</h2>
+                    <p>
+                        Um procedimento simples, apenas executa uma determinada tarefa quando é chamado, por exemplo, vamos criar um procedimento que toca um alarme, nesse caso, o procedimento não precisa retornar um resultado e nem precisa receber uma informação por parâmetro.
+                    </p>
+                    <p>
+                        Para criar um procedimento simples você só precisa dar um nome a ele e implementar a tarefa que ele deve executar. Veja abaixo como podemos criar o procedimento que toca um alarme no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/procedimento-simples.png" alt="Exemplo de uso de procedimentos simples." />
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“para”</b> nós informamos o nome do procedimento, ao lado da palavra <b>“fazer”</b> nós programamos tudo que esse procedimento vai fazer, ele vai apenas tocar o alarme.
+                    </p>
+                    <p>
+                        Para fazer uso de um procedimento simples basta chamá-lo, que ele irá executar a tarefa para a qual ele foi criado. Veja abaixo como fazemos a chamada de um procedimento.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/chamando-procedimento-simples.png" alt="Exemplo de chamada de procedimentos simples." />
+                    </p>
+                    <p>
+                        O bloco <b>“chamar”</b> na cor roxa é o responsável por chamar o procedimento com o nome <b>“tocar_alarme”</b>.
+                    </p>
+
+                    <h2>Procedimentos com parâmetros</h2>
+                    <p>
+                        Imagine que você vai criar um procedimento que imprime o resultado da soma entre dois números, nesse caso seu procedimento precisa saber quais números deve somar, para isso usamos os parâmetros.
+                    </p>
+                    <p>
+                        Denominamos de parâmetros as informações que passamos para o procedimento no momento em que o chamamos.
+                    </p>
+                    <p>
+                        Para criar um procedimento com parâmetros, é necessário dar um nome a ele e também informar quais dados ele vai receber por parâmetro quando for chamado. Veja abaixo como podemos criar o procedimento de soma que vai receber dois números por parâmetro.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/procedimento-com-parametros.png" alt="Exemplo de uso de procedimentos com parâmetros." />
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>“para”</b> nós colocamos o nome do procedimento, depois do nome indicamos o nome de cada parâmetro que ele espera.
+                    </p>
+                    <p>
+                        Para usar esse procedimento basta chamá-lo e informar os dados que ele necessita por parâmetro.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/chamando-procedimento-com-parametros.png" alt="Exemplo de chamada de procedimentos com parâmetros." />
+                    </p>
+                    <p>
+                        Ao usar o bloco <b>“chamar”</b> para usar o procedimento <b>“somar”</b> foi necessário informar os dois número que o procedimento espera receber por parâmetro.
+                    </p>
+
+                    <h2>Procedimento com retorno</h2>
+                    <p>
+                        Esse tipo de procedimento após ser chamado executa sua tarefa e retorna um resultado. Em seguida, vamos criar um procedimento que calcula a soma entre dois números e retorna o resultado da soma.
+                    </p>
+                    <p>
+                        Ao criar um procedimento com retorno você precisa indicar qual vai ser o tipo da informação que ele retornará, além disso ele deve ter um nome, você também  pode informar os parâmetros que ele vai receber caso seja necessário. Veja abaixo como podemos criar este  procedimento.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/procedimento-com-retorno.png" alt="Exemplo de uso de procedimentos com retorno." />
+                    </p>
+                    <p>
+                        Nesse procedimento nós indicamos seu nome ao lado da palavra <b>“para”</b> e também solicitamos dois parâmetros que serão os números para fazer a soma. A diferença é que temos a palavra <b>“resultado”</b> onde indicamos que o resultado será a soma dos números.
+                    </p>
+                    <p>
+                        Para usar um procedimento com retorno basta chamá-lo e informar os parâmetros caso você tenha criado ele solicitando parâmetros, além disso você precisa guardar a informação que o procedimento irá retornar em uma variável ou usá-la logo após chamar o procedimento.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/procedimentos/chamando-procedimento-com-retorno.png" alt="Exemplo de chamada de procedimentos com retorno." />
+                    </p>
+                    <p>
+                        Aqui nós usamos o bloco que chama o procedimento <b>“somar”</b> conectado à uma variável, assim o resultado da soma será guardado na variável <b>“resultado”</b>.
                     </p>
 
                     <h2>Conclusão</h2>
                     <p>
-                        Nesse post vimos que usar procedimentos em nossos aplicativos faz com que seus códigos fiquem mais organizados, além disso, com o uso de procedimentos podemos reutilizar alguns códigos.
+                        Nessa aula nós aprendemos como funcionam e como usar os procedimentos no App Inventor.
                     </p>
                     <p>
-                        No próximo post vamos criar um aplicativo usando procedimentos para vermos na prática como eles funcionam, ate lá!
+                        Aprendemos que com os procedimentos conseguimos deixar nosso código mais organizado, mais fácil de ser entendido e também conseguimos fazer a reutilização de códigos que seriam reescritos várias vezes em nossos aplicativos.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão/pergunta envie uma mensagem para nós. Responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Até a próxima aula.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        ALVES, Gustavo Furtado de Oliveira. <b>O que são Funções e Procedimentos?</b>. Dicas de programação, 2013. Disponível em: <a target="_blank" href="https://dicasdeprogramacao.com.br/o-que-sao-funcoes-e-procedimentos/">https://dicasdeprogramacao.com.br/o-que-sao-funcoes-e-procedimentos/</a>. Acesso em: 29 de setembro de 2019.
+                    </p>
+                    <p>
+                        REIS, Fabia. <b>Lógica de Programação – Procedimentos</b>. Bóson treinamentos em tecnologia, 2015. Disponível em: <a target="_blank" href="http://www.bosontreinamentos.com.br/logica-de-programacao/26-logica-de-programacao-procedimentos/">http://www.bosontreinamentos.com.br/logica-de-programacao/26-logica-de-programacao-procedimentos/</a>. Acesso em: 29 de setembro de 2019.
+                    </p>
+                    <p>
+                        GATTO, Elaine Cecília. <b>Funções e Procedimentos</b>. Embarcados, 2017. Disponível em: <a target="_blank" href="https://www.embarcados.com.br/funcoes-e-procedimentos-parte-1/">https://www.embarcados.com.br/funcoes-e-procedimentos-parte-1/</a>. Acesso em: 29 de setembro de 2019.
                     </p>
 
                     <a href="video-aula-desenvolvendo-jogo-com-numeros.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/procedimentos')">
