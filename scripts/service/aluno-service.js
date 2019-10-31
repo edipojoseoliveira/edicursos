@@ -1,4 +1,4 @@
-function cadastreSe() {
+function alunoSalvar() {
 	var conta = new Object();
 	conta.email = document.getElementById('inputEmail').value;
 	conta.senha = document.getElementById('inputSenha').value;

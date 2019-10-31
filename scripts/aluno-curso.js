@@ -13,6 +13,6 @@ function salvarAlunoCurso(idCurso) {
 		alunoCurso.aluno = aluno;
 		alunoCurso.situacao = 1;
 
-
+		
 	}
 }

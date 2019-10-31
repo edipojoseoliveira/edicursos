@@ -22,7 +22,7 @@ var dialogsHTML =
 			'</div>' + 
 			'<div class="modal-footer">' + 
 				'<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>' + 
-				'<button type="button" class="btn btn-primary" onclick="entrar()">Entrar</button>' +
+				'<button type="button" class="btn btn-primary" onclick="contaEntrar()">Entrar</button>' +
 			'</div>' +
 		'</div>' +
 	'</div>' +
@@ -54,7 +54,7 @@ var dialogsHTML =
 			'</div>' + 
 			'<div class="modal-footer">' + 
 				'<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>' + 
-				'<button type="button" class="btn btn-primary" onclick="cadastreSe()">Cadastre-se</button>' +
+				'<button type="button" class="btn btn-primary" onclick="alunoSalvar()">Cadastre-se</button>' +
 			'</div>' +
 		'</div>' +
 	'</div>' +
