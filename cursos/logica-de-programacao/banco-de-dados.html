@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="icon" type="imagem/png" href="../../sources/icone-tab.png" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="EdiCursos é uma plataforma de cursos na área de tecnologia, visite nosso site e confira os cursos disponíveis, entre eles temos os cursos de Lógica de Programação, JAVA Básico, API REST com JAVA e muito mais.">
+	</head>
+	<body>
+		<div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
+                    <h1 id="titulo-pagina">Banco de dados no App Inventor</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Nessa aula vamos aprender o que é e como podemos usar o banco de dados no App Inventor para conseguirmos gravar informações de maneira permanente em nossos aplicativos.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Você já ouviu a expressão? “Isso é como andar de bicicleta, depois que aprende nunca mais esquece”. Realmente tem algumas coisas que nós aprendemos e nunca mais esquecemos.
+                    </p>
+                    <p>
+                        Ao desenvolver um aplicativo nós também precisamos fazer com que algumas informações sejam registradas na memória dele, de uma forma que ele não esqueça mais.
+                    </p>
+                    <p>
+                        Até agora, utilizamos as variáveis para armazenar informações, no entanto a informação armazenada em uma variável é apagada quando fechamos o aplicativo.
+                    </p>
+					<p>
+						Aplicando os bancos de dados podemos gravar informações de modo permanente no celular e usar essas informações a qualquer momento em nossos aplicativos. Vamos ver nesta aula os critérios de funcionamento e uso do banco de dados no App Inventor.
+					</p>
+
+                    <h2>Qual é a finalidade de um banco de dados?</h2>
+                    <p>
+                        O objetivo principal ao utilizar o banco de dados é gravar informações de forma permanente em nossos aplicativos, ou seja, as informações gravadas em um banco de dados não são perdidas quando o aplicativo é fechado.
+                    </p>
+                    <p>
+                        Todas as informações armazenadas no banco de dados podem ser consultadas a qualquer momento pelo seu aplicativo, além disso você pode aplicar filtros para consultar essas informações.
+                    </p>
+                    <p>
+                        Pense que você criou um aplicativo de agenda, nele o usuário grava todos os compromissos de cada dia.
+                    </p>
+                    <p>
+                        Agora o usuário quer ver apenas os compromissos agendados para amanhã, você pode fazer essa consulta no banco de dados utilizando um filtro para buscar apenas os compromissos de amanhã, assim seu aplicativo fica mais rápido e o usuário consegue as informações que ele deseja.
+                    </p>
+
+                    <h2>Em que momentos é indicado gravar as informações em um banco de dados?</h2>
+                    <p>
+                        O banco de dados deve ser usado apenas quando as informações precisam ser gravadas e não podem ser perdidas, mesmo que o aplicativo seja fechado.
+                    </p>
+                    <p>
+                        Imagine que você vai desenvolver um aplicativo de anotações, onde você quer fazer anotações e salvá-las  para ler em outro momento.
+                    </p>
+                    <p>
+                        Nesse caso, as anotações escritas devem ser armazenadas em um banco de dados, pois caso sejam armazenadas em uma variável, podem ser apagadas assim que o aplicativo for fechado.
+                    </p>
+
+                    <h2>Como funciona o banco de dados no App Inventor?</h2>
+                    <p>
+                        Para poder utilizar o banco de dados no App Inventor você precisa primeiro adicionar ao seu aplicativo o componente chamado TinyDB, esse componente é o responsável por gravar, editar, excluir e buscar as informações no banco de dados.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/banco-de-dados/componente-tinydb.png" alt="Exemplo de uso do componente TinyDB no App Inventor." />
+                    </p>
+                    <p>
+                        Você encontra o componente TinyDB dentro do grupo de componentes chamado "Armazenamento", para adicioná-lo ao seu projeto apenas arraste-o até a tela do aplicativo. Em seguida, ele vai ficar aparecendo abaixo da tela de seu aplicativo no App Inventor na área dos componentes invisíveis.
+                    </p>
+                    <p>
+                        O banco de dados no App Inventor funciona de forma muito semelhante às variáveis, a principal diferença é que o valor armazenado em uma variável é perdido quando o aplicativo for fechado, já no banco de dados as suas informações não são apagadas quando o aplicativo estiver fechado.
+                    </p>
+
+                    <h2>Procedimentos disponíveis no banco de dados do App Inventor</h2>
+                    <p>
+                        Nos tópicos abaixo, seguem informações sobre como trabalhar com o componente TinyDB para gravar, consultar, deletar e editar informações no banco de dados.
+                    </p>
+					
+					<h3>Gravar informações no banco de dados</h3>
+					<p>
+						Para gravar uma informação no banco de dados você primeiro precisa informar um nome a ela, é esse mesmo nome que você usará para consultar a informação gravada futuramente.
+					</p>
+					<p>
+						Pense que você deseja gravar o nome do usuário do seu aplicativo no banco de dados, veja abaixo como poderíamos fazer isso no App Inventor utilizando o TinyDB.
+					</p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/banco-de-dados/gravando-dados.png" alt="Exemplo de uso do componente TinyDB para gravar informações." />
+                    </p>
+                    <p>
+                        Aqui nós chamamos o procedimento <b>"ArmazenarValor"</b> do componente TinyDB.
+                    </p>
+                    <p>
+                        Ao lado da palavra <b>"rótulo"</b> colocamos o nome que vamos usar para identificar a informação que iremos gravar. Você pode imaginar o <b>"rótulo"</b> como sendo o nome de uma variável que vai armazenar sua informação no banco de dados.
+                    </p>
+					<p>
+						Por fim, ao lado da palavra <b>"valorParaArmazenar"</b> colocamos o valor que desejamos guardar no banco de dados. Neste exemplo estamos armazenando o texto digitado em uma caixa de texto que está na tela.
+					</p>
+					
+					<h3>Consultar informações do banco de dados</h3>
+					<p>
+						Para consultar uma informação gravada no banco de dados precisamos saber qual é seu <b>"rótulo"</b>, ou seja, qual é o nome que identifica essa informação no banco de dados.
+					</p>
+					<p>
+						Imagine que queremos consultar o nome do usuário que gravamos anteriormente, veja abaixo como podemos fazer isso no App Inventor.
+					</p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/banco-de-dados/consultando-dados.png" alt="Exemplo de uso do componente TinyDB para consultar informações." />
+                    </p>
+                    <p>
+                        Nesse bloco estamos chamando o procedimento <b>"ObterValor"</b> do componente TinyDB, esse procedimento vai retornar o valor armazenado no banco de dados de acordo com o rótulo passado.
+                    </p>
+					<p>
+						Ao lado da palavra <b>"rótulo"</b> nós colocamos <b>"nome_usuario"</b> pois foi esse rótulo que usamos no momento de gravar o nome do usuário no banco de dados.
+					</p>
+					<p>
+						Em seguida, depois da palavra <b>"valorSeRótuloNãoExistir"</b> deixamos o bloco que representa um texto vazio, pois caso não exista um rótulo chamado <b>"nome_usuario"</b> o procedimento vai retornar apenas um texto vazio.
+					</p>
+
+                    <h3>Deletar informações do banco de dados</h3>
+                    <p>
+                        Agora você deseja excluir do banco de dados o nome do usuário que estava armazenado. Veja abaixo como faríamos isso no App Inventor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/banco-de-dados/apagando-dados.png" alt="Exemplo de uso do componente TinyDB para deletar informações." />
+                    </p>
+                    <p>
+                        No bloco acima, nós chamamos o procedimento <b>"ApagarRótulo"</b> do componente TinyDB. Ao lado da palavra <b>"rótulo"</b> nós informamos o nome do rótulo que desejamos deletar do banco de dados.
+                    </p>
+					
+					<h3>Editar informações do banco de dados</h3>
+                    <p>
+                        Agora digamos que você deseja alterar a informação que está gravada no rótulo <b>"nome_usuario"</b> do banco de dados, para isso basta usar o mesmo procedimento usado para salvar o <b>"rótulo"</b>. Veja o exemplo abaixo.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-logica-programacao/banco-de-dados/gravando-dados.png" alt="Exemplo de uso do componente TinyDB para editar informações." />
+                    </p>
+                    <p>
+                        Sempre que armazenamos uma informação em um <b>"rótulo"</b> que já existe, o App Inventor apenas altera o valor que estava armazenado antes no rótulo informado.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula nós aprendemos como funciona e como usar o banco de dados no App Inventor.
+                    </p>
+                    <p>
+                        Vimos que com o componente TinyDB do App Inventor conseguimos gravar, editar, consultar e excluir informações no banco de dados.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver um aplicativo de agenda para você poder usar na prática o banco de dados no App Inventor.
+                    </p>
+					<p>
+						Caso você tenha ficado com dúvidas ou tenha alguma sugestão/pergunta envie uma mensagem para nós. Responderemos o mais rápido possível.
+					</p>
+                    <p>
+                        Até a próxima aula.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        MACHADO, Germinaro. <b>Componente TinyDB</b>. Desenvolvendo com App Inventor, 2013. Disponível em: <a target="_blank" href="http://appinventordeveloper.blogspot.com/2013/03/componente-tinydb.html">http://appinventordeveloper.blogspot.com/2013/03/componente-tinydb.html</a>. Acesso em: 19 de outubro de 2019.
+                    </p>
+                    <p>
+                        BARREIROS, Felipe. <b>BANCO DE DADOS TINYDB</b>. FIAP X, 2014. Disponível em: <a target="_blank" href="https://www.fiap.com.br/fiapx/cursos/desenvolvimento-android-com-appinventor/banco-de-dados-tinydb">https://www.fiap.com.br/fiapx/cursos/desenvolvimento-android-com-appinventor/banco-de-dados-tinydb</a>. Acesso em: 19 de outubro de 2019.
+                    </p>
+                    <p>
+                        Massachusetts Institute of Technology. <b>Storage - App Inventor for Android</b>. MIT App Inventor, 2013. Disponível em: <a target="_blank" href="http://ai2.appinventor.mit.edu/reference/components/storage.html">http://ai2.appinventor.mit.edu/reference/components/storage.html</a>. Acesso em: 19 de outubro de 2019.
+                    </p>
+
+                    <a href="video-aula-desenvolvendo-uma-agenda-primeira-parte.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/banco-de-dados')">
+                        Próxima aula
+                    </a>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-5">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <img class="ondas-cursos" src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://www.edicursos.com.br",
+                "name": "EdiCursos",
+                "logo": "http://www.edicursos.com/imagens/icone-tab.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+55-046-99106-2205",
+                    "contactType": "customer support",
+                    "areaServed": "BR",
+                    "contactOption": "TollFree"
+                }
+            }
+        </script>
+	</body>
+</html>

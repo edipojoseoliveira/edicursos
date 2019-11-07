@@ -180,10 +180,20 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/procedimentos', 'oi-file') + '"></span>' +
 		'O que são procedimentos e como usá-los?' +
 	'</a>' +
-	'<a href="' + getUrlHref("video-aula-desenvolvendo-jogo-com-numeros.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo um jogo com números') + '"' +
+	'<a href="' + getUrlHref("video-aula-desenvolvendo-um-conversor-de-moedas-primeira-parte.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo um conversor de moedas - Primeira parte') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
-		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-jogo-com-numeros', 'oi-video') + '"></span>' +
-		'Vídeo - Desenvolvendo um jogo com números' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-primeira-parte', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo um conversor de moedas - Primeira parte' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo um conversor de moedas - Segunda parte') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo um conversor de moedas - Segunda parte' +
+	'</a>' +
+	'<a href="' + getUrlHref("banco-de-dados.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Banco de dados no App Inventor') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/banco-de-dados', 'oi-file') + '"></span>' +
+		'Banco de dados no App Inventor' +
 	'</a>' +
 '</div>';
 
