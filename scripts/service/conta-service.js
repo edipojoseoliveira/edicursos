@@ -35,7 +35,7 @@ function contaEntrar() {
 		conta.senha = document.getElementById('inputLoginSenha').value;
 
 		$.ajax({
-			url: 'http://localhost:8080/EdiCursos/api/conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
+			url: 'http://192.168.100.34:8080/EdiCursos/api/conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
 			headers: {
 		        'Content-Type': 'application/json',
 		        'Foo-Header': 'foo'

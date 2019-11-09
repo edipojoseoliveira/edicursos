@@ -4,8 +4,8 @@ var titulo_pagina_text = titulo_pagina_element.textContent;
 //Ao abrir a página se não estiver logado volta para a página inicial
 window.onload = function() {
 	if (verificarUsuarioLogado() == false 
-		&& document.URL != "file:///C:/edicursos/cursos/logica-de-programacao.html") {
-		window.location.href = "file:///C:/edicursos/cursos/logica-de-programacao.html";
+		&& document.URL != "http://localhost:8080/edicursos/cursos/logica-de-programacao.html") {
+		window.location.href = "http://localhost:8080/edicursos/cursos/logica-de-programacao.html";
 	}
 }
 
@@ -46,7 +46,7 @@ function getUrlHref(pagina) {
 
 function verificarUsuarioLogado() {
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
-		var conta = JSON.stringify(localStorage.getItem('conta'));
+		var conta = JSON.parse(localStorage.getItem('conta'));
 
 		if (conta.codigo != null && conta.codigo != '') {
 			return true;
