@@ -44,6 +44,20 @@ html {
     position: fixed;
 }
 
+#form-redefinir-senha {
+	width: 35%;
+	margin: 0 auto;
+}
+
+#form-redefinir-senha > h2 {
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
 #menu-superior {
     list-style-type: none;
     margin: 0;
@@ -152,26 +166,12 @@ html {
     background: blue;
     color: white;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
     font-size: 26pt;
     font-weight: bold;
 }
 
 .logica-programacao > a {
-    text-decoration: none;
-    color: black;
-}
-
-.ingles-essencial > a > h2 {
-    background: #00ff00;
-    color: white;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 26pt;
-    font-weight: bold;
-}
-
-.ingles-essencial > a {
     text-decoration: none;
     color: black;
 }
