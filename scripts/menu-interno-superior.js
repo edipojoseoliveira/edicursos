@@ -22,12 +22,19 @@ var menu =
 				'<li class="nav-item">' +
 					'<a class="nav-link ' + getClassMenu('/sobre') + '" href="' + getUrlHref() + 'sobre.html">SOBRE</a>' +
 				'</li>' +
-				'<li class="nav-item">' +
-					'<a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>' +
-				'</li>' +
-				'<li class="nav-item">' +
-					'<a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>' +
-				'</li>' +
+				(verificarUsuarioLogado()
+				?
+					'<li class="nav-item">' +
+						'<a class="nav-link" href="' + getUrlHref() + 'index.html" onclick="contaSair()">SAIR</a>' +
+					'</li>'
+				:
+					'<li class="nav-item">' +
+						'<a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>' +
+					'</li>' +
+					'<li class="nav-item">' +
+						'<a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>' +
+					'</li>'
+				)
 			'</ul>' +
 		'</div>' +
 	'</div>' +
@@ -69,4 +76,22 @@ function getClassMenu(menu) {
 	} else {
 		return '';
 	}
+}
+
+function verificarUsuarioLogado() {
+	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
+		var conta = JSON.parse(localStorage.getItem('conta'));
+
+		if (conta.codigo != null && conta.codigo != '') {
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		return false;
+	}
+}
+
+function contaSair() {
+	localStorage.removeItem('conta');
 }

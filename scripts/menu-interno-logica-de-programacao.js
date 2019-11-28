@@ -195,6 +195,16 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/banco-de-dados', 'oi-file') + '"></span>' +
 		'Banco de dados no App Inventor' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-desenvolvendo-uma-agenda-primeira-parte.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo uma agenda - Primeira parte') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-uma-agenda-primeira-parte', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo uma agenda - Primeira parte' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-desenvolvendo-uma-agenda-segunda-parte.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo uma agenda - Segunda parte') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-uma-agenda-segunda-parte', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo uma agenda - Segunda parte' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');

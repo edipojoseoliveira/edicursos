@@ -10,6 +10,7 @@ var dialogsHTML =
 			'</div>' +
 			'<div class="modal-body">' +
 				'<div id="mensagensEntrar"></div>' +
+				'<div id="loadingEntrar"></div>' +
 				'<form>' +
 					'<div class="form-group">' +
 						'<input type="mail" id="inputLoginEmail" class="form-control" placeholder="E-mail">' +
@@ -18,7 +19,7 @@ var dialogsHTML =
 						'<input type="password" id="inputLoginSenha" class="form-control" placeholder="Senha">' +
 					'</div>' +
 					'<div class="form-group">' +
-						'<button type="button" class="btn btn-primary btn-block" onclick="contaEntrar()">Entrar</button>' +
+						'<button id="btnEntrarConta" type="button" class="btn btn-primary btn-block" onclick="contaEntrar()">Entrar</button>' +
 					'</div>' +
 					'<div class="form-group text-center">' +
 						'<span><a onclick="fechaLoginAbreRedefinirSenha()" href="#">Esqueci minha senha</a></span>' +
@@ -27,6 +28,41 @@ var dialogsHTML =
 						'<span>Ou se ainda não se cadastrou <a onclick="fechaLoginAbreCadastro()" href="#">clique aqui</a>!</span>' +
 					'</div>' +
 				'</form>' +
+			'</div>' +
+		'</div>' +
+	'</div>' +
+'</div>' +
+
+'<div class="modal fade" id="modalCadastreSe" tabindex="-1" role="dialog" aria-labelledby="CadastreSeModalCenterTitle" aria-hidden="true">' + 
+	'<div class="modal-dialog modal-dialog-centered" role="document">' +
+		'<div class="modal-content">' +
+			'<div class="modal-header">' +
+				'<h5 class="modal-title" id="CadastreSeModalCenterTitle">Cadastre-se</h5>' +
+				'<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+					'<span aria-hidden="true">&times;</span>' +
+				'</button>' +
+			'</div>' +
+			'<div class="modal-body">' +
+				'<div id="mensagensCadastreSe"></div>' +
+				'<div id="loadingCadastreSe"></div>' +
+				'<form>' +
+					'<div class="form-group">' +
+						'<input type="text" id="inputNome" class="form-control" placeholder="Nome">' +
+					'</div>' +
+					'<div class="form-group">' +
+						'<input type="text" id="inputSobrenome" class="form-control" placeholder="Sobrenome">' +
+					'</div>' +
+					'<div class="form-group">' +
+						'<input type="mail" id="inputEmail" class="form-control" placeholder="E-mail">' +
+					'</div>' +
+					'<div class="form-group">' +
+						'<input type="password" id="inputSenha" class="form-control" placeholder="Senha">' +
+					'</div>' +
+				'</form>' +
+			'</div>' + 
+			'<div class="modal-footer">' + 
+				'<button id="btnCancelarAluno" type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>' + 
+				'<button id="btnCadastreSeAluno" type="button" class="btn btn-primary" onclick="alunoSalvar()">Cadastre-se</button>' +
 			'</div>' +
 		'</div>' +
 	'</div>' +
@@ -43,6 +79,7 @@ var dialogsHTML =
 			'</div>' +
 			'<div class="modal-body">' +
 				'<div id="mensagensRedefinirSenhha"></div>' +
+				'<div id="loadingRedefinirSenhha"></div>' +
 				'<form>' +
 					'<div class="form-group text-center">' +
 						'<span>Informe o mesmo e-mail que utilizou ao criar sua conta.</span>' +
@@ -51,7 +88,7 @@ var dialogsHTML =
 						'<input type="mail" id="inputRedefinirSenhaEmail" class="form-control" placeholder="E-mail">' +
 					'</div>' +
 					'<div class="form-group">' +
-						'<button type="button" class="btn btn-primary btn-block" onclick="contaRedefinirSenha()">Enviar e-mail</button>' +
+						'<button id="btnRedefinirSenha" type="button" class="btn btn-primary btn-block" onclick="contaRedefinirSenha()">Enviar e-mail</button>' +
 					'</div>' +
 				'</form>' +
 			'</div>' +
@@ -95,40 +132,7 @@ var dialogsHTML =
 			'<div class="modal-footer">' +
 				'<a href="https://www.edicursos.com.br/">' + 
 					'<button type="button" class="btn btn-primary">OK</button>' + 
-				'</a>'
-			'</div>' +
-		'</div>' +
-	'</div>' +
-'</div>' +
-
-'<div class="modal fade" id="modalCadastreSe" tabindex="-1" role="dialog" aria-labelledby="CadastreSeModalCenterTitle" aria-hidden="true">' + 
-	'<div class="modal-dialog modal-dialog-centered" role="document">' +
-		'<div class="modal-content">' +
-			'<div class="modal-header">' +
-				'<h5 class="modal-title" id="CadastreSeModalCenterTitle">Cadastre-se</h5>' +
-				'<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
-					'<span aria-hidden="true">&times;</span>' +
-				'</button>' +
-			'</div>' +
-			'<div class="modal-body">' +
-				'<form>' +
-					'<div class="form-group">' +
-						'<input type="text" id="inputNome" class="form-control" placeholder="Nome">' +
-					'</div>' +
-					'<div class="form-group">' +
-						'<input type="text" id="inputSobrenome" class="form-control" placeholder="Sobrenome">' +
-					'</div>' +
-					'<div class="form-group">' +
-						'<input type="mail" id="inputEmail" class="form-control" placeholder="E-mail">' +
-					'</div>' +
-					'<div class="form-group">' +
-						'<input type="password" id="inputSenha" class="form-control" placeholder="Senha">' +
-					'</div>' +
-				'</form>' +
-			'</div>' + 
-			'<div class="modal-footer">' + 
-				'<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>' + 
-				'<button type="button" class="btn btn-primary" onclick="alunoSalvar()">Cadastre-se</button>' +
+				'</a>' +
 			'</div>' +
 		'</div>' +
 	'</div>' +

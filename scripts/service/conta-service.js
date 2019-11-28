@@ -43,6 +43,63 @@ function limparMensagensTelaRedefinirSenha() {
 	mensagensRedefinirSenha.innerHTML = '';
 }
 
+function exibirLoadingEntrar() {
+	var loadingHTML = 
+	'<div class="progress" style="margin-bottom: 15px;">' +
+		'<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>' +
+	'</div>';
+	
+	var loadingEntrar = document.getElementById("loadingEntrar");
+	loadingEntrar.innerHTML = loadingHTML;
+	
+	document.getElementById('btnEntrarConta').disabled = true;	
+}
+
+function fecharLoadingEntrar() {
+	var loadingEntrar = document.getElementById("loadingEntrar");
+	loadingEntrar.innerHTML = '';
+	
+	document.getElementById('btnEntrarConta').disabled = false;
+}
+
+function exibirLoadingRedefinirSenhha() {
+	var loadingHTML = 
+	'<div class="progress" style="margin-bottom: 15px;">' +
+		'<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>' +
+	'</div>';
+	
+	var loadingRedefinirSenhha = document.getElementById("loadingRedefinirSenhha");
+	loadingRedefinirSenhha.innerHTML = loadingHTML;
+	
+	document.getElementById('btnRedefinirSenha').disabled = true;	
+}
+
+function fecharLoadingRedefinirSenhha() {
+	var loadingRedefinirSenhha = document.getElementById("loadingRedefinirSenhha");
+	loadingRedefinirSenhha.innerHTML = '';
+	
+	document.getElementById('btnRedefinirSenha').disabled = false;
+}
+
+function exibirLoadingTelaRedefinirSenhha() {
+	var loadingHTML = 
+	'<div class="progress" style="margin-bottom: 15px;">' +
+		'<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>' +
+	'</div>';
+	
+	var loadingTelaRedefinirSenhha = document.getElementById("loadingTelaRedefinirSenhha");
+	loadingTelaRedefinirSenhha.innerHTML = loadingHTML;
+	
+	document.getElementById('btnSalvarSenhaRedefinida').disabled = true;	
+}
+
+function fecharLoadingTelaRedefinirSenhha() {
+	var loadingTelaRedefinirSenhha = document.getElementById("loadingTelaRedefinirSenhha");
+	loadingTelaRedefinirSenhha.innerHTML = '';
+	
+	document.getElementById('btnSalvarSenhaRedefinida').disabled = false;
+}
+
 function validarCampos() {
 	if (document.getElementById('inputLoginEmail').value == null ||
 		document.getElementById('inputLoginEmail').value == '') {
@@ -63,6 +120,8 @@ function contaEntrar() {
 		var conta = new Object();
 		conta.email = document.getElementById('inputLoginEmail').value;
 		conta.senha = document.getElementById('inputLoginSenha').value;
+
+		exibirLoadingEntrar();
 
 		$.ajax({
 			url: 'http://192.168.100.34:8080/EdiCursos/api/conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
@@ -85,6 +144,7 @@ function contaEntrar() {
 			},
 			complete: function (jqXHR, textStatus) {
 				//console.log('Requisição finalizada: ' + textStatus);
+				fecharLoadingEntrar()
 			}
 		});
 	}
@@ -99,6 +159,8 @@ function contaRedefinirSenha() {
 	} else {
 		var conta = new Object();
 		conta.email = document.getElementById('inputRedefinirSenhaEmail').value;
+		
+		exibirLoadingRedefinirSenhha();
 		
 		$.ajax({
 			url: 'http://192.168.100.34:8080/EdiCursos/api/conta/enviar-email-redefinir-senha?email=' + conta.email,
@@ -121,19 +183,20 @@ function contaRedefinirSenha() {
 			},
 			complete: function (jqXHR, textStatus) {
 				//console.log('Requisição finalizada: ' + textStatus);
+				fecharLoadingRedefinirSenhha()
 			}
 		});
 	}		
 }
 
 function validarCamposParaRedefinirSenha() {
-	if (document.getElementById('inputSenha').value == null || document.getElementById('inputSenha').value == '') {
+	if (document.getElementById('inputNovaSenha').value == null || document.getElementById('inputNovaSenha').value == '') {
 		exibirMensagemTelaRedefinirSenha('Informe a nova senha!');
 		return false;
-	} else if (document.getElementById('inputSenhaConfirmacao').value == null || document.getElementById('inputSenhaConfirmacao').value == '') {
+	} else if (document.getElementById('inputNovaSenhaConfirmacao').value == null || document.getElementById('inputNovaSenhaConfirmacao').value == '') {
 		exibirMensagemTelaRedefinirSenha('Confirme a nova senha!');
 		return false;
-	} else if (document.getElementById('inputSenha').value != document.getElementById('inputSenhaConfirmacao').value) {
+	} else if (document.getElementById('inputNovaSenha').value != document.getElementById('inputNovaSenhaConfirmacao').value) {
 		exibirMensagemTelaRedefinirSenha('As senhas informadas são diferentes, verifique as informações!');
 		return false;
 	} else {
@@ -161,6 +224,8 @@ function salvarSenhaRedefinida() {
 			conta.email = data['e'];
 			conta.senha = document.getElementById('inputSenha').value;
 			
+			exibirLoadingTelaRedefinirSenhha();
+			
 			$.ajax({
 				url: 'http://192.168.100.34:8080/EdiCursos/api/conta/redefinir-senha',
 				headers: {
@@ -181,7 +246,8 @@ function salvarSenhaRedefinida() {
 					exibirMensagemTelaRedefinirSenha('Erro ao tentar redefinir a senha: ' + JSON.stringify(erro));
 				},
 				complete: function (jqXHR, textStatus) {
-					console.log('Fim: ' + textStatus);
+					//console.log('Fim: ' + textStatus);
+					fecharLoadingTelaRedefinirSenhha();
 				}
 			});
 		} else {
