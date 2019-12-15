@@ -12,7 +12,9 @@ function salvarAlunoCurso(idCurso) {
 		alunoCurso.curso = curso;
 		alunoCurso.aluno = aluno;
 		alunoCurso.situacao = 1;
-
-		
 	}
+}
+
+function imprimirCertificado() {
+	window.open('http://192.168.100.34:8080/EdiCursos/api/certificado/imprimir/1', '_blank');
 }
