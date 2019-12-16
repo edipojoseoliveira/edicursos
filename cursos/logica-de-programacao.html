@@ -45,13 +45,16 @@
                     <p class="font-size-18">
                         Nesse curso aprenderemos lógica de programação usando a plataforma App Inventor para desenvolver nossos aplicativos.
                     </p>
+					<div id="mensagensAlunoCurso"></div>
                     <p style="margin-top: 0 !important;" class="text-right">
-                        <button type="button" onclick="salvarAlunoCurso()" 
-							class="btn btn-outline-primary btn-lg">
-							INICIAR CURSO							
+                        <button type="button" onclick="salvarAlunoCurso(1)" 
+							class="btn btn-outline-primary btn-lg"
+							id="btnInscreverSe">
+							INSCREVER-SE NO CURSO							
 						</button>
 						<button type="button" onclick="imprimirCertificado()" 
-							class="btn btn-outline-primary btn-lg">
+							class="btn btn-outline-primary btn-lg"
+							id="btnGerarGertificado">
 							GERAR CERTIFICADO
 						</button>
                     </p>
@@ -74,10 +77,10 @@
         <script src="../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
 
         <script src="../scripts/main.js"></script>
-        <script src="../scripts/aluno-curso.js"></script>
+        <script src="../scripts/dialog.js"></script>
         <script src="../scripts/menu-interno-superior.js"></script>
         <script src="../scripts/menu-interno-logica-de-programacao.js"></script>
-        <script src="../scripts/dialog.js"></script>
+        <script src="../scripts/service/aluno-curso-service.js"></script>
         <script src="../scripts/service/aluno-service.js"></script>
         <script src="../scripts/service/conta-service.js"></script>
 
