@@ -1,25 +1,16 @@
 var alunoCursoCarregado = new Object();
+var botaoCertificado = document.getElementById("btnGerarGertificado");
+var botaoInscreverSe = document.getElementById("btnInscreverSe");
 
 window.onload = function() {
 	verificarBotoesParaExibir();
 }
 
 function verificarBotoesParaExibir() {
-	var botaoCertificado = document.getElementById("btnGerarGertificado");
-	var botaoInscreverSe = document.getElementById("btnInscreverSe");
-	
-	if (verificarUsuarioLogado() == false) {
-		botaoCertificado.setAttribute("hidden", "true");
-	} else {
-		if (verificarInscricaoNoCurso() == false) {
-			botaoCertificado.setAttribute("hidden", "true");
-		} else {
-			botaoInscreverSe.setAttribute("hidden", "true");
-			//Se a situação for 2 então está concluído
-			if (alunoCursoCarregado.situacao == 2) {
-				botaoCertificado.removeAttribute("hidden");
-			}
-		}
+	botaoCertificado.setAttribute("hidden", "true");
+		
+	if (verificarUsuarioLogado()) {
+		verificarInscricaoNoCurso();
 	}
 }
 
@@ -42,7 +33,7 @@ function salvarAlunoCurso(idCurso) {
 	limparMensagensAlunoCurso();
 	
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
-		var conta = JSON.stringify(localStorage.getItem('conta'));
+		var conta = JSON.parse(localStorage.getItem('conta'));
 
 		var curso = new Object();
 		var aluno = new Object();
@@ -62,7 +53,7 @@ function salvarAlunoCurso(idCurso) {
 				'Foo-Header': 'foo'
 			},
 			type: 'POST',
-			data: JSON.stringify(aluno),
+			data: JSON.stringify(alunoCurso),
 			success: function(result, status, request) {
 				window.location.href = "http://localhost:8080/edicursos/cursos/logica-de-programacao/introducao-logica-programacao.html";
 			},
@@ -79,11 +70,9 @@ function salvarAlunoCurso(idCurso) {
 }
 
 function verificarInscricaoNoCurso() {
-	var conta = JSON.stringify(localStorage.getItem('conta'));
+	var conta = JSON.parse(localStorage.getItem('conta'));
 	var idAluno = conta.codigo;
 	var idCurso = 1;
-	
-	var resposta = false;
 	
 	$.ajax({
 		url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-curso/consultar?idAluno=' + idAluno + '&idCurso=' + idCurso,
@@ -96,17 +85,20 @@ function verificarInscricaoNoCurso() {
 		success: function(result, status, request) {
 			if (result.mensagem == 'Registro encontrado!') {
 				alunoCursoCarregado = JSON.parse(JSON.stringify(result));
-				resposta = true;
+				//Se a situação for 2 então está concluído
+				if (alunoCursoCarregado.situacao == 2) {
+					botaoCertificado.removeAttribute("hidden");
+				}
 			} else {
-				resposta = false;
+				botaoInscreverSe.removeAttribute("hidden");
 			}
 		},
 		error: function(request, status, erro) {
-			exibirMensagemAlunoCurso('Erro ao tentar entrar!' + JSON.stringify(erro));
+			exibirMensagemAlunoCurso('Erro ao tentar verificar inscrição!');
+			botaoInscreverSe.removeAttribute("hidden");
 		},
 		complete: function (jqXHR, textStatus) {
 			//console.log('Requisição finalizada: ' + textStatus);
-			return resposta;
 		}
 	});
 }

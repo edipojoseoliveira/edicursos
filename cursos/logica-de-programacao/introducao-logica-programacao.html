@@ -216,9 +216,33 @@
                         <a target="_blank" href="https://cursosdeprogramacao.com.br/o-que-e-logica-de-programacao/">https://cursosdeprogramacao.com.br/o-que-e-logica-de-programacao/</a>. Acesso em: 02, Maio 2019.
                     </p>
 
-                    <a href="video-aula-acessando-app-inventor.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/introducao-logica-programacao')">
-                        Próxima aula
-                    </a>
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(1, 'logica-de-programacao/introducao-logica-programacao')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true"
+									onclick="desmarcarAulaComoConcluida(1, 'logica-de-programacao/introducao-logica-programacao')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+								<a href="video-aula-acessando-app-inventor.html" 
+									class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true"
+									onclick="marcarAulaComoConcluida(1, 'logica-de-programacao/introducao-logica-programacao')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</a>
+							</div>
+						</div>
+					</p>
                 </div>
                 <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
                     <!-- Aqui fica o menu direito -->
@@ -238,6 +262,7 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+        <script src="../../scripts/service/aluno-aula-service.js"></script>
 
         <script type="application/ld+json">
             {
