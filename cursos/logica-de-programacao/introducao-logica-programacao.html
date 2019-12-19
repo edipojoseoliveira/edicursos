@@ -227,19 +227,19 @@
 									Marcar como concluída
 								</button>
 								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
-									role="button" aria-pressed="true" hidden="true"
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
 									onclick="desmarcarAulaComoConcluida(1, 'logica-de-programacao/introducao-logica-programacao')">
 									<span class="oi oi-x"></span>
 									Desmarcar como concluída
 								</button>
 							</div>
 							<div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
-								<a href="video-aula-acessando-app-inventor.html" 
-									class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true"
-									onclick="marcarAulaComoConcluida(1, 'logica-de-programacao/introducao-logica-programacao')">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(1, 'logica-de-programacao/introducao-logica-programacao', 'logica-de-programacao/video-aula-acessando-app-inventor')">
 									<span class="oi oi-chevron-right"></span>
 									Próxima aula
-								</a>
+								</button>
 							</div>
 						</div>
 					</p>
@@ -262,7 +262,7 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
-        <script src="../../scripts/service/aluno-aula-service.js"></script>
+        <script onload="verificarSituacaoAula(1)" src="../../scripts/service/aluno-aula-service.js"></script>
 
         <script type="application/ld+json">
             {

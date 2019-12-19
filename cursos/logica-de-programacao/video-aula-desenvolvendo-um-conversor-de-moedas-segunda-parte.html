@@ -50,9 +50,33 @@
                         <img class="personagem" src="../../sources/Dudu.png" alt="-" /> Se você ficou com alguma dúvida pode digitar aqui embaixo, vou ficar muito feliz em poder te ajudar.
                     </p>
 					
-					<a href="banco-de-dados.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte')">
-                        Próxima aula
-                    </a>
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(26, 'logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(26, 'logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(26, 'logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte', 'logica-de-programacao/banco-de-dados')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+					</p>
 					
                     <p>
                         <div id="fb-root"></div>
@@ -78,6 +102,7 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+		<script onload="verificarSituacaoAula(26)" src="../../scripts/service/aluno-aula-service.js"></script>
         <script src="../../scripts/facebook-coments-sdk.js"></script>
 
         <script type="application/ld+json">

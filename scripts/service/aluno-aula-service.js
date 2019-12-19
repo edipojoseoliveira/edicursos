@@ -2,17 +2,13 @@ var alunoAulaCarregado = new Object();
 var botaoMarcarConcluida = document.getElementById("btnMarcarConcluida");
 var botaoDesmarcarConcluida = document.getElementById("btnDesmarcarConcluida");
 
-window.onload = function() {
-	verificarSituacaoAula();
-}
-
-function verificarSituacaoAula() {
+function verificarSituacaoAula(idAulaAtual) {
 	var conta = JSON.parse(localStorage.getItem('conta'));
 	var idAluno = conta.codigo;
-	var idAula = 1;
+	var idAula = idAulaAtual;
 	
 	$.ajax({
-		url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/consultar?idAluno=' + idAluno + '&idCurso=' + idAula,
+		url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/consultar?idAluno=' + idAluno + '&idAula=' + idAula,
 		headers: {
 			'Content-Type': 'application/json',
 			'Foo-Header': 'foo'
@@ -84,7 +80,7 @@ function marcarAulaComoConcluida(idAula, pagina) {
 				localStorage.setItem(pagina, 'OK');
 			},
 			error: function(request, status, erro) {
-				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor. ' + JSON.stringify(erro));
+				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor.');
 			},
 			complete: function (jqXHR, textStatus) {
 				//console.log('Fim: ' + textStatus);
@@ -124,7 +120,48 @@ function desmarcarAulaComoConcluida(idAula, pagina) {
 				localStorage.removeItem(pagina);
 			},
 			error: function(request, status, erro) {
-				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor. ' + JSON.stringify(erro));
+				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor.');
+			},
+			complete: function (jqXHR, textStatus) {
+				//console.log('Fim: ' + textStatus);
+			}
+		});
+	}
+}
+
+function proximaAula(idAula, pagina, proximaPagina) {
+	limparMensagensAlunoAula();
+	
+	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
+		var conta = JSON.parse(localStorage.getItem('conta'));
+
+		var aula = new Object();
+		var aluno = new Object();
+		var alunoAula = new Object();
+
+		aula.id = idAula;
+		aluno.id = conta.codigo;
+
+		alunoAula.aula = aula;
+		alunoAula.aluno = aluno;
+		alunoAula.situacao = 1;
+		
+		$.ajax({
+			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/salvar',
+			headers: {
+				'Content-Type': 'application/json',
+				'Foo-Header': 'foo'
+			},
+			type: 'POST',
+			data: JSON.stringify(alunoAula),
+			success: function(result, status, request) {
+				botaoDesmarcarConcluida.removeAttribute("hidden");
+				botaoMarcarConcluida.setAttribute("hidden", "true");
+				localStorage.removeItem(pagina);
+				window.location.href = "http://localhost:8080/edicursos/cursos/" + proximaPagina + ".html";
+			},
+			error: function(request, status, erro) {
+				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor.');
 			},
 			complete: function (jqXHR, textStatus) {
 				//console.log('Fim: ' + textStatus);

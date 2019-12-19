@@ -121,9 +121,33 @@
                         Caso tenha ficado com alguma dúvida não deixe de escrever sua pergunta abaixo, nós responderemos o mais rápido possível.
                     </p>
 
-                    <a href="video-aula-primeiro-aplicativo-variaveis.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/o-que-sao-variaveis')">
-                        Próxima aula
-                    </a>
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(6, 'logica-de-programacao/o-que-sao-variaveis')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(6, 'logica-de-programacao/o-que-sao-variaveis')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(6, 'logica-de-programacao/o-que-sao-variaveis', 'logica-de-programacao/video-aula-primeiro-aplicativo-variaveis')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+					</p>
                 </div>
                 <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-5">
                     <!-- Aqui fica o menu -->
@@ -143,6 +167,7 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+		<script onload="verificarSituacaoAula(6)" src="../../scripts/service/aluno-aula-service.js"></script>
 
         <script type="application/ld+json">
             {

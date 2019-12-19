@@ -196,9 +196,33 @@
                         ALVES, Gustavo Furtado de Oliveira. <b>Estrutura de repetição PARA</b>. Dicas de Programação, 2013. Disponível em: <a target="_blank" href="https://dicasdeprogramacao.com.br/estrutura-de-repeticao-para/">https://dicasdeprogramacao.com.br/estrutura-de-repeticao-para/</a>. Acesso em: 05 de setembro de 2019.
                     </p>
 
-                    <a href="video-aula-aplicativo-estrutura-de-repeticao-for.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina('logica-de-programacao/estruturas-de-repeticao')">
-                        Próxima aula
-                    </a>
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(21, 'logica-de-programacao/estruturas-de-repeticao')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(21, 'logica-de-programacao/estruturas-de-repeticao')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(21, 'logica-de-programacao/estruturas-de-repeticao', 'logica-de-programacao/video-aula-aplicativo-estrutura-de-repeticao-for')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+					</p>
                 </div>
                 <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-5">
                     <!-- Aqui fica o menu -->
@@ -218,6 +242,7 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-logica-de-programacao.js"></script>
+		<script onload="verificarSituacaoAula(21)" src="../../scripts/service/aluno-aula-service.js"></script>
 
         <script type="application/ld+json">
             {
