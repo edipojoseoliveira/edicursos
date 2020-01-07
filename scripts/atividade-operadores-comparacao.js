@@ -162,13 +162,15 @@ function atualizaClasseCampo(campo, classe, div, mensagem) {
 
 function exibirBotaoProximaAula() {
 	var divBotoes = document.getElementById('divBotoes');
-	var botaoProximaAula = 
-		'<div class="col-12 col-sm-12 col-md-12 col-lg-12">' +
-			'<a href="video-aula-primeiro-aplicativo-operadores-comparacao.html" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true" onclick="gravarVisualizacaoPagina(' + "'" + 'logica-de-programacao/atividade-operadores-comparacao' + "'" + ')">' +
-				'Próxima aula' +
-			'</a>' +
-		'</div>';
-	divBotoes.innerHTML = botaoProximaAula;
+	
+	var botaoEnviarResposta = document.getElementById("btnEnviarResposta");
+	var botaoMarcarConcluida = document.getElementById("btnMarcarConcluida");
+	var botaoDesmarcarConcluida = document.getElementById("btnDesmarcarConcluida");
+	var botaoProximaAula = document.getElementById("btnProximaAula");
+	
+	botaoMarcarConcluida.removeAttribute("hidden");
+	botaoProximaAula.removeAttribute("hidden");
+	botaoEnviarResposta.setAttribute("hidden", "true");
 }
 
 function voltarAoTopo() {

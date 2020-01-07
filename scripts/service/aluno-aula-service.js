@@ -35,8 +35,8 @@ function verificarSituacaoAula(idAulaAtual) {
 }
 
 function limparMensagensAlunoAula() {
-	var mensagensAlunoCurso = document.getElementById("mensagensAlunoAula");
-	mensagensAlunoCurso.innerHTML = '';
+	var mensagensAlunoAula = document.getElementById("mensagensAlunoAula");
+	mensagensAlunoAula.innerHTML = '';
 }
 
 function exibirMensagemAlunoAula(mensagem) {

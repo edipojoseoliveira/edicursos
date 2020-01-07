@@ -205,6 +205,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-desenvolvendo-uma-agenda-segunda-parte', 'oi-video') + '"></span>' +
 		'Vídeo - Desenvolvendo uma agenda - Segunda parte' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-publicando-aplicativos-na-play-store.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Publicando aplicativos na Play Store') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/video-aula-publicando-aplicativos-na-play-store', 'oi-video') + '"></span>' +
+		'Vídeo - Publicando aplicativos na Play Store' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');
