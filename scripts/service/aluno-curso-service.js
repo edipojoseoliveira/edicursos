@@ -104,5 +104,9 @@ function verificarInscricaoNoCurso() {
 }
 
 function imprimirCertificado() {
-	window.open('http://192.168.100.34:8080/EdiCursos/api/certificado/imprimir/1', '_blank');
+	if (alunoCursoCarregado.id != null) {
+		window.open('http://192.168.100.34:8080/EdiCursos/api/certificado/imprimir/' + alunoCursoCarregado.id, '_blank');
+	} else {
+		exibirMensagemAlunoCurso('Erro ao tentar gerar seu certificado!');
+	}
 }
