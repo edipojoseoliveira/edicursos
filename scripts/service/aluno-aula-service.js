@@ -8,7 +8,7 @@ function verificarSituacaoAula(idAulaAtual) {
 	var idAula = idAulaAtual;
 	
 	$.ajax({
-		url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/consultar?idAluno=' + idAluno + '&idAula=' + idAula,
+		url: urlServer + 'aluno-aula/consultar?idAluno=' + idAluno + '&idAula=' + idAula,
 		headers: {
 			'Content-Type': 'application/json',
 			'Foo-Header': 'foo'
@@ -67,7 +67,7 @@ function marcarAulaComoConcluida(idAula, pagina) {
 		alunoAula.situacao = 1;
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/salvar',
+			url: urlServer + 'aluno-aula/salvar',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'
@@ -107,7 +107,7 @@ function desmarcarAulaComoConcluida(idAula, pagina) {
 		alunoAula.situacao = 0;
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/salvar',
+			url: urlServer + 'aluno-aula/salvar',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'
@@ -147,7 +147,7 @@ function proximaAula(idAula, pagina, proximaPagina) {
 		alunoAula.situacao = 1;
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-aula/salvar',
+			url: urlServer + 'aluno-aula/salvar',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'
@@ -158,7 +158,7 @@ function proximaAula(idAula, pagina, proximaPagina) {
 				botaoDesmarcarConcluida.removeAttribute("hidden");
 				botaoMarcarConcluida.setAttribute("hidden", "true");
 				localStorage.removeItem(pagina);
-				window.location.href = "http://localhost:8080/edicursos/cursos/" + proximaPagina + ".html";
+				window.location.href = urlSite + "cursos/" + proximaPagina + ".html";
 			},
 			error: function(request, status, erro) {
 				exibirMensagemAlunoAula('Erro ao tentar conectar ao servidor.');

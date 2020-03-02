@@ -19,10 +19,10 @@ function gravarVisualizacaoPagina(pagina) {
 
 function getUrlHref() {
 	var endereco = document.URL;
-	var inicio = endereco.indexOf('edicursos');
-	endereco = endereco.substring(inicio, endereco.length);
+	endereco = endereco.substring(urlSite.length, endereco.length);
+	console.log(endereco);
 	var niveis = endereco.split('/');
-	if ((niveis.length - 1) == 2) {
+	if (niveis.length == 2) {
 		return 'a-programadora/';
 	} else {
 		return './';

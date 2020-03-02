@@ -45,12 +45,11 @@ div.innerHTML = menu;
 
 function getUrlHref() {
 	var endereco = document.URL;
-	var inicio = endereco.indexOf('edicursos');
-	endereco = endereco.substring(inicio, endereco.length);
+	endereco = endereco.substring(urlSite.length, endereco.length);
 	var niveis = endereco.split('/');
-	if ((niveis.length - 1) == 3) {
+	if (niveis.length == 3) {
 		return '../../';
-	} else if ((niveis.length - 1) == 2) {
+	} else if (niveis.length == 2) {
 		return '../';
 	} else {
 		return '';
@@ -59,10 +58,9 @@ function getUrlHref() {
 
 function getImagemLogo() {
 	var endereco = document.URL;
-	var inicio = endereco.indexOf('edicursos');
-	endereco = endereco.substring(inicio, endereco.length);
+	endereco = endereco.substring(urlSite.length, endereco.length);
 	var niveis = endereco.split('/');
-	if ((niveis.length - 1) >= 0 && endereco.indexOf('index') == -1) {
+	if (niveis.length >= 0 && endereco.indexOf('index') == -1) {
 		return '<img src="' + getUrlHref() + 'sources/logo-home-slide-um.png" width="160" class="d-inline-block align-top navbar-brand" alt="Logomarca da EdiCursos.">';
 	} else {
 		return '';

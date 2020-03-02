@@ -72,7 +72,7 @@ function alunoSalvar() {
 		exibirLoading();
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno/salvar',
+			url: urlServer + 'aluno/salvar',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'

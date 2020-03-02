@@ -124,7 +124,7 @@ function contaEntrar() {
 		exibirLoadingEntrar();
 
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
+			url: urlServer + 'conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
 			headers: {
 		        'Content-Type': 'application/json',
 		        'Foo-Header': 'foo'
@@ -163,7 +163,7 @@ function contaRedefinirSenha() {
 		exibirLoadingRedefinirSenhha();
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/conta/enviar-email-redefinir-senha?email=' + conta.email,
+			url: urlServer + 'conta/enviar-email-redefinir-senha?email=' + conta.email,
 			headers: {
 		        'Content-Type': 'application/json',
 		        'Foo-Header': 'foo'
@@ -227,7 +227,7 @@ function salvarSenhaRedefinida() {
 			exibirLoadingTelaRedefinirSenhha();
 			
 			$.ajax({
-				url: 'http://192.168.100.34:8080/EdiCursos/api/conta/redefinir-senha',
+				url: urlServer + 'conta/redefinir-senha',
 				headers: {
 					'Content-Type': 'application/json',
 					'Foo-Header': 'foo'

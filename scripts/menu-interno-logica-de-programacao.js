@@ -4,8 +4,8 @@ var titulo_pagina_text = titulo_pagina_element.textContent;
 //Ao abrir a página se não estiver logado volta para a página inicial
 window.onload = function() {
 	if (verificarUsuarioLogado() == false 
-		&& document.URL != "http://localhost:8080/edicursos/cursos/logica-de-programacao.html") {
-		window.location.href = "http://localhost:8080/edicursos/cursos/logica-de-programacao.html";
+		&& document.URL != (urlSite + "cursos/logica-de-programacao.html")) {
+		window.location.href = urlSite + "cursos/logica-de-programacao.html";
 	}
 }
 
@@ -29,12 +29,11 @@ function gravarVisualizacaoPagina(pagina) {
 
 function getUrlHref(pagina) {
 	var endereco = document.URL;
-	var inicio = endereco.indexOf('edicursos');
-	endereco = endereco.substring(inicio, endereco.length);
+	endereco = endereco.substring(urlSite.length, endereco.length);
 	var niveis = endereco.split('/');
 
 	if (verificarUsuarioLogado()) {
-		if ((niveis.length - 1) == 2) {
+		if (niveis.length == 2) {
 			return 'logica-de-programacao/' + pagina;
 		} else {
 			return './' + pagina;

@@ -47,7 +47,7 @@ function salvarAlunoCurso(idCurso) {
 		alunoCurso.situacao = 1;
 		
 		$.ajax({
-			url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-curso/salvar',
+			url: urlServer + 'aluno-curso/salvar',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'
@@ -55,7 +55,7 @@ function salvarAlunoCurso(idCurso) {
 			type: 'POST',
 			data: JSON.stringify(alunoCurso),
 			success: function(result, status, request) {
-				window.location.href = "http://localhost:8080/edicursos/cursos/logica-de-programacao/introducao-logica-programacao.html";
+				window.location.href = urlSite + "cursos/logica-de-programacao/introducao-logica-programacao.html";
 			},
 			error: function(request, status, erro) {
 				exibirMensagemAlunoCurso('Erro ao tentar conectar ao servidor. ' + JSON.stringify(erro));
@@ -75,7 +75,7 @@ function verificarInscricaoNoCurso() {
 	var idCurso = 1;
 	
 	$.ajax({
-		url: 'http://192.168.100.34:8080/EdiCursos/api/aluno-curso/consultar?idAluno=' + idAluno + '&idCurso=' + idCurso,
+		url: urlServer + 'aluno-curso/consultar?idAluno=' + idAluno + '&idCurso=' + idCurso,
 		headers: {
 			'Content-Type': 'application/json',
 			'Foo-Header': 'foo'
@@ -105,7 +105,7 @@ function verificarInscricaoNoCurso() {
 
 function imprimirCertificado() {
 	if (alunoCursoCarregado.id != null) {
-		window.open('http://192.168.100.34:8080/EdiCursos/api/certificado/imprimir/' + alunoCursoCarregado.id, '_blank');
+		window.open(urlServer + 'certificado/imprimir/' + alunoCursoCarregado.id, '_blank');
 	} else {
 		exibirMensagemAlunoCurso('Erro ao tentar gerar seu certificado!');
 	}
