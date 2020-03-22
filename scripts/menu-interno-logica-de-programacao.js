@@ -44,6 +44,8 @@ function getUrlHref(pagina) {
 }
 
 function verificarUsuarioLogado() {
+	return true;
+	/*
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
 		var conta = JSON.parse(localStorage.getItem('conta'));
 
@@ -55,6 +57,7 @@ function verificarUsuarioLogado() {
 	} else {
 		return false;
 	}
+	*/
 }
 
 var menu = 
@@ -116,7 +119,7 @@ var menu =
 	'</a>' +
 	'<a href="' + getUrlHref("operadores-comparacao.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Aprenda a usar operadores de comparação') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
-		'<span class="oi ' + getIconeMenu('logica-de-programacao/ativida-operadores-comparacao', 'oi-file') + '"></span>' +
+		'<span class="oi ' + getIconeMenu('logica-de-programacao/operadores-comparacao', 'oi-file') + '"></span>' +
 		'Operadores de comparação' +
 	'</a>' +
 	'<a href="' + getUrlHref("atividade-operadores-comparacao.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Atividade - Operadores de comparação') + '"' +

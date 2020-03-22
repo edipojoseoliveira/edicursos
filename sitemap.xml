@@ -4,97 +4,217 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>http://www.edicursos.com.br/</loc>
-    <lastmod>2018-08-04</lastmod>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://www.edicursos.com.br/index.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/curso-logica-programacao.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/contato.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/sobre.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-01-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/introducao-logica-programacao.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-02-app-inventor-post.html</loc>
-    <lastmod>2018-08-05</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-acessando-app-inventor.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/continuacao-aula-02-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-como-criar-projeto-app-inventor.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-03-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-concluindo-primeiro-aplicativo-app-inventor.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-04-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-testando-aplicativo.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/pratica-aula-04-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/o-que-sao-variaveis.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-05-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-variaveis.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-06-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-gerando-o-instalador-dos-aplicativos.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/continuacao-aula-06-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/operadores-matematicos.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-07-app-inventor-post.html</loc>
-    <lastmod>2018-08-04</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-operadores-matematicos.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/pratica-01-aula-07-app-inventor-post.html</loc>
-    <lastmod>2018-10-31</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-desenvolvendo-uma-calculadora.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/aula-08-app-inventor-post.html</loc>
-    <lastmod>2018-12-14</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/operadores-comparacao.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://www.edicursos.com.br/paginas/pratica-aula-08-app-inventor-post.html</loc>
-    <lastmod>2018-12-14</lastmod>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/atividade-operadores-comparacao.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-operadores-comparacao.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-concluindo-calculadora-de-media.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/estrutura-condicional.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-estrutura-condicional.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/operadores-logicos.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-operadores-logicos.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-primeiro-aplicativo-operadores-logicos-segunda-parte.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/estruturas-de-repeticao.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-aplicativo-estrutura-de-repeticao-for.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-aplicativo-gera-tabuada.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/procedimentos.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-primeira-parte.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-desenvolvendo-um-conversor-de-moedas-segunda-parte.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/banco-de-dados.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-desenvolvendo-uma-agenda-primeira-parte.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-desenvolvendo-uma-agenda-segunda-parte.html</loc>
+    <lastmod>2020-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/logica-de-programacao/video-aula-publicando-aplicativos-na-play-store.html</loc>
+    <lastmod>2020-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

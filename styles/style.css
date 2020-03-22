@@ -1,20 +1,33 @@
-html {
-    background-color: white;
-}
-
 * {
     margin: 0;
 }
 
-.personagem {
-    width: 5%;
+html {
+    background-color: white;
 }
 
-.ondas-banner {
-    max-width: 100%;
-    bottom: 0;
-    right: 0;
-    position: fixed;
+a {
+    word-wrap: break-word;
+}
+
+/*Footer*/
+footer {
+    box-sizing: border-box;
+    height: 125px;
+    padding-left: 15px;
+}
+footer dl {
+    float: left;
+    width: 70%;
+}
+footer img {
+    float: right;
+    height: 100%;
+    max-width: 30%;
+}
+
+.personagem {
+    width: 5%;
 }
 
 .ondas-cursos {
@@ -26,14 +39,20 @@ html {
 
 .logo-banner {
     width: 60%;
-    top: 20%;
-    left: 7%;
-    position: fixed;
+    margin-top: 4%;
+    margin-left: 7%;
 }
 
 .texto-banner {
     color: #09234a;
-    left: 10%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.ondas-banner {
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
     position: fixed;
 }
 
@@ -291,6 +310,10 @@ body {
     opacity: 1;
 }
 
+#btnMarcarConcluida, #btnDesmarcarConcluida {
+    margin-bottom: 5px;
+}
+
 @media(min-width:769px) {
     .conteudo-post { padding: 90px 20px !important; }
     .logica-programacao > h2 { position: absolute; }
@@ -310,6 +333,7 @@ body {
 @media(max-width:575px) {
     .slide-title { font-size: 1.7rem !important; }
     .conteudo-post { padding: 90px 20px !important; }
+    footer img { display: none; }
 }
 
 #apresentacao-curso {

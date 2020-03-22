@@ -61,7 +61,6 @@ function salvarAlunoCurso(idCurso) {
 				exibirMensagemAlunoCurso('Erro ao tentar conectar ao servidor. ' + JSON.stringify(erro));
 			},
 			complete: function (jqXHR, textStatus) {
-				console.log('Fim: ' + textStatus);
 			}
 		});
 	} else {
@@ -98,7 +97,6 @@ function verificarInscricaoNoCurso() {
 			botaoInscreverSe.removeAttribute("hidden");
 		},
 		complete: function (jqXHR, textStatus) {
-			//console.log('Requisição finalizada: ' + textStatus);
 		}
 	});
 }

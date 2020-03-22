@@ -143,7 +143,6 @@ function contaEntrar() {
 				exibirMensagem('Erro ao tentar entrar!');
 			},
 			complete: function (jqXHR, textStatus) {
-				//console.log('Requisição finalizada: ' + textStatus);
 				fecharLoadingEntrar()
 			}
 		});
@@ -182,7 +181,6 @@ function contaRedefinirSenha() {
 				exibirMensagemRedefinirSenha('Erro ao tentar redefinir sua senha!');
 			},
 			complete: function (jqXHR, textStatus) {
-				//console.log('Requisição finalizada: ' + textStatus);
 				fecharLoadingRedefinirSenhha()
 			}
 		});
@@ -246,7 +244,6 @@ function salvarSenhaRedefinida() {
 					exibirMensagemTelaRedefinirSenha('Erro ao tentar redefinir a senha: ' + JSON.stringify(erro));
 				},
 				complete: function (jqXHR, textStatus) {
-					//console.log('Fim: ' + textStatus);
 					fecharLoadingTelaRedefinirSenhha();
 				}
 			});

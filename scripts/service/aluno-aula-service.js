@@ -3,6 +3,7 @@ var botaoMarcarConcluida = document.getElementById("btnMarcarConcluida");
 var botaoDesmarcarConcluida = document.getElementById("btnDesmarcarConcluida");
 
 function verificarSituacaoAula(idAulaAtual) {
+	/*
 	var conta = JSON.parse(localStorage.getItem('conta'));
 	var idAluno = conta.codigo;
 	var idAula = idAulaAtual;
@@ -32,6 +33,7 @@ function verificarSituacaoAula(idAulaAtual) {
 			//console.log('Requisição finalizada: ' + textStatus);
 		}
 	});
+	*/
 }
 
 function limparMensagensAlunoAula() {
@@ -52,6 +54,11 @@ function exibirMensagemAlunoAula(mensagem) {
 function marcarAulaComoConcluida(idAula, pagina) {
 	limparMensagensAlunoAula();
 	
+	botaoDesmarcarConcluida.removeAttribute("hidden");
+	botaoMarcarConcluida.setAttribute("hidden", "true");
+	localStorage.setItem(pagina, 'OK');
+
+	/*
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
 		var conta = JSON.parse(localStorage.getItem('conta'));
 
@@ -87,11 +94,17 @@ function marcarAulaComoConcluida(idAula, pagina) {
 			}
 		});
 	}
+	*/
 }
 
 function desmarcarAulaComoConcluida(idAula, pagina) {
 	limparMensagensAlunoAula();
 	
+	botaoMarcarConcluida.removeAttribute("hidden");
+	botaoDesmarcarConcluida.setAttribute("hidden", "true");
+	localStorage.removeItem(pagina);
+
+	/*
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
 		var conta = JSON.parse(localStorage.getItem('conta'));
 
@@ -127,11 +140,16 @@ function desmarcarAulaComoConcluida(idAula, pagina) {
 			}
 		});
 	}
+	*/
 }
 
 function proximaAula(idAula, pagina, proximaPagina) {
 	limparMensagensAlunoAula();
 	
+	marcarAulaComoConcluida(idAula, pagina);
+	window.location.href = urlSite + "cursos/" + proximaPagina + ".html";
+
+	/*
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
 		var conta = JSON.parse(localStorage.getItem('conta'));
 
@@ -168,4 +186,5 @@ function proximaAula(idAula, pagina, proximaPagina) {
 			}
 		});
 	}
+	*/
 }

@@ -1,3 +1,8 @@
+var campoNome = document.getElementById('inputNomeContato');
+var camporEmail = document.getElementById('inputEmailContato');
+var campoMensagem = document.getElementById('inputMensagemContato');
+var frmContato = document.getElementById('frmContato');
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyAWrYCj6C8NN8BI69ep_f92XBC1xLcIwPU",
@@ -10,14 +15,34 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-function salvarMensagem() {
+
+function enviarMensagem() {
     var newKey = firebase.database().ref().child('mensagens').push().key;
-    var valorNome = document.getElementById('inputNome').value;
-    var valorEmail = document.getElementById('inputEmail').value;;
-    var valorMensagem = document.getElementById('inputMensagem').value;;
+    var valorEmail = camporEmail.value;
+    var valorMensagem = campoMensagem.value;
+    var valorNome = campoNome.value;
     firebase.database().ref('mensagens/' + newKey).set({
-        nome: valorNome,
         email: valorEmail,
-        mensagem : valorMensagem
+        mensagem : valorMensagem,
+        nome: valorNome
     });
+    exibirMensagem('Obrigado por enviar sua mensagem ;)');
+    limparCampos();
+}
+
+function exibirMensagem(mensagem) {
+	var mensagemHTML = 
+	'<div class="alert alert-primary" role="alert">' +
+		mensagem +
+    '</div>' +
+    '<br/>';
+
+	var mensagensContato = document.getElementById("mensagensContato");
+	mensagensContato.innerHTML = mensagemHTML;
+}
+
+function limparCampos() {
+    camporEmail.value = '';
+    campoMensagem.value = '';
+    campoNome.value = '';
 }

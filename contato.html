@@ -42,29 +42,30 @@
                 <div class="col-md-10 col-sm-12 logica-programacao">
                     <h2>Contato</h2>
                     <p>
-                        <form>
+                        <form id="frmContato">
                             <br/>
                             <div class="row">
                                 <div class="col-md-9 col-sm-12">
+                                    <div id="mensagensContato"></div>
                                     <div class="form-row">
                                         <div class="col-6">
-                                            <input type="text" id="inputNome" class="form-control" placeholder="Nome">
+                                            <input type="text" id="inputNomeContato" class="form-control" placeholder="Nome" />
                                         </div>
                                         <div class="col-6">
-                                            <input type="mail" id="inputEmail" class="form-control" placeholder="E-mail">
+                                            <input type="mail" id="inputEmailContato" class="form-control" placeholder="E-mail" />
                                         </div>
                                     </div>
                                     <br/>
                                     <div class="form-row">
                                         <div class="col-12">
-                                            <textarea id="inputMensagem" class="form-control" placeholder="Mensagem"></textarea>
+                                            <textarea id="inputMensagemContato" class="form-control" placeholder="Mensagem"></textarea>
                                         </div>
                                     </div>
                                     <br/>
                                     <div class="form-row">
                                         <div class="col-12 text-right margin-bottom-10">
-                                            <button type="submit" class="btn btn-outline-primary"
-                                                onclick="salvarMensagem()">Enviar</button>
+                                            <button type="button" class="btn btn-outline-primary"
+                                                onclick="enviarMensagem()">Enviar</button>
                                         </div>
                                     </div>
                                 </div>

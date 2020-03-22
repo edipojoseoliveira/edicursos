@@ -24,16 +24,16 @@ var menu =
 				'</li>' +
 				(verificarUsuarioLogado()
 				?
-					'<li class="nav-item">' +
+					'<!-- <li class="nav-item">' +
 						'<a class="nav-link" href="' + getUrlHref() + 'index.html" onclick="contaSair()">SAIR</a>' +
-					'</li>'
+					'</li> -->'
 				:
-					'<li class="nav-item">' +
+					'<!-- <li class="nav-item">' +
 						'<a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>' +
 					'</li>' +
 					'<li class="nav-item">' +
 						'<a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>' +
-					'</li>'
+					'</li> -->'
 				)
 			'</ul>' +
 		'</div>' +
@@ -60,7 +60,7 @@ function getImagemLogo() {
 	var endereco = document.URL;
 	endereco = endereco.substring(urlSite.length, endereco.length);
 	var niveis = endereco.split('/');
-	if (niveis.length >= 0 && endereco.indexOf('index') == -1) {
+	if (niveis.length > 0 && endereco != "" && endereco.indexOf('index') == -1) {
 		return '<img src="' + getUrlHref() + 'sources/logo-home-slide-um.png" width="160" class="d-inline-block align-top navbar-brand" alt="Logomarca da EdiCursos.">';
 	} else {
 		return '';

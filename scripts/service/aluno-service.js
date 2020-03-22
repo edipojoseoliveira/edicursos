@@ -80,14 +80,12 @@ function alunoSalvar() {
 			type: 'POST',
 			data: JSON.stringify(aluno),
 			success: function(result, status, request) {
-				console.log('Success: ' + result);
 				$('#modalCadastreSe').modal('hide');
 			},
 			error: function(request, status, erro) {
 				exibirMensagemAluno('Erro ao tentar conectar ao servidor. ' + JSON.stringify(erro));
 			},
 			complete: function (jqXHR, textStatus) {
-				console.log('Fim: ' + textStatus);
 				fecharLoading();
 			}
 		});
