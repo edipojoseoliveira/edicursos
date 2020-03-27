@@ -69,7 +69,7 @@ footer img {
 }
 
 #form-redefinir-senha > h2 {
-    background: blue;
+    background: #001b44;
     color: white;
     border-radius: 5px;
     padding: 15px;
@@ -122,6 +122,10 @@ footer img {
 
 .margin-bottom-10 {
     margin-bottom: 7rem;
+}
+
+.margin-bottom-15-px {
+    margin-bottom: 15px;
 }
 
 .video-aula {
@@ -180,17 +184,53 @@ footer img {
     font-size: 18pt;
 }
 
+.metodo-fanart > a > h2,
+.metodo-fanart > h2 {
+    background: #d40553;
+    color: white;
+}
+
+.ingles > a > h2,
+.ingles > h2 {
+    background: rgb(2, 9, 87);
+    color: white;
+}
+
 .logica-programacao > a > h2,
 .logica-programacao > h2 {
-    background: blue;
+    background: #008678;
     color: white;
+}
+
+.a-programadora > a > h2,
+.a-programadora > h2 {
+    background: #008678;
+    color: white;
+}
+
+.paginas-web > a > h2,
+.paginas-web > h2 {
+    background: #0d72b8;
+    color: white;
+}
+
+.titulo-contato > h2,
+.titulo-contato > a > h2,
+.titulo-sobre > h2,
+.titulo-sobre > a > h2 {
+    background: #001b44;
+    color: white;
+}
+
+.titulo > a > h2,
+.titulo > h2 {
     border-radius: 5px;
     padding: 15px;
     font-size: 26pt;
     font-weight: bold;
 }
 
-.logica-programacao > a {
+.titulo > a {
     text-decoration: none;
     color: black;
 }
@@ -316,8 +356,8 @@ body {
 
 @media(min-width:769px) {
     .conteudo-post { padding: 90px 20px !important; }
-    .logica-programacao > h2 { position: absolute; }
-    .logica-programacao > p { margin-top: 10%; }
+    .titulo > h2 { position: absolute; }
+    .titulo > p { margin-top: 10%; }
     .ondas-banner { height: 90%; }
     .texto-banner { top: 65%; }
 }

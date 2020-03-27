@@ -13,9 +13,9 @@ var menu =
 				'<li class="nav-item">' +
 					'<a class="nav-link ' + getClassMenu('/cursos') + '" href="' + getUrlHref() + 'cursos.html">CURSOS</a>' +
 				'</li>' +
-				'<li class="nav-item">' +
+				'<!-- <li class="nav-item">' +
 					'<a class="nav-link ' + getClassMenu('/historias') + '" href="' + getUrlHref() + 'historias.html">HISTÓRIAS</a>' +
-				'</li>' +
+				'</li> -->' +
 				'<li class="nav-item">' +
 					'<a class="nav-link ' + getClassMenu('/contato') + '" href="' + getUrlHref() + 'contato.html">CONTATO</a>' +
 				'</li>' +

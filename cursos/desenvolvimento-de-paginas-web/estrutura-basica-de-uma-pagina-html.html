@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="icon" type="imagem/png" href="../../sources/icone-tab.png" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="Nessa aula vamos aprender sobre a estrutura básica de um documento HTML, veremos que existem elementos fixos que devem ser usados em nossas páginas web.">
+	</head>
+	<body>
+        <div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 id="titulo-pagina">Estrutura básica de uma página HTML</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Na aula de hoje vamos aprender sobre a estrutura básica de um documento HTML, veremos que existem elementos fixos que devem ser usados em nossas páginas web.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Você já teve que desenvolver uma dissertação? Se sim, você deve lembrar que ela precisa ter uma introdução, um desenvolvimento e uma conclusão para estar completa.
+                    </p>
+                    <p>
+                        Um documento HTML também tem elementos fixos que são definidos como padrão de desenvolvimento de qualquer página web. Nessa aula, veremos quais são esses elementos e quais suas características.
+                    </p>
+
+                    <h2>Tags do HTML</h2>
+                    <p>
+                        Primeiro vamos entender o que são as tags do HTML, pois no desenvolvimento desses documentos ambas são utilizadas em todo momento.
+                    </p>
+                    <p>
+                        Tags são os nomes dados aos elementos do nosso site. Para formar uma tag nós escrevemos o nome da tag entre os símbolos <b>&lt;</b> e <b>&gt;</b>, como no exemplo abaixo.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-exemplo.png" alt="Exemplo de como criar uma tag no HTML." />
+                    </p>
+                    <p>
+                        As tags normalmente são usadas em pares, como no exemplo mostrado temos <b>&lt;nomeDaTag&gt;</b> e <b>&lt;/nomeDaTag&gt;</b>, a primeira tag é a tag de abertura e a segunda é a tag de fechamento. Note que a diferença entre as duas é que a tag de fechamento tem uma <b>barra</b> inserida antes do nome da tag.
+                    </p>
+                    <p>
+                        Para cada elemento de uma página web usamos uma tag. Imagine que você vai escrever um parágrafo no seu site; para criar o parágrafo usamos a tag <b>&lt;p&gt;</b>. Veja a seguir o exemplo de um parágrafo em HTML.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-p.png" alt="Exemplo de como usar a tag p do HTML." />
+                    </p>
+                    <p>
+                        O que você percebe? Todo o texto do parágrafo deve ficar entre as tags <b>&lt;p&gt;</b> e <b>&lt;/p&gt;</b>, que são respectivamente a tag de abertura e fechamento de um parágrafo.
+                    </p>
+                    <p>
+                        Agora que você já sabe o que é uma tag no HTML vamos ver as tags usadas para criar a estrutura básica de uma página web.
+                    </p>
+
+                    <h2>Abertura e fechamento do documento</h2>
+                    <p>
+                        Todo o conteúdo de um documento HTML deve estar dentro da tag chamada <b>html</b>. Veja abaixo um modelo de uso da tag <b>html</b>.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-html.png" alt="Exemplo de como usar a tag html." />
+                    </p>
+                    <p>
+                        Perceba que todo o conteúdo da página vai ficar entre a abertura e fechamento da tag <b>html</b>, para abrir a tag escrevemos <b>&lt;html&gt;</b> e para fechá-la usamos o código <b>&lt;/html&gt;</b>.
+                    </p>
+                    <p>
+                        Dentro das tags html nós ainda temos dois elementos importantes que são a cabeça e o corpo do documento que veremos a seguir.
+                    </p>
+
+                    <h2>Cabeça do documento tag Head</h2>
+                    <p>
+                        Na tag <b>head</b> que representa a cabeça do documento nós colocamos informações e algumas configurações sobre o documento que estamos desenvolvendo.
+                    </p>
+                    <p>
+                        Nessa área podemos colocar o título do site que é exibido na guia do navegador, além de colocarmos informações sobre a formatação dos caracteres, configurações sobre como o documento vai se comportar em cada navegador, entre outras informações que veremos mais detalhadamente na aula prática (vídeo).
+                    </p>
+                    <p>
+                        Dentro do <b>head</b> do documento também configuramos os arquivos de CSS e JavaScript que nossa página vai usar. Por enquanto estamos estudando apenas HTML, mas futuramente vamos começar a usar CSS e JavaScript.
+                    </p>
+                    <p>
+                        Veja abaixo um protótipo de código HTML implementando a tag <b>head</b>.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-head.png" alt="Exemplo de como usar a tag head do HTML." />
+                    </p>
+                    <p>
+                        Note que a tag <b>head</b> tem sua abertura <b>&lt;head&gt;</b> e seu fechamento <b>&lt;/head&gt;</b>, além de ser escrita dentro da tag <b>html</b>.
+                    </p>
+                    <p>
+                        É importante saber que o conteúdo escrito dentro da tag <b>head</b> não é exibido no site, apenas o conteúdo escrito no corpo do documento será exibido como veremos em seguida.
+                    </p>
+
+                    <h2>Corpo do documento tag Body</h2>
+                    <p>
+                        A tag <b>body</b> representa o corpo do documento, nela nós colocamo todo o conteúdo que será exibido em nosso site.
+                    </p>
+                    <p>
+                        Dentro da tag <b>body</b> colocamos todos os textos, imagens, vídeos e áudios de nossas páginas web, tudo que será exibido no site devemos colocar dentro dessa tag.
+                    </p>
+                    <p>
+                        Veja a seguir o modelo de código HTML implementando a tag <b>body</b>.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-body.png" alt="Exemplo de como usar a tag body do HTML." />
+                    </p>
+                    <p>
+                        A tag <b>body</b> é aberta com o código <b>&lt;body&gt;</b> e fechada com o código <b>&lt;/body&gt;</b>. Perceba que essa tag deve iniciar logo após o fechamento da tag <b>head</b>, e ela também deve ficar dentro da tag <b>html</b> que é a principal.
+                    </p>
+
+                    <h2>Tag DOCTYPE</h2>
+                    <p>
+                        Ao criar nosso documento HTML precisamos indicar que ele é um documento HTML da versão 5 para quê os navegadores possam interpretá-lo de forma correta. Para isso usamos a tag especial doctype.
+                    </p>
+                    <p>
+                        Esse tag deve ser escrita no início do documento HTML, acima da abertura da tag <b>html</b>. Veja abaixo como escrevê-la.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/estrutura-pagina-html/tag-doctype.png" alt="Exemplo de como usar a tag doctype do HTML." />
+                    </p>
+                    <p>
+                        Como ela é uma tag especial não tem fechamento, sua única função é indicar ao navegador que a página deve ser interpretada como um documento HTML 5.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula aprendemos sobre a estrutura básica de um documento HTML, vimos que ela é formada por três tags essências que são <b>html</b>, <b>head</b> e <b>body</b>.
+                    </p>
+                    <p>
+                        Na tag <b>&lt;html&gt;</b> colocamos todos os elementos de nosso site, na tag <b>&lt;head&gt;</b> colocamos informações e configurações sobre o documento e na tag <b>&lt;body&gt;</b> colocamos todo o conteúdo que será exibido em nosso site como imagens, textos e vídeos.
+                    </p>
+                    <p>
+                        Também vimos que as tags são muito importantes no desenvolvimento de documentos HTML, pois é através delas que nós conseguimos indicar quais elementos nosso site vai ter, além de serem usadas para montar toda a estrutura de nossas páginas web.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver nossa primeira página web colocando em prática o conteúdo estudado hoje além de conhecer novas tags do html.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        Professor Digital. <b>HTML: Tags HTML, Head e Body</b>. Professor Digital, 2019. Disponível em: <a target="_blank" href="https://www.luis.blog.br/html-e-xhtml.html">https://www.luis.blog.br/html-e-xhtml.html</a>. Acesso em 08 de janeiro de 2020.
+                    </p>
+                    <p>
+                        W3SCHOOLS. <b>HTML Introdução</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/html/html_intro.asp">https://www.w3schools.com/html/html_intro.asp</a>. Acesso em 06 de janeiro de 2020.
+                    </p>
+
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(4, 'desenvolvimento-de-paginas-web/estrutura-basica-de-uma-pagina-html')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(4, 'desenvolvimento-de-paginas-web/estrutura-basica-de-uma-pagina-html')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(4, 'desenvolvimento-de-paginas-web/estrutura-basica-de-uma-pagina-html', 'desenvolvimento-de-paginas-web/video-aula-conhecendo-estrutura-basica-do-html')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+                    </p>
+                    
+                    <p>
+                        <div id="fb-root"></div>
+                        <div class="fb-comments" data-width="100%" data-numposts="10"
+                            data-href="https://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/estrutura-basica-de-uma-pagina-html.html">
+                        </div>
+                    </p>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <dl>
+                <dt>E-mail</dt>
+                <dd>edipojoseoliveira@gmail.com</dd>
+
+                <dt>Telefone</dt>
+                <dd>(46) 9 9106-2205</dd>
+            </dl>
+            <img src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/service/propriedades.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-desenvolvimento-de-paginas-web.js"></script>
+		<script onload="verificarSituacaoAula(4)" src="../../scripts/service/aluno-aula-service.js"></script>
+        <script src="../../scripts/facebook-coments-sdk.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/estrutura-basica-de-uma-pagina-html.html"
+                },
+                "headline": "Estrutura básica de uma página HTML",
+                "datePublished": "2020-03-26T08:00:00+08:00",
+                "dateModified": "2020-03-26T09:20:00+08:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "Edipo Oliveira"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "EdiCursos",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.edicursos.com.br/sources/icone-tab.png"
+                    }
+                },
+                "description": "Nessa aula vamos aprender sobre a estrutura básica de um documento HTML, veremos que existem elementos fixos que devem ser usados em nossas páginas web."
+            }
+        </script>
+	</body>
+</html>
