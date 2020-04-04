@@ -87,6 +87,76 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-conhecendo-estrutura-basica-do-html', 'oi-video') + '"></span>' +
 		'Vídeo - Conhecendo a estrutura básica do HTML' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-usar-tag-meta-viewport.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como usar a tag meta viewport') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-usar-tag-meta-viewport', 'oi-video') + '"></span>' +
+		'Vídeo - Como usar a tag meta viewport' +
+	'</a>' +
+    '<a href="' + getUrlHref("definindo-layout-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Definindo o layout do site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/definindo-layout-do-site', 'oi-file') + '"></span>' +
+		'Definindo o layout do site' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-definindo-layout-do-site-com-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Definindo o layout do site com HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-definindo-layout-do-site-com-html', 'oi-video') + '"></span>' +
+		'Vídeo - Definindo o layout do site com HTML' +
+	'</a>' +
+    '<a href="' + getUrlHref("como-usar-css-em-paginas-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Como usar CSS em páginas HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html', 'oi-file') + '"></span>' +
+		'Como usar CSS em páginas HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-aplicando-css-ao-header-da-pagina.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Aplicando CSS ao header da página') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-aplicando-css-ao-header-da-pagina', 'oi-video') + '"></span>' +
+		'Vídeo - Aplicando CSS ao header da página' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-criando-listas-com-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Criando listas com HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-criando-listas-com-html', 'oi-video') + '"></span>' +
+		'Vídeo - Criando listas com HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-criar-barra-de-navegacao-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como criar a barra de navegação do site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-criar-barra-de-navegacao-do-site', 'oi-video') + '"></span>' +
+		'Vídeo - Como criar a barra de navegação do site' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-usar-links-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como usar links no HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-usar-links-no-html', 'oi-video') + '"></span>' +
+		'Vídeo - Como usar links no HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-inserir-imagens-nas-paginas-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como inserir imagens nas páginas HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-inserir-imagens-nas-paginas-html', 'oi-video') + '"></span>' +
+		'Vídeo - Como inserir imagens nas páginas HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-fixar-barra-lateral-do-site-com-css.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como fixar a barra lateral do site com CSS') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-fixar-barra-lateral-do-site-com-css', 'oi-video') + '"></span>' +
+		'Vídeo - Como fixar a barra lateral do site com CSS' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-concluindo-barra-lateral-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Concluindo a barra lateral do site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-concluindo-barra-lateral-do-site', 'oi-video') + '"></span>' +
+		'Vídeo - Concluindo a barra lateral do site' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-desenvolvendo-rodape-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Desenvolvendo o rodapé do site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-desenvolvendo-rodape-do-site', 'oi-video') + '"></span>' +
+		'Vídeo - Desenvolvendo o rodapé do site' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-criar-e-usar-favicon-no-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como criar e usar o favicon no site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-criar-e-usar-favicon-no-site', 'oi-video') + '"></span>' +
+		'Vídeo - Como criar e usar o favicon no site' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-organizar-os-arquivos-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como organizar os arquivos do site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-organizar-os-arquivos-do-site', 'oi-video') + '"></span>' +
+		'Vídeo - Como organizar os arquivos do site' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');

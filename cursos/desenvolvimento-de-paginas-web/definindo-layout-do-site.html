@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="Na aula de hoje vamos aprender quais são os elementos que formam o layout de uma página web.">
+	</head>
+	<body>
+        <div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 id="titulo-pagina">Definindo o layout do site</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Na aula de hoje vamos aprender quais são os elementos que formam o layout de uma página web.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Você já percebeu que a maioria dos sites tem alguns elementos em comum como por exemplo, um menu com as opções do site, um local onde fica o conteúdo e um rodapé com informações sobre a empresa?
+                    </p>
+                    <p>
+                        O conjunto desses elementos formam o layout de um site, nessa aula nós vamos aprender quais são esses elementos e qual é a finalidade de cada um.
+                    </p>
+
+                    <h2>Elementos do HTML usados para criar o layout</h2>
+                    <p>
+                        O HTML tem vários elementos semânticos que definem cada parte de um site. É importante colocar cada componente do site em seu devido lugar, pois isso  que os robôs de busca como o Google entendam melhor o conteúdo do seu site.
+                    </p>
+                    <p>
+                        Criando um site que segue o padrão e colocando cada parte do site em seu devido lugar as chances deste aparecer nas primeiras páginas de busca aumenta.
+                    </p>
+                    <p>
+                        Vamos ver a seguir cada um desses elementos usados para definir as diferentes partes de um site, para isso vamos usar o exemplo da página web abaixo.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-site.png" alt="Imagem ilustrando o layout de um site." />
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;header&gt;</h2>
+                    <p>
+                        No elemento chamado Header normalmente colocamos o nome e a logo da empresa proprietária do site.
+                    </p>
+                    <p>
+                        No entanto, o Header é um elemento que é adequado dentro de outros elementos como em uma Section, o  qual veremos no decorrer do texto. Neste caso, ele será usado para colocar o título da Section.
+                    </p>
+                    <p>
+                        Em resumo o Header é para identificar os cabeçalhos dentro do nosso site, e ele pode ser usado mais de uma vez nas mesmas páginas web. Veja a seguir, um exemplo do Header sendo usado em um site para dar destaque ao nome da empresa proprietária do site.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-header.png" alt="Imagem ilustrando o layout de um site com header." />
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;nav&gt;</h2>
+                    <p>
+                        A tag Nav define o elemento onde colocamos todos os links de navegação dos nossos sites.
+                    </p>
+                    <p>
+                        Em um site institucional onde normalmente temos as páginas Home, Sobre, Contato, entre outras, colocamos todas essas opções de navegação dentro do elemento Nav.
+                    </p>
+                    <p>
+                        Mas é importante dizer que em outras partes do site você também pode colocar links de navegação se for necessário, no entanto o elemento Nav é o indicado para colocar os links principais para navegação do seu site. Veja abaixo uma aplicação do Nav em um site.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-nav.png" alt="Imagem ilustrando o layout de um site com nav." />
+                    </p>
+                    <p>
+                        No exemplo acima, temos o elemento Nav contendo os links de navegação entre as páginas Home, Sobre e Contato da empresa.
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;section&gt;</h2>
+                    <p>
+                        É uma tag que define uma seção dentro do site: uma seção com fotos, uma seção onde vão ficar os produtos, outra onde vão ficar as matérias caso seja um jornal, entre outros.
+                    </p>
+                    <p>
+                        Uma mesma página web pode ter várias seções. Imagine que você vai criar um site onde há uma lista de produtos oferecidos pela empresa, e logo abaixo há uma lista dos principais clientes da empresa e ainda há uma outra área do site onde você vai colocar fotos da empresa.
+                    </p>
+                    <p>
+                        Todas essas partes podem estar na mesma página, desde que estejam bem separadas utilizando uma Section para cada uma delas. Veja a seguir, um exemplo de Section que contém todo o conteúdo principal da página de um site.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-section.png" alt="Imagem ilustrando o layout de um site com section." />
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;article&gt;</h2>
+                    <p>
+                        A tag Article define um elemento onde o conteúdo é independente, por exemplo, artigos de um jornal, nesta situação poderíamos ter uma Section com todos os artigos do jornal, e cada um dos artigos poderia estar dentro de um elemento Article.
+                    </p>
+                    <p>
+                        Você pode usar Section dentro de Article sem problemas, pois um artigo pode ter diferentes seções dentro dele, assim como pode existir uma seção do site onde há vários artigos. Veja a seguir um exemplo de Article sendo usado em um site:
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-article.png" alt="Imagem ilustrando o layout de um site com article." />
+                    </p>
+                    <p>
+                        Nesse exemplo você pode notar que há dois elementos Article dentro de uma Section.
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;aside&gt;</h2>
+                    <p>
+                        O elemento Aside pode ser utilizado para colocar conteúdos complementares ao conteúdo principal do site. Veja a seguir um exemplo onde o Aside foi implementado.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-aside.png" alt="Imagem ilustrando o layout de um site com aside." />
+                    </p>
+                    <p>
+                        Nessa página web o Aside exibe links secundários com fotos, livros e notícias sobre a empresa.
+                    </p>
+
+                    <h2>Conhecendo a tag &lt;footer&gt;</h2>
+                    <p>
+                        A tag Footer define o rodapé de uma página web ou de uma seção que compõe a página.
+                    </p>
+                    <p>
+                        O elemento Footer pode ser empregado mais de uma vez na mesma página assim como o elemento Header, pois cada Section pode ter seu próprio Footer com informações referentes ao conteúdo da Section.
+                    </p>
+                    <p>
+                        Normalmente no Footer da página ficam mais informações sobre a organização do site. Veja a seguir, um exemplo de Foote em um site.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/definindo-layout-site/layout-footer.png" alt="Imagem ilustrando o layout de um site com footer." />
+                    </p>
+                    <p>
+                        Nesse caso, foram colocados o e-mail e o telefone para contato da empresa dentro do elemento Footer.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula aprendemos quais são os elementos precisos para criar o layout de páginas web.
+                    </p>
+                    <p>
+                        É importante você saber que esses elementos não são obrigatórios, ou seja, seu site não precisa ter todos eles, mas sempre que você precisa ter um cabeçalho, lembre-se de usar o Header, quando usar um rodapé use o Footer e assim por diante.
+                    </p>
+                    <p>
+                        Essas tag são importantes para que os navegadores consigam interpretar de forma correta os elementos que formam nossos sites.
+                    </p>
+                    <p>
+                        Na próxima aula vamos desenvolver o layout do nosso site aplicando os elementos que estudamos hoje.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos o mais rápido possível.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        W3SCHOOLS. <b>HTML5 elementos semânticos</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/html/html5_semantic_elements.asp">https://www.w3schools.com/html/html5_semantic_elements.asp</a>. Acesso em 12 de janeiro de 2020.
+                    </p>
+                    <p>
+                        W3SCHOOLS. <b>HTML Layouts</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/html/html_layout.asp">https://www.w3schools.com/html/html_layout.asp</a>. Acesso em 13 de janeiro de 2020.
+                    </p>
+
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(7, 'desenvolvimento-de-paginas-web/definindo-layout-do-site')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(7, 'desenvolvimento-de-paginas-web/definindo-layout-do-site')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(7, 'desenvolvimento-de-paginas-web/definindo-layout-do-site', 'desenvolvimento-de-paginas-web/video-aula-definindo-layout-do-site-com-html')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+                    </p>
+                    
+                    <p>
+                        <div id="fb-root"></div>
+                        <div class="fb-comments" data-width="100%" data-numposts="10"
+                            data-href="https://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/definindo-layout-do-site.html">
+                        </div>
+                    </p>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <dl>
+                <dt>E-mail</dt>
+                <dd>edipojoseoliveira@gmail.com</dd>
+
+                <dt>Telefone</dt>
+                <dd>(46) 9 9106-2205</dd>
+            </dl>
+            <img src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/service/propriedades.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-desenvolvimento-de-paginas-web.js"></script>
+		<script onload="verificarSituacaoAula(7)" src="../../scripts/service/aluno-aula-service.js"></script>
+        <script src="../../scripts/facebook-coments-sdk.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/definindo-layout-do-site.html"
+                },
+                "headline": "Definindo o layout do site",
+                "datePublished": "2020-03-27T08:00:00+08:00",
+                "dateModified": "2020-03-27T09:20:00+08:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "Edipo Oliveira"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "EdiCursos",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.edicursos.com.br/sources/icone-tab.png"
+                    }
+                },
+                "description": "Na aula de hoje vamos aprender quais são os elementos que formam o layout de uma página web."
+            }
+        </script>
+	</body>
+</html>

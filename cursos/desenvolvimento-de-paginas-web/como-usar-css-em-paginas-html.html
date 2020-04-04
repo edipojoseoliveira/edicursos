@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+
+        <meta name="description" content="Nessa aula vamos aprender a usar CSS em nossas páginas HTML para deixá-las mais bonitas visualmente.">
+	</head>
+	<body>
+        <div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 id="titulo-pagina">Como usar CSS em páginas HTML</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <p>
+                        Nessa aula vamos aprender a usar CSS em nossas páginas HTML para deixá-las mais bonitas visualmente.
+                    </p>
+
+                    <h2>Introdução</h2>
+                    <p>
+                        Você já percebeu como as páginas web de hoje em dia são coloridas e tem vários efeitos visuais para chamar a atenção do usuário?
+                    </p>
+                    <p>
+                        Todos os efeitos e cores de uma página web são feitos utilizando o CSS e em alguns casos também é usado JavaScript. A partir de agora vamos aprender o que é e como usar o CSS em nossos sites.
+                    </p>
+
+                    <h2>O que é CSS?</h2>
+                    <p>
+                        A sigla CSS significa Cascading Style Sheet, que traduzido para o  português  denomina-se “Folha de estilo em cascata”.
+                    </p>
+                    <p>
+                        Usamos CSS na formatação das páginas web, com ele conseguimos descrever como os elementos HTML devem ser exibidos na tela, qual vai ser sua cor, tamanho, em que posição vai ficar, entre outras opções.
+                    </p>
+                    <p>
+                        O CSS traz muita praticidade ao desenvolvimento de sites, pois o mesmo arquivo CSS pode ser utilizado em diferentes páginas HTML, evitando assim o trabalho de reescrevê-lo.
+                    </p>
+
+                    <h2>Como usar CSS em minhas páginas web?</h2>
+                    <p>
+                        Os comando CSS são normalmente escritos em um arquivo externo ao arquivo HTML, com isso você pode mudar o estilo de todo o site apenas alterando um arquivo CSS.
+                    </p>
+                    <p>
+                        Todo arquivo CSS deve ser salvo com a extensão “.css”, assim como os arquivos HTML são salvos com a extensão “.html”.
+                    </p>
+                    <p>
+                        Também é possível escrever códigos CSS dentro do arquivo HTML utilizando a tag style, dentro dessa tag podemos escrever os códigos CSS aplicados na página. No entanto, quando há muito código CSS ou quando esse código deve ser compartilhado entre diferentes páginas é indicado escrevê-lo em um arquivo separado.
+                    </p>
+
+                    <h2>Como escrever um código CSS</h2>
+                    <p>
+                        Os códigos escritos em CSS são compostos por um seletor e um bloco de declarações.
+                    </p>
+                    <p>
+                        O seletor é onde indicamos quais componentes HTML vão receber os estilos, e no bloco de declarações informamos as características que desejamos alterar no componente informado.
+                    </p>
+                    <p>
+                        O bloco de declaração pode conter várias declarações separadas por ponto e vírgula. Cada declaração é formada pelo nome da propriedade CSS e o valor que ela irá receber.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/exemplo-CSS.jpg" alt="Imagem ilustrando como usar CSS em páginas HTML." />
+                    </p>
+                    <p>
+                        No exemplo acima, temos na linha 1 o seletor indicando que os estilos CSS serão aplicados ao elemento h1 do HTML, relembrando que o elemento h1 representa um título.
+                    </p>
+                    <p>
+                        Nas linhas 2 e 3 temos as declarações CSS alterando o tamanho da fonte e a cor do texto respectivamente, e na linha 4 temos o fechamento do bloco de declarações CSS.
+                    </p>
+                    <p>
+                        Nós temos três formas diferentes de indicar os elementos que receberão as alterações do CSS, são elas: usando o nome do elemento; usando o id do elemento e usando a classe do elemento. A seguir veremos como funciona cada uma dessas formas.
+                    </p>
+
+                    <h2>Aplicando estilos aos elementos usando seu nome</h2>
+                    <p>
+                        Como estudamos anteriormente, pode-se aplicar estilos aos elementos do HTML utilizando o nome da tag para identificá-los.
+                    </p>
+                    <p>
+                        Para exemplificar, vamos supor que desejamos alterar a cor do texto do título do nosso site para azul. Veja a seguir o código HTML da nossa página.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/exemplo-HTML.jpg" alt="Imagem ilustrando código html de uma página." />
+                    </p>
+                    <p>
+                        Temos a estrutura básica de um documento HTML e na linha 9 temos o título da página dentro do elemento h1.
+                    </p>
+                    <p>
+                        Veja abaixo o resultado desse código no navegador.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/resultado-01.jpg" alt="Imagem ilustrando resultado de um código HTML no navegador." />
+                    </p>
+                    <p>
+                        O nome do elemento referente ao título é h1, para ficar mais simples de entender vamos usar o CSS dentro da tag style no mesmo arquivo HTML, o elemento style é adicionado no head da nossa página, então nosso código CSS ficaria da forma em anexo.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/aplcando-CSS-nome.jpg" alt="Imagem ilustrando como aplicar CSS em um elemento HTML usando seu nome." />
+                    </p>
+                    <p>
+                        Na linha 8 adicionamos o elemento style, dentro dele escrevemos o código CSS da página.
+                    </p>
+                    <p>
+                        Na linha 9 colocamos o identificador do elemento, nesse caso o seu próprio nome que é h1. Depois usamos o caractere “{“ para indicar o início do bloco de declarações.
+                    </p>
+                    <p>
+                        Na linha seguinte temos a declaração que altera a cor do texto com a propriedade color, após os dois pontos indicamos que seu valor será blue, assim a cor do texto ficará azul e para finalizar a declaração colocamos ponto e vírgula.
+                    </p>
+                    <p>
+                        Por fim, na linha 11 fechamos o bloco de declarações com o caractere “}”. O resultado no navegador será este:
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/resultado-02.jpg" alt="Imagem ilustrando resultado de um código HTML no navegador." />
+                    </p>
+
+                    <h2>Aplicando estilos aos elementos usando seu id</h2>
+                    <p>
+                        Todos os elementos do HTML tem algumas propriedades, entre elas temos o id, ele é utilizado para identificar cada componente dentro de uma página.
+                    </p>
+                    <p>
+                        No exemplo anterior usamos o elemento h1 para aplicar o estilo CSS, no entanto se houvesse mais de um elemento h1 na mesma página todos iriam receber o mesmo estilo de cor.
+                    </p>
+                    <p>
+                        Para diferenciar um elemento de outro podemos usar a propriedade id, pois o mesmo id não pode ser repetido na mesma página, então com ele conseguimos identificar cada componente de forma única. Veja o código abaixo onde usamos a propriedade id nos elementos h1.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/exemplo-02-HTML.jpg" alt="Imagem ilustrando como usar o atributo id dos elementos HTML." />
+                    </p>
+                    <p>
+                        Note que no exemplo acima o primeiro h1 tem o id “tituto-01” e o segundo tem o id “titulo-02”. O resultado desse código no navegador será este abaixo.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/resultado-03.jpg" alt="Imagem ilustrando resultado de um código HTML no navegador." />
+                    </p>
+                    <p>
+                        Agora nosso objetivo é deixar apenas o primeiro título com a cor azul, sabemos que o id dele é “titulo-01”. Veja a seguir como ficaria nosso código CSS usando o id do elemento como seletor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/aplcando-CSS-id.jpg" alt="Imagem ilustrando como aplicar CSS aos elementos do HTML usando seu id." />
+                    </p>
+                    <p>
+                        A única alteração foi no seletor onde passamos a empregar o id do componente que é “titulo-01” no lugar do nome h1, perceba que quando usamos o id como seletor devemos adicionar o caractere “#” no início. Veja seguir como ficou o resultado no navegador.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/resultado-04.jpg" alt="Imagem ilustrando resultado de um código HTML no navegador." />
+                    </p>
+                    <p>
+                        Como podemos perceber nosso objetivo foi alcançado, pois o estilo CSS foi aplicado apenas ao título com o id “titulo-01”.
+                    </p>
+
+                    <h2>Aplicando estilos aos elementos usando sua classe</h2>
+                    <p>
+                        Vamos ver agora quando podemos utilizar as classes como seletores do CSS, para isso adicionei mais um h1 em nossa página, veja abaixo como está nosso código HTML.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/exemplo-03-HTML.jpg" alt="Imagem ilustrando como usar o atributo id dos elementos HTML." />
+                    </p>
+                    <p>
+                        Nosso objetivo é deixar o segundo e o terceiro título na cor vermelha. Vimos que usando o nome do elemento h1 não vai dar certo pois com o nome iríamos alterar a cor de todos os títulos, e não é isso que desejamos.
+                    </p>
+                    <p>
+                        Utilizando o id também não seria legal pois teríamos que colocar dois ids no seletor e se futuramente adicionar mais um título que deve ser vermelho vamos precisar lembrar de colocar o id dele no nosso CSS também.
+                    </p>
+                    <p>
+                        Nessa situação é indicado usar as classes, para informar a classe de um elemento usamos o atributo class. Veja a seguir como ficou nosso código com as classes.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/exemplo-04-HTML.jpg" alt="Imagem ilustrando como usar o atributo class dos elementos HTML." />
+                    </p>
+                    <p>
+                        Perceba que o segundo e o terceiro h1 tem a propriedade class com o valor “vermelho”, note que a mesma classe pode ser usada por vários elementos, diferente do id que deve ser usado apenas uma vez em cada página.
+                    </p>
+                    <p>
+                        Note em seguida como ficaria o código CSS usando a classe como seletor.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/aplcando-CSS-class.jpg" alt="Imagem ilustrando como aplicar CSS aos elementos do HTML usando sua classe." />
+                    </p>
+                    <p>
+                        Criamos mais um bloco de código CSS usando a classe “vermelho” como seletor. Na primeira linha do bloco colocamos o nome da classe, e perceba que antes do nome da classe colocamos um ponto, pois sempre que usamos classes devemos usar um ponto antes de seu nome.
+                    </p>
+                    <p>
+                        Também alteramos a cor do texto com a declaração da segunda linha do bloco CSS, onde colocamos o valor “red” na propriedade “color”. Veja a seguir o resultado do nosso código.
+                    </p>
+                    <p>
+                        <img style="max-width: 100%;" src="../../sources/curso-paginas-web/como-usar-css-paginas-html/resultado-05.jpg" alt="Imagem ilustrando resultado de um código HTML no navegador." />
+                    </p>
+                    <p>
+                        Agora em todo texto que você deseja que fique vermelho basta adicionar a propriedade class do elemento e usar a classe chamada “vermelho”.
+                    </p>
+
+                    <h2>Conclusão</h2>
+                    <p>
+                        Nessa aula começamos a estudar o CSS que é a linguagem usada para aplicar estilos em nossas páginas.
+                    </p>
+                    <p>
+                        Também vimos como utilizar seletores para identificar quais componentes do HTML desejamos alterar.
+                    </p>
+                    <p>
+                        Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos o mais rápido possível.
+                    </p>
+                    <p>
+                        Na próxima aula vamos aplicar estilos na página do site que estamos desenvolvendo.
+                    </p>
+
+                    <h2>Referências</h2>
+                    <p>
+                        W3SCHOOLS. <b>CSS Introdução</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/css/css_intro.asp">https://www.w3schools.com/css/css_intro.asp</a>. Acesso em 20 de janeiro de 2020.
+                    </p>
+                    <p>
+                        W3SCHOOLS. <b>CSS Syntax</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/css/css_syntax.asp">https://www.w3schools.com/css/css_syntax.asp</a>. Acesso em 03 de fevereiro de 2020.
+                    </p>
+                    <p>
+                        W3SCHOOLS. <b>CSS Seletores</b>. W3SCHOOLS.COM, 2019. Disponível em: <a target="_blank" href="https://www.w3schools.com/css/css_selectors.asp">https://www.w3schools.com/css/css_selectors.asp</a>. Acesso em 03 de fevereiro de 2020.
+                    </p>
+
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(9, 'desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(9, 'desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(9, 'desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html', 'desenvolvimento-de-paginas-web/video-aula-aplicando-css-ao-header-da-pagina')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+                    </p>
+                    
+                    <p>
+                        <div id="fb-root"></div>
+                        <div class="fb-comments" data-width="100%" data-numposts="10"
+                            data-href="https://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html.html">
+                        </div>
+                    </p>
+                </div>
+                <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
+                    <!-- Aqui fica o menu -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <dl>
+                <dt>E-mail</dt>
+                <dd>edipojoseoliveira@gmail.com</dd>
+
+                <dt>Telefone</dt>
+                <dd>(46) 9 9106-2205</dd>
+            </dl>
+            <img src="../../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../../bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="../../bibliotecas/popper/popper.min.js"></script>
+        <script src="../../bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/service/propriedades.js"></script>
+        <script src="../../scripts/main.js"></script>
+        <script src="../../scripts/menu-interno-superior.js"></script>
+        <script src="../../scripts/menu-interno-desenvolvimento-de-paginas-web.js"></script>
+		<script onload="verificarSituacaoAula(9)" src="../../scripts/service/aluno-aula-service.js"></script>
+        <script src="../../scripts/facebook-coments-sdk.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/como-usar-css-em-paginas-html.html"
+                },
+                "headline": "Como usar CSS em páginas HTML",
+                "datePublished": "2020-03-27T08:00:00+08:00",
+                "dateModified": "2020-03-27T09:20:00+08:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "Edipo Oliveira"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "EdiCursos",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.edicursos.com.br/sources/icone-tab.png"
+                    }
+                },
+                "description": "Nessa aula vamos aprender a usar CSS em nossas páginas HTML para deixá-las mais bonitas visualmente."
+            }
+        </script>
+	</body>
+</html>
