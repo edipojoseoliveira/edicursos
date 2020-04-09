@@ -152,10 +152,15 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-criar-e-usar-favicon-no-site', 'oi-video') + '"></span>' +
 		'Vídeo - Como criar e usar o favicon no site' +
 	'</a>' +
-	'<a href="' + getUrlHref("video-aula-como-organizar-os-arquivos-do-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como organizar os arquivos do site') + '"' +
+	'<a href="' + getUrlHref("video-aula-como-separar-css-de-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como separar CSS de HTML') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
-		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-organizar-os-arquivos-do-site', 'oi-video') + '"></span>' +
-		'Vídeo - Como organizar os arquivos do site' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-separar-css-de-html', 'oi-video') + '"></span>' +
+		'Vídeo - Como separar CSS de HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-inserir-videos-no-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como inserir vídeos em nosso site') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-inserir-videos-no-site', 'oi-video') + '"></span>' +
+		'Vídeo - Como inserir vídeos em nosso site' +
 	'</a>' +
 '</div>';
 
