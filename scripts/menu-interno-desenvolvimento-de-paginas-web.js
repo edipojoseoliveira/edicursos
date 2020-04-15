@@ -157,10 +157,10 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-separar-css-de-html', 'oi-video') + '"></span>' +
 		'Vídeo - Como separar CSS de HTML' +
 	'</a>' +
-	'<a href="' + getUrlHref("video-aula-como-inserir-videos-no-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como inserir vídeos em nosso site') + '"' +
+	'<a href="' + getUrlHref("video-aula-como-inserir-videos-no-site.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como inserir vídeos no site') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-inserir-videos-no-site', 'oi-video') + '"></span>' +
-		'Vídeo - Como inserir vídeos em nosso site' +
+		'Vídeo - Como inserir vídeos no site' +
 	'</a>' +
 	'<a href="' + getUrlHref("video-aula-formatacao-de-texto-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Formatação de texto no HTML') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
