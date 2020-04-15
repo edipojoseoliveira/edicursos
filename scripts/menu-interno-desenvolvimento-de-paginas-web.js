@@ -162,6 +162,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-inserir-videos-no-site', 'oi-video') + '"></span>' +
 		'Vídeo - Como inserir vídeos em nosso site' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-formatacao-de-texto-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Formatação de texto no HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-formatacao-de-texto-no-html', 'oi-video') + '"></span>' +
+		'Vídeo - Formatação de texto no HTML' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');
