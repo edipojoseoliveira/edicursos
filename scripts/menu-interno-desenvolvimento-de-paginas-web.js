@@ -162,10 +162,15 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-inserir-videos-no-site', 'oi-video') + '"></span>' +
 		'Vídeo - Como inserir vídeos no site' +
 	'</a>' +
-	'<a href="' + getUrlHref("video-aula-formatacao-de-texto-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Formatação de texto no HTML') + '"' +
+	'<a href="' + getUrlHref("video-aula-formatacao-de-texto-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Formatação de textos no HTML') + '"' +
 		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-formatacao-de-texto-no-html', 'oi-video') + '"></span>' +
-		'Vídeo - Formatação de texto no HTML' +
+		'Vídeo - Formatação de textos no HTML' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-deixar-o-site-responsivo.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como deixar o site responsivo') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-deixar-o-site-responsivo', 'oi-video') + '"></span>' +
+		'Vídeo - Como deixar o site responsivo' +
 	'</a>' +
 '</div>';
 
