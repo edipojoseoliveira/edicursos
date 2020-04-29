@@ -172,6 +172,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-deixar-o-site-responsivo', 'oi-video') + '"></span>' +
 		'Vídeo - Como deixar o site responsivo' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-criar-formularios-no-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como criar formulários no HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-criar-formularios-no-html', 'oi-video') + '"></span>' +
+		'Vídeo - Como criar formulários no HTML' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');
