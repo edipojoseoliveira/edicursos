@@ -3,3 +3,5 @@ Disallow: /sources/
 Disallow: /scripts/
 Disallow: /bibliotecas/
 Disallow: /styles/
+
+Sitemap: https://www.edicursos.com.br/sitemap.xml
