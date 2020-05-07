@@ -177,6 +177,11 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-criar-formularios-no-html', 'oi-video') + '"></span>' +
 		'Vídeo - Como criar formulários no HTML' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-aplicar-css-em-formularios-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como aplicar CSS em formulários HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-aplicar-css-em-formularios-html', 'oi-video') + '"></span>' +
+		'Vídeo - Como aplicar CSS em formulários HTML' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');
