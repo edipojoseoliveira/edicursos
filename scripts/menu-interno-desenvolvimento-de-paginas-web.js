@@ -182,6 +182,16 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-aplicar-css-em-formularios-html', 'oi-video') + '"></span>' +
 		'Vídeo - Como aplicar CSS em formulários HTML' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-formulario-responsivo-com-html-e-css.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Formulário responsivo com HTML e CSS') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-formulario-responsivo-com-html-e-css', 'oi-video') + '"></span>' +
+		'Vídeo - Formulário responsivo com HTML e CSS' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-validacao-de-campos-em-formularios-html.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Validação de campos em formulários HTML') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html', 'oi-video') + '"></span>' +
+		'Vídeo - Validação de campos em formulários HTML' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');

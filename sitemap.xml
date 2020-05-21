@@ -356,4 +356,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/video-aula-como-aplicar-css-em-formularios-html.html</loc>
+    <lastmod>2020-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/video-aula-formulario-responsivo-com-html-e-css.html</loc>
+    <lastmod>2020-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
