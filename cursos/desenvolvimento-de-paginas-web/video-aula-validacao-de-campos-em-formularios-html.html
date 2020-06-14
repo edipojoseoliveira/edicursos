@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <!-- Ícone -->
-        <link rel="apple-touch-icon" sizes="190x190" href="/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
@@ -32,6 +32,8 @@
 
             gtag('config', 'UA-120813321-1');
         </script>
+
+        <meta name="description" content="Nessa aula vamos aprender a fazer validações nos campos que compõem nosso formulário de contato, para essas validações vamos usar os atributos maxlength, minlength e required dos inputs e textarea do nosso formulário.">
     </head>
     <body>
         <div id="menu-interno-superior">
@@ -43,9 +45,49 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <h1 id="titulo-pagina">Vídeo - Validação de campos em formulários HTML</h1>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 font-size-18 margin-top-2 margin-bottom-5">
+                    <div id="video" class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item video-aula"
+                            src="https://www.youtube.com/embed/uvzFT-TCVFM" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
                     <p>
-                        Esta aula será publicada na próxima quarta-feira dia 27 de maio de 2020.
+                        <img class="personagem" src="../../sources/Dudu.png" alt="-" /> Se você ficou com alguma dúvida pode digitar aqui embaixo, vou ficar muito feliz em poder te ajudar.
+                    </p>
+					
+					<p>
+						<div id="mensagensAlunoAula"></div>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+								<button id="btnMarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" 
+									onclick="marcarAulaComoConcluida(26, 'desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html')">
+									<span class="oi oi-check"></span>
+									Marcar como concluída
+								</button>
+								<button id="btnDesmarcarConcluida" class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" hidden="true" style="margin-top: 0px;"
+									onclick="desmarcarAulaComoConcluida(26, 'desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html')">
+									<span class="oi oi-x"></span>
+									Desmarcar como concluída
+								</button>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 text-right">
+								<button class="btn btn-primary btn-lg btn-block active" 
+									role="button" aria-pressed="true" style="margin-top: 0px;"
+									onclick="proximaAula(26, 'desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html', 'desenvolvimento-de-paginas-web/video-aula-como-usar-a-propriedade-position-do-css')">
+									<span class="oi oi-chevron-right"></span>
+									Próxima aula
+								</button>
+							</div>
+						</div>
+					</p>
+                    
+                    <p>
+                        <div id="fb-root"></div>
+                        <div class="fb-comments" data-href="https://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html.html" data-width="100%" data-numposts="10">
+                        </div>
                     </p>
                 </div>
                 <div id="menu-interno" class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
@@ -76,7 +118,34 @@
         <script src="../../scripts/main.js"></script>
         <script src="../../scripts/menu-interno-superior.js"></script>
         <script src="../../scripts/menu-interno-desenvolvimento-de-paginas-web.js"></script>
-        <script onload="verificarSituacaoAula(26)" src="../../scripts/service/aluno-aula-service.js"></script>
+        <script onload="verificarSituacaoAula(26, 2)" src="../../scripts/service/aluno-aula-service.js"></script>
         <script src="../../scripts/facebook-coments-sdk.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "http://www.edicursos.com.br/cursos/desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html.html"
+                },
+                "headline": "Vídeo - Validação de campos em formulários HTML",
+                "datePublished": "2020-06-11T08:00:00+08:00",
+                "dateModified": "2020-06-11T09:20:00+08:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "Edipo Oliveira"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "EdiCursos",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.edicursos.com.br/sources/icone-tab.png"
+                    }
+                },
+                "description": "Nessa aula vamos aprender a fazer validações nos campos que compõem nosso formulário de contato, para essas validações vamos usar os atributos maxlength, minlength e required dos inputs e textarea do nosso formulário."
+            }
+        </script>
     </body>
 </html>

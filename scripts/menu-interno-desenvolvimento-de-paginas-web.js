@@ -192,6 +192,21 @@ var menu =
 		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-validacao-de-campos-em-formularios-html', 'oi-video') + '"></span>' +
 		'Vídeo - Validação de campos em formulários HTML' +
 	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-usar-a-propriedade-position-do-css.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como usar a propriedade position do CSS') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-usar-a-propriedade-position-do-css', 'oi-video') + '"></span>' +
+		'Vídeo - Como usar a propriedade position do CSS' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-como-adicionar-icones-nos-inputs.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Como adicionar ícones nos inputs') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-como-adicionar-icones-nos-inputs', 'oi-video') + '"></span>' +
+		'Vídeo - Como adicionar ícones nos inputs' +
+	'</a>' +
+	'<a href="' + getUrlHref("video-aula-enviando-dados-formulario-contato-para-email.html") + '" class="list-group-item list-group-item-action ' + getClassActive('Vídeo - Enviando os dados do formulário de contato para um e-mail') + '"' +
+		(verificarUsuarioLogado() ? '' : ' data-toggle="modal" data-target="#modalEntrar" ') + '>' +
+		'<span class="oi ' + getIconeMenu('desenvolvimento-de-paginas-web/video-aula-enviando-dados-formulario-contato-para-email', 'oi-video') + '"></span>' +
+		'Vídeo - Enviando os dados do formulário de contato para um e-mail' +
+	'</a>' +
 '</div>';
 
 var div = document.getElementById('menu-interno');
