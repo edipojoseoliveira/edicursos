@@ -69,7 +69,11 @@ function getImagemLogo() {
 
 function getClassMenu(menu) {
 	var endereco = document.URL;
+	var uri = endereco.substring(urlSite.length, endereco.length);
+	var niveis = uri.split('/');
 	if (endereco.indexOf(menu) != -1) {
+		return 'menu-active';
+	} else if (menu == '/index' && (niveis.length <= 0 || uri == "")) {
 		return 'menu-active';
 	} else {
 		return '';
