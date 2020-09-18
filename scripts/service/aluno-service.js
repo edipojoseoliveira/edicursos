@@ -60,19 +60,16 @@ function alunoSalvar() {
 	limparMensagensAluno();
 	
 	if (validarCamposAluno()) {
-		var conta = new Object();
-		conta.email = document.getElementById('inputEmail').value;
-		conta.senha = document.getElementById('inputSenha').value;
-
 		var aluno = new Object();
 		aluno.nome = document.getElementById('inputNome').value;
 		aluno.sobrenome = document.getElementById('inputSobrenome').value;
-		aluno.conta = conta;
+		aluno.email = document.getElementById('inputEmail').value;
+		aluno.senha = document.getElementById('inputSenha').value;
 
 		exibirLoading();
 		
 		$.ajax({
-			url: urlServer + 'aluno/salvar',
+			url: urlServer + 'aluno',
 			headers: {
 				'Content-Type': 'application/json',
 				'Foo-Header': 'foo'

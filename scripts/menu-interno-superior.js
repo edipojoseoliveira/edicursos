@@ -24,16 +24,16 @@ var menu =
 				'</li>' +
 				(verificarUsuarioLogado()
 				?
-					'<!-- <li class="nav-item">' +
+					'<li class="nav-item">' +
 						'<a class="nav-link" href="' + getUrlHref() + 'index.html" onclick="contaSair()">SAIR</a>' +
-					'</li> -->'
+					'</li>'
 				:
-					'<!-- <li class="nav-item">' +
+					'<li class="nav-item">' +
 						'<a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>' +
 					'</li>' +
 					'<li class="nav-item">' +
 						'<a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>' +
-					'</li> -->'
+					'</li>'
 				)
 			'</ul>' +
 		'</div>' +
@@ -84,7 +84,7 @@ function verificarUsuarioLogado() {
 	if (localStorage.getItem('conta') != null && localStorage.getItem('conta') != '') {
 		var conta = JSON.parse(localStorage.getItem('conta'));
 
-		if (conta.codigo != null && conta.codigo != '') {
+		if (conta.codigo != null && conta.codigo == 200) {
 			return true;
 		} else {
 			return false;

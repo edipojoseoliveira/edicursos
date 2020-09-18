@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./icone/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icone/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icone/favicon-16x16.png">
+        <link rel="manifest" href="./icone/site.webmanifest">
+        <link rel="mask-icon" href="./icone/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+	</head>
+	<body>
+		<div id="menu-interno-superior">
+            <!-- Aqui fica o menu superior -->
+        </div>
+
+        <div id="dialogs">
+            <!-- Aqui fica os dialogs de cadastro e login -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 titulo logica-programacao">
+                    <h2 id="titulo-pagina">
+                        <!-- Aqui fica o nome do curso -->
+                    </h2>
+                    <p id="descricao-curso" class="font-size-18">
+                        <!-- Aqui fica a descrição do curso -->
+                    </p>
+                </div>
+            </div>
+            <div class="row margin-top-2 margin-bottom-10">
+                <div class="col-md-12 col-sm-12">
+                    <div id="painel-aulas" class="list-group list-group-flush">
+                        <!-- Aqui fica o menu interno -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img class="ondas-cursos" src="../sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./bibliotecas/popper/popper.min.js"></script>
+        <script src="./bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="./scripts/service/propriedades.js"></script>
+        <script src="./scripts/dialog.js"></script>
+        <script src="./scripts/menu-interno-superior.js"></script>
+        <script src="./scripts/service/aluno-curso-service.js"></script>
+        <script src="./scripts/service/aluno-service.js"></script>
+        <script src="./scripts/service/conta-service.js"></script>
+        <script onload="carregarCursoComAulas()"  src="./scripts/service/aula-service.js"></script>
+	</body>
+</html>

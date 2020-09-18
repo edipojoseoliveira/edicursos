@@ -108,7 +108,7 @@ var dialogsHTML =
 			'<div class="modal-body">' +
 				'<div class="alert alert-success" role="alert">' +
 					'<h4 class="alert-heading">E-mail enviado</h4>' +
-					'<p>Você deverá receber em breve um e-mail permitindo a redefinição de sua senha. Caso não encontre o e-mail verifique seus spams e lixo por favor.</p>' +
+					'<p>Você deverá receber em breve um e-mail permitindo a redefinição de sua senha. Caso não encontre o e-mail verifique seus spams por favor.</p>' +
 				'</div>' +
 			'</div>' +
 			'<div class="modal-footer">' + 
@@ -130,7 +130,7 @@ var dialogsHTML =
 				'</div>' +
 			'</div>' +
 			'<div class="modal-footer">' +
-				'<a href="https://www.edicursos.com.br/">' + 
+				'<a href="/">' + 
 					'<button type="button" class="btn btn-primary">OK</button>' + 
 				'</a>' +
 			'</div>' +

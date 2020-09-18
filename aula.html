@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Ícone -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./icone/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icone/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icone/favicon-16x16.png">
+        <link rel="manifest" href="./icone/site.webmanifest">
+        <link rel="mask-icon" href="./icone/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./bibliotecas/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bibliotecas/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <title>EdiCursos - Plataforma de cursos on-line</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813321-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120813321-1');
+		</script>
+	</head>
+	<body>
+		<div id="menu-interno-superior">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a href="./index.html">
+                        <img src="./sources/logo-home-slide-um.png" width="160" 
+                            class="d-inline-block align-top navbar-brand" alt="Logomarca da EdiCursos." />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                        aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contato.html">CONTATO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobre.html">SOBRE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="modal" data-target="#modalEntrar" class="nav-link" href="#">ENTRAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="modal" data-target="#modalCadastreSe" class="nav-link" href="#">CADASTRE-SE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="dialogs">
+            <!-- Aqui fica os dialogs de cadastro e login -->
+        </div>
+        
+        <div class="container margin-top-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 logica-programacao">
+                    <h1 id="titulo-pagina">
+                        <!-- Aqui fica o nome da aula -->
+                    </h1>
+                </div>
+                <div id="conteudo-aula" class="col-12 col-sm-12 col-md-12 col-lg-9 text-justify font-size-18 margin-top-2 margin-bottom-5">
+                    <!-- Aqui fica o conteúdo da aula -->
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 margin-top-2 margin-bottom-10">
+                    <div id="painel-aulas" class="list-group list-group-flush">
+                        <!-- Aqui fica o menu interno -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <dl>
+                <dt>E-mail</dt>
+                <dd>edipojoseoliveira@gmail.com</dd>
+
+                <dt>Telefone</dt>
+                <dd>(46) 9 9106-2205</dd>
+            </dl>
+            <img src="./sources/ondas-cursos.png" alt="Banner da EdiCursos, cursos online." />
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./bibliotecas/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./bibliotecas/jquery/jquery.lazyload.min.js"></script>
+        <script src="./bibliotecas/popper/popper.min.js"></script>
+        <script src="./bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="./scripts/service/propriedades.js"></script>
+        <script src="./scripts/dialog.js"></script>
+        <script src="./scripts/main.js"></script>
+		<script onload="carregarConteudoAula()" src="./scripts/service/aula-service.js"></script>
+	</body>
+</html>

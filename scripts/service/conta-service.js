@@ -124,7 +124,7 @@ function contaEntrar() {
 		exibirLoadingEntrar();
 
 		$.ajax({
-			url: urlServer + 'conta/entrar?email=' + conta.email + '&senha=' + conta.senha,
+			url: urlServer + 'aluno-por-email-senha?email=' + conta.email + '&senha=' + conta.senha,
 			headers: {
 		        'Content-Type': 'application/json',
 		        'Foo-Header': 'foo'
@@ -132,11 +132,12 @@ function contaEntrar() {
 			type: 'GET',
 			dataType: 'json',
 			success: function(result, status, request) {
-				if (result.mensagem == 'Usuário encontrado!') {
+				if (result.codigo == 200) {
 					localStorage.setItem('conta', JSON.stringify(result));
 					$('#modalEntrar').modal('hide');
+					document.location.reload(true);
 				} else {
-					exibirMensagem(result.mensagem);
+					exibirMensagem(result.chave);
 				}
 			},
 			error: function(request, status, erro) {
@@ -162,7 +163,7 @@ function contaRedefinirSenha() {
 		exibirLoadingRedefinirSenhha();
 		
 		$.ajax({
-			url: urlServer + 'conta/enviar-email-redefinir-senha?email=' + conta.email,
+			url: urlServer + 'enviar-email-redefinir-senha?email=' + conta.email,
 			headers: {
 		        'Content-Type': 'application/json',
 		        'Foo-Header': 'foo'
@@ -170,7 +171,7 @@ function contaRedefinirSenha() {
 			type: 'GET',
 			dataType: 'json',
 			success: function(result, status, request) {
-				if (result.mensagem == 'E-mail enviado com sucesso!') {
+				if (result.mensagem == 'Enviamos para seu e-mail o link para redefinir sua senha.') {
 					//Tentando chamar o método que está no arquivo dialog.js
 					fechaRedefinirSenhaAbreMensagem();
 				} else {
@@ -217,21 +218,21 @@ function salvarSenhaRedefinida() {
 
 	if (validarCamposParaRedefinirSenha()) {
 		if (data['e'] != null) {
-			var conta = new Object();
+			var aluno = new Object();
 			//O e-mail da conta deve vir no parâmetro "e" da url
-			conta.email = data['e'];
-			conta.senha = document.getElementById('inputSenha').value;
+			aluno.email = data['e'];
+			aluno.senha = document.getElementById('inputNovaSenha').value;
 			
 			exibirLoadingTelaRedefinirSenhha();
 			
 			$.ajax({
-				url: urlServer + 'conta/redefinir-senha',
+				url: urlServer + 'redefinir-senha',
 				headers: {
 					'Content-Type': 'application/json',
 					'Foo-Header': 'foo'
 				},
 				type: 'POST',
-				data: JSON.stringify(conta),
+				data: JSON.stringify(aluno),
 				success: function(result, status, request) {
 					if (result.mensagem == 'Senha redefinida com sucesso!') {
 						//Tentando chamar o método que está no arquivo dialog.js
